@@ -1,0 +1,99 @@
+     Group       ME     ME_SD   Active Active_SD Education
+[1,]     1 4.776543 0.8500420 3.832099 0.8242339  4.393651
+[2,]     2 4.746770 0.8047389 4.209302 1.1264051  4.946844
+     Education_SD  Emotion Emotion_SD  Singing Singing_SD Perception
+[1,]    1.1396691 5.500000  0.8079466 4.977778   0.968883   5.728395
+[2,]    0.6156552 5.600775  0.7630171 4.192691   1.268932   5.772610
+     Perception_SD
+[1,]     0.8180606
+[2,]     1.0301035
+
+	Welch Two Sample t-test
+
+data:  ME_mean by Group
+t = 0.16878, df = 85.993, p-value = 0.8664
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.3209031  0.3804494
+sample estimates:
+mean in group 1 mean in group 2 
+       4.776543        4.746770 
+
+d    |        95% CI
+--------------------
+0.04 | [-0.39, 0.46]
+
+	Welch Two Sample t-test
+
+data:  Mean_active by Group
+t = -1.786, df = 76.786, p-value = 0.07804
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.79776671  0.04335959
+sample estimates:
+mean in group 1 mean in group 2 
+       3.832099        4.209302 
+
+d     |        95% CI
+---------------------
+-0.41 | [-0.86, 0.05]
+
+	Welch Two Sample t-test
+
+data:  Mean_education by Group
+t = -2.8499, df = 68.305, p-value = 0.005776
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.9404983 -0.1658878
+sample estimates:
+mean in group 1 mean in group 2 
+       4.393651        4.946844 
+
+d     |         95% CI
+----------------------
+-0.69 | [-1.18, -0.20]
+
+	Welch Two Sample t-test
+
+data:  Mean_emotion by Group
+t = -0.60176, df = 85.989, p-value = 0.5489
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.4336915  0.2321411
+sample estimates:
+mean in group 1 mean in group 2 
+       5.500000        5.600775 
+
+d     |        95% CI
+---------------------
+-0.13 | [-0.55, 0.29]
+
+	Welch Two Sample t-test
+
+data:  Mean_singing by Group
+t = 3.2513, df = 78.558, p-value = 0.001693
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ 0.3044138 1.2657597
+sample estimates:
+mean in group 1 mean in group 2 
+       4.977778        4.192691 
+
+d    |       95% CI
+-------------------
+0.73 | [0.27, 1.19]
+
+	Welch Two Sample t-test
+
+data:  Mean_perception by Group
+t = -0.22233, df = 80.106, p-value = 0.8246
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.4399676  0.3515381
+sample estimates:
+mean in group 1 mean in group 2 
+       5.728395        5.772610 
+
+d     |        95% CI
+---------------------
+-0.05 | [-0.49, 0.39]

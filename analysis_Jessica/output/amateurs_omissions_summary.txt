@@ -1,0 +1,4 @@
+# A tibble: 1 × 5
+  percent     SD     N      SE      CI
+    <dbl>  <dbl> <int>   <dbl>   <dbl>
+1  0.0108 0.0107    79 0.00120 0.00239

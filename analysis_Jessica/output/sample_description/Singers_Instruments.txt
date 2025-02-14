@@ -1,0 +1,10 @@
+      Var1               Freq
+ [1,] "Bass"             " 1"
+ [2,] "Chor "            " 1"
+ [3,] "Geige und Gesang" " 1"
+ [4,] "Gesang"           "34"
+ [5,] "Gitarre"          " 2"
+ [6,] "Klavier"          " 3"
+ [7,] "Klavier, Cello"   " 1"
+ [8,] "Trompete"         " 1"
+ [9,] "Violine"          " 1"

@@ -1,0 +1,33 @@
+     Group      Neg     NegSD      Pos     PosSD
+[1,]     1 1.533333 0.4729021 3.004444 0.6785531
+[2,]     2 1.402326 0.3460583 3.106977 0.5742056
+
+	Welch Two Sample t-test
+
+data:  neg_Aff by Group
+t = 1.4877, df = 80.612, p-value = 0.1407
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.04421868  0.30623418
+sample estimates:
+mean in group 1 mean in group 2 
+       1.533333        1.402326 
+
+d    |        95% CI
+--------------------
+0.33 | [-0.11, 0.77]
+
+	Welch Two Sample t-test
+
+data:  pos_Aff by Group
+t = -0.76637, df = 84.779, p-value = 0.4456
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.3685514  0.1634868
+sample estimates:
+mean in group 1 mean in group 2 
+       3.004444        3.106977 
+
+d     |        95% CI
+---------------------
+-0.17 | [-0.59, 0.26]

@@ -1,0 +1,70 @@
+[1] "ANOVA on MType for happy stimuli only"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect        MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.03351751   1 165 8030.369 0.000  0.980  0.962
+2       MType 0.01542383   2 330  624.133 0.000  0.791  0.644
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+  Effect p_Mauchly GGEpsilon  p_GG HFEpsilon  p_HF
+1  MType     0.000     0.738 0.000     0.743 0.000
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 165) = 8030.369, p < .001, np2 = .980
+2       MType F(2, 330) =  624.133, p < .001, np2 = .791
+
+$`NOTE:`
+[1] "p-values for the following effects were HF-adjusted (p_Mauchly <= 0.05): MType. Reporting uncorrected degrees of freedom."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.98             | [0.97, 0.98]
+0.79             | [0.75, 0.82]
+[1] "F0 vs Tbr"
+
+	Paired t-test
+
+data:  ACC by MType
+t = 21.05, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.3009030 0.3631924
+sample estimates:
+mean difference 
+      0.3320477 
+
+d    |       95% CI
+-------------------
+1.64 | [1.40, 1.87]
+[1] "Tbr vs Full"
+
+	Paired t-test
+
+data:  ACC by MType
+t = 30.651, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.4379951 0.4983092
+sample estimates:
+mean difference 
+      0.4681522 
+
+d    |       95% CI
+-------------------
+2.39 | [2.09, 2.68]
+[1] " F0 vs Full"
+
+	Paired t-test
+
+data:  ACC by MType
+t = -15.676, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.1532476 -0.1189613
+sample estimates:
+mean difference 
+     -0.1361044 
+
+d     |         95% CI
+----------------------
+-1.22 | [-1.42, -1.02]

@@ -1,0 +1,70 @@
+[1] "ANOVA on MType for pleasure stimuli only"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect        MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.04122009   1 165 3045.664 0.000  0.949  0.924
+2       MType 0.01072099   2 330  348.494 0.000  0.679  0.420
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+  Effect p_Mauchly GGEpsilon  p_GG HFEpsilon  p_HF
+1  MType     0.114     0.974 0.000     0.986 0.000
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 165) = 3045.664, p < .001, np2 = .949
+2       MType F(2, 330) =  348.494, p < .001, np2 = .679
+
+$`NOTE:`
+[1] "No adjustments necessary (all p_Mauchly > 0.05)."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.95             | [0.93, 0.96]
+0.68             | [0.62, 0.72]
+[1] "F0 vs Tbr"
+
+	Paired t-test
+
+data:  ACC by MType
+t = 8.4334, df = 165, p-value = 0.00000000000001606
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.07506638 0.12096032
+sample estimates:
+mean difference 
+     0.09801335 
+
+d    |       95% CI
+-------------------
+0.66 | [0.49, 0.82]
+[1] "Tbr vs Full"
+
+	Paired t-test
+
+data:  ACC by MType
+t = 24.586, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.2709428 0.3182600
+sample estimates:
+mean difference 
+      0.2946014 
+
+d    |       95% CI
+-------------------
+1.91 | [1.66, 2.17]
+[1] " F0 vs Full"
+
+	Paired t-test
+
+data:  ACC by MType
+t = -18.842, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.2171884 -0.1759877
+sample estimates:
+mean difference 
+     -0.1965881 
+
+d     |         95% CI
+----------------------
+-1.47 | [-1.69, -1.25]

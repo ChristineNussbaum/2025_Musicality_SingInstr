@@ -1,0 +1,45 @@
+
+	Pearson's Chi-squared test
+
+data:  survey2$Group and survey2$Einkommen
+X-squared = 5.2334, df = 4, p-value = 0.2642
+
+           
+             1  2
+  <1750      5  4
+  1750-2500  6  7
+  2500-3500 11 10
+  3500-5000 17  9
+  >5000      6 13
+
+	Pearson's Chi-squared test
+
+data:  survey2$Group and survey2$Schulabschluss
+X-squared = 1.061, df = 2, p-value = 0.5883
+
+              
+                1  2
+  Schüler       0  1
+  ohne          0  0
+  Hauptschule   0  0
+  Mittelschule  0  0
+  Fachschule    1  1
+  Abitur       44 41
+
+	Pearson's Chi-squared test
+
+data:  survey2$Group and survey2$Ausbildung
+X-squared = 9.0557, df = 7, p-value = 0.2487
+
+                        
+                          1  2
+  inAusbildung           15 17
+  Schüler                 0  0
+  nochKeine               0  1
+  Lehre                   0  3
+  Fachschule              1  0
+  Meister                 0  0
+  Bachelor               10  4
+  Fachhochschulabschluss  1  2
+  Master/Diplom          14 10
+  Promotion               4  6

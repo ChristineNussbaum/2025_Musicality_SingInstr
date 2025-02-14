@@ -1,0 +1,314 @@
+[1] "Confidence"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect        MSE df1 df2       F     p petasq getasq
+1 (Intercept) 0.00795982   1 163 408.229 0.000  0.715  0.715
+2       Group 0.00795982   2 163  32.555 0.000  0.285  0.285
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 408.229, p < .001, np2 = .715
+2       Group F(2, 163) =  32.555, p < .001, np2 = .285
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.71             | [0.64, 0.76]
+0.28             | [0.16, 0.38]
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 4.4216, df = 95.236, p-value = 0.00002599
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.03936145 0.10350471
+sample estimates:
+mean in group M mean in group A 
+      0.2284722       0.1570391 
+
+d    |       95% CI
+-------------------
+0.91 | [0.48, 1.33]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 9.4153, df = 75.95, p-value = 0.00000000000002159
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.1282692 0.1970963
+sample estimates:
+mean in group M mean in group C 
+     0.22847222      0.06578947 
+
+d    |       95% CI
+-------------------
+2.16 | [1.59, 2.72]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = -5.6501, df = 91.341, p-value = 0.0000001804
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.12332802 -0.05917131
+sample estimates:
+mean in group C mean in group A 
+     0.06578947      0.15703914 
+
+d     |         95% CI
+----------------------
+-1.18 | [-1.62, -0.74]
+[1] "dprime"
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  dprime by Group
+t = 3.6891, df = 85.985, p-value = 0.0003937
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.2288236 0.7636184
+sample estimates:
+mean in group M mean in group A 
+      1.2464206       0.7501997 
+
+d    |       95% CI
+-------------------
+0.80 | [0.35, 1.23]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  dprime by Group
+t = 7.9888, df = 75.937, p-value = 0.00000000001163
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.8779129 1.4610444
+sample estimates:
+mean in group M mean in group C 
+     1.24642064      0.07694201 
+
+d    |       95% CI
+-------------------
+1.83 | [1.29, 2.36]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  dprime by Group
+t = -5.1773, df = 86.67, p-value = 0.000001442
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.9317429 -0.4147724
+sample estimates:
+mean in group C mean in group A 
+     0.07694201      0.75019966 
+
+d     |         95% CI
+----------------------
+-1.11 | [-1.56, -0.66]
+[1] "Response Accuracy"
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  Resp by Group
+t = 3.9551, df = 99.579, p-value = 0.0001434
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.686361 2.068184
+sample estimates:
+mean in group M mean in group A 
+       12.90000        11.52273 
+
+d    |       95% CI
+-------------------
+0.79 | [0.38, 1.20]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Resp by Group
+t = 8.975, df = 71.105, p-value = 0.0000000000002579
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 2.910758 4.573452
+sample estimates:
+mean in group M mean in group C 
+      12.900000        9.157895 
+
+d    |       95% CI
+-------------------
+2.13 | [1.54, 2.71]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Resp by Group
+t = -5.8703, df = 76.002, p-value = 0.0000001073
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -3.167176 -1.562490
+sample estimates:
+mean in group C mean in group A 
+       9.157895       11.522727 
+
+d     |         95% CI
+----------------------
+-1.35 | [-1.84, -0.85]
+[1] "Criterion"
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  crit by Group
+t = 0.90015, df = 69.972, p-value = 0.3711
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -0.07817376  0.20678087
+sample estimates:
+mean in group M mean in group A 
+      0.5246403       0.4603368 
+
+d    |        95% CI
+--------------------
+0.22 | [-0.26, 0.68]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  crit by Group
+t = 3.6876, df = 74.368, p-value = 0.0004279
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.1554197 0.5207373
+sample estimates:
+mean in group M mean in group C 
+      0.5246403       0.1865618 
+
+d    |       95% CI
+-------------------
+0.86 | [0.38, 1.33]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  crit by Group
+t = -3.4976, df = 60.196, p-value = 0.0008888
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.4303368 -0.1172132
+sample estimates:
+mean in group C mean in group A 
+      0.1865618       0.4603368 
+
+d     |         95% CI
+----------------------
+-0.90 | [-1.43, -0.37]
+[1] "unsure Responses"
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  Unsure by Group
+t = -1.2082, df = 86.807, p-value = 0.2303
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -1.4729051  0.3592687
+sample estimates:
+mean in group M mean in group A 
+       5.250000        5.806818 
+
+d     |        95% CI
+---------------------
+-0.26 | [-0.68, 0.16]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Unsure by Group
+t = -4.0478, df = 75.083, p-value = 0.0001245
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -3.239512 -1.102594
+sample estimates:
+mean in group M mean in group C 
+       5.250000        7.421053 
+
+d     |         95% CI
+----------------------
+-0.93 | [-1.41, -0.46]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Unsure by Group
+t = 3.3184, df = 76.483, p-value = 0.001388
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ 0.6454874 2.5829815
+sample estimates:
+mean in group C mean in group A 
+       7.421053        5.806818 
+
+d    |       95% CI
+-------------------
+0.76 | [0.29, 1.22]
+[1] "DontKnow Responses"
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  DontKnow by Group
+t = 0.12945, df = 82.258, p-value = 0.8973
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -0.3918183  0.4463637
+sample estimates:
+mean in group M mean in group A 
+      0.9250000       0.8977273 
+
+d    |        95% CI
+--------------------
+0.03 | [-0.40, 0.46]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  DontKnow by Group
+t = -2.2849, df = 58.802, p-value = 0.02594
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -1.47348312 -0.09756951
+sample estimates:
+mean in group M mean in group C 
+       0.925000        1.710526 
+
+d     |         95% CI
+----------------------
+-0.60 | [-1.12, -0.07]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  DontKnow by Group
+t = 2.5063, df = 50.448, p-value = 0.01547
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ 0.1615703 1.4640278
+sample estimates:
+mean in group C mean in group A 
+      1.7105263       0.8977273 
+
+d    |       95% CI
+-------------------
+0.71 | [0.13, 1.27]

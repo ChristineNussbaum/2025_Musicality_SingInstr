@@ -1,0 +1,346 @@
+[1] "Sex"
+   
+     1  2  4
+  M 20 20  0
+  C 20 18  0
+  A 46 40  2
+[1] "Language"
+   
+     1  3
+  M 40  0
+  C 37  1
+  A 85  3
+[1] "Profession"
+
+                                                           Doktorand der Bioinformatik 
+                                                                                     1 
+                                                                               Ärztin 
+                                                                                     2 
+                                                                 aktuell arbeitsuchend 
+                                                                                     1 
+                                                  Angestellter im öffentlichen Dienst 
+                                                                                     1 
+                                                Anglistik/Amerikanistik und Management 
+                                                                                     1 
+                                                                             Apotheker 
+                                                                                     1 
+                                                       Archäologe /wiss. MA / Postdoc 
+                                                                                     1 
+                                                                                  Arzt 
+                                                                                     1 
+                                                                   Arzt (Humanmedizin) 
+                                                                                     1 
+                                                                 Außendienst Vertrieb 
+                                                                                     1 
+                        ausgebildeter Jurist, arbeite als Salesassistent im Homeoffice 
+                                                                                     1 
+                                                                          B.Sc. Physik 
+                                                                                     1 
+BA Kommunikationswissenschaft und Interkulturelles Musik- und Veranstaltungsmanagement 
+                                                                                     1 
+                                                                     Bachelor Biologie 
+                                                                                     1 
+                                              Bachelor of Education, Doppelfachstudium 
+                                                                                     1 
+                                               Bachelor of Education/ Musik Doppelfach 
+                                                                                     1 
+                                 Bachelor of Music, Gesang (populäre Stile + Klassik) 
+                                                                                     1 
+                             Bachelorstudium Lehramt für Gymnasien (Doppelfach Musik) 
+                                                                                     1 
+                                                                         Bauzeichnerin 
+                                                                                     1 
+                                                           Biochemie/Molekularbiologie 
+                                                                                     1 
+                                                                         Bioinformatik 
+                                                                                     1 
+                                          BWL für Ingenieure und Naturwissenschaftler 
+                                                                                     1 
+                                                                                Chemie 
+                                                                                     2 
+                                                                    Chemische Biologie 
+                                                                                     1 
+                                                           Chemische Biologie (M. Sc.) 
+                                                                                     1 
+                                                                          Chordirigent 
+                                                                                     1 
+                                                                        Data Scientist 
+                                                                                     1 
+                                                Diplomorchestermusiker/Musikpädagogin 
+                                                                                     1 
+                                                                      Doktorand Physik 
+                                                                                     1 
+                                                                 Doktorandin Biochemie 
+                                                                                     1 
+                                                                Doktorandin Linguistik 
+                                                                                     1 
+                                                                 Doppelfach Schulmusik 
+                                                                                     1 
+                                                                        Elektrotechnik 
+                                                                                     1 
+                                                                  Ernährungsberaterin 
+                                                                                     1 
+                                                       Erziehungswissenschaft und LLTP 
+                                                                                     1 
+                                                     Förder- und Inklusionspädagogik 
+                                                                                     1 
+                                                                   Förderschullehramt 
+                                                                                     1 
+                                              Forstwirtschaft und Ökosystemmanagement 
+                                                                                     1 
+                                                                       Geoinformatiker 
+                                                                                     1 
+                                                                               Geologe 
+                                                                                     1 
+                                                            Geprüfte Berufspädagogin 
+                                                                                     1 
+                                                                     Geräteentwickler 
+                                                                                     1 
+                                     Germanistik mit Sprechwissenschaft/Phonetik B. A. 
+                                                                                     1 
+                                                                     Geschäftsführer 
+                                                                                     1 
+                                                  Geschäftsführer im Sportmanagement 
+                                                                                     1 
+                                                              Geschichtswissenschaften 
+                                                                                     1 
+                                                                               Hebamme 
+                                                                                     1 
+                                                                  Humanmedizin Studium 
+                                                                                     1 
+                                                                            Informatik 
+                                                                                     1 
+                                                                          Informatiker 
+                                                                                     1 
+                                                                             Ingenieur 
+                                                                                     1 
+                                                        Ingenieur für Gebäudetechnik 
+                                                                                     1 
+                                                                     Instrumentenbauer 
+                                                                                     1 
+                                             Internationale Beziehungen und Romanistik 
+                                                                                     1 
+                                                                       IT-Angestellter 
+                                                                                     1 
+                                                                                  Jura 
+                                                                                     1 
+                                                                                Jurist 
+                                                                                     2 
+                                                                   Kantor/Kirchenmusik 
+                                                                                     1 
+                                                              Kinder- und Jugendmedien 
+                                                                                     1 
+                                                                        Kirchenmusiker 
+                                                                                     2 
+                                                           Kirchenmusikerin/Organistin 
+                                                                                     1 
+                                                  Klavierlehrerin und Sozialarbeiterin 
+                                                                                     1 
+                                                                   klinische Forschung 
+                                                                                     1 
+                                                            Kommunikationswissenschaft 
+                                                                                     1 
+                                               Kommunikationswissenschaft und Englisch 
+                                                                                     1 
+  Kommunikationswissenschaften und interkulturelles Musik und Veranstaltungsmanagement 
+                                                                                     1 
+                                                    Komponist und Musikwissenschaftler 
+                                                                                     1 
+                                                                     Korrepetitor Tanz 
+                                                                                     1 
+                                                        Krankenschwester / Psychologie 
+                                                                                     1 
+                                                                       Kunstgeschichte 
+                                                                                     1 
+                                                                Landschaftsarchitektur 
+                                                                                     1 
+                                                                              Landwirt 
+                                                                                     1 
+                                           Lehramt Gymnasium Deutsch; Wirtschaft-Recht 
+                                                                                     1 
+                                          Lehramt Gymnasium Englisch/Geschichte/DaFDaZ 
+                                                                                     1 
+                                               Lehramt Musik für Gymnasien Doppelfach 
+                                                                                     1 
+                                          Lehramt Musik/Instrumentalpädagogik Violine 
+                                                                                     1 
+                                                                              Lehrerin 
+                                                                                     1 
+                                            Lehrerin für Gymnasien, Deutsch und Musik 
+                                                                                     1 
+                                                                          M.Sc. Chemie 
+                                                                                     1 
+                         MA Erziehungswissenschaft - Sozialpädagogik/Sozialmanagement 
+                                                                                     1 
+                                       Master of Education, Lehramt Musik an Gymnasien 
+                                                                                     1 
+                                                          Master of Music - Dirigieren 
+                                                                                     1 
+                                                 Master of Music_Lehramt Musik/Deutsch 
+                                                                                     1 
+                                                                            Mathematik 
+                                                                                     2 
+                                Mathematik, Musik, IT-Projektleiter, Chorleiter, Autor 
+                                                                                     1 
+                                                        Mathematiker (Hochschuldozent) 
+                                                                                     1 
+                                                                               Medizin 
+                                                                                     1 
+                                                                        Medizintechnik 
+                                                                                     2 
+                                                                Molecular Life Science 
+                                                                                     1 
+                                                                     Molekularbiologin 
+                                                                                     1 
+                                                                                 Musik 
+                                                                                     1 
+                                                                         Musik Lehramt 
+                                                                                     1 
+                                                         Musik und Deutsch auf Lehramt 
+                                                                                     1 
+                                                                         Musiktherapie 
+                                                                                     1 
+                                            Musikwissenschaft & Erziehungswissenschaft 
+                                                                                     1 
+                                              Musikwissenschaft (M.A.) (abgeschlossen) 
+                                                                                     1 
+                                                                    noch in der Schule 
+                                                                                     1 
+                                                       Pharmazie; Gitarrist Nebenberuf 
+                                                                                     1 
+                                                                      Philosophie B.A. 
+                                                                                     1 
+                                                                                Physik 
+                                                                                     3 
+                                                                 Physik und Mathematik 
+                                                                                     1 
+                                                                              Physiker 
+                                                                                     5 
+                                                                       Physikingenieur 
+                                                                                     1 
+                                                                        Prüfingenieur 
+                                                                                     1 
+                                                      Praktikantin mit BSc in Biologie 
+                                                                                     1 
+                                                                      Primarpädagogik 
+                                                                                     2 
+                                                            Primarpädagogik (Studium) 
+                                                                                     1 
+                                                                  Projektkoordinatorin 
+                                                                                     1 
+                                                     Promotion - Wirtschaftsgeographie 
+                                                                                     1 
+                                                            Promotion in Mikrobiologie 
+                                                                                     1 
+                                                                            Psychologe 
+                                                                                     1 
+                                                                           Psychologie 
+                                                                                     6 
+                                                                     Psychologie B.Sc. 
+                                                                                     1 
+                                                                 Psychologie Studentin 
+                                                                                     1 
+                                                                   Psychologie Studium 
+                                                                                     1 
+                                                     Psychologie, Bachelor of Science  
+                                                                                     1 
+                                         Psychologin / Wissenschaftliche Mitarbeiterin 
+                                                                                     1 
+                                                           Psychologin im Strafvollzug 
+                                                                                     1 
+                                                       Psychologischer Psychotherapeut 
+                                                                                     1 
+                                                                    Rechtswissenschaft 
+                                                                                     1 
+                                                                              Referent 
+                                                                                     1 
+                                                                            Schulmusik 
+                                                                                     1 
+                                                                      Sonderpädagogik 
+                                                                                     1 
+                                                                      Sozialarbeiterin 
+                                                                                     1 
+                                                            Soziologie und Psychologie 
+                                                                                     1 
+                                                                Sprecherin/Podcasterin 
+                                                                                     1 
+                                            Student (jetzt WiWi, vorher: Kirchenmusik) 
+                                                                                     1 
+                                                                Student der Informatik 
+                                                                                     1 
+                                                                Studentin, Psychologie 
+                                                                                     1 
+                              Studiengang Musikwissenschaft/freischaffende Künstlerin 
+                                                                                     1 
+                                                            Studiengang Soziale Arbeit 
+                                                                                     1 
+                                                   Studium: Bauingenieurwesen Bachelor 
+                                                                                     1 
+                                                   Studium: Gärtnerischer Pflanzenbau 
+                                                                                     1 
+                        Studium: Master Grundschullehramt mit Schwerpunktfach Englisch 
+                                                                                     1 
+                                                                         Teamassistenz 
+                                                                                     1 
+                                                     Theologie und Wirtschaft (Master) 
+                                                                                     1 
+                                                                     Tischler Lehrling 
+                                                                                     1 
+                                           Umweltingenieurwissenschaftler/Geotechniker 
+                                                                                     1 
+                                                                Verwaltungsangestellte 
+                                                                                     1 
+                                                                           Volkswirtin 
+                                                                                     1 
+                                                                 Volkswirtschaftslehre 
+                                                                                     1 
+                                                                 Wirtschaftsinformatik 
+                                                                                     1 
+                                          wissenschaftliche Mitarbeiterin / Soziologin 
+                                                                                     1 
+                                         wissenschaftliche Mitarbeiterin ev. Theologie 
+                                                                                     1 
+                                                        wissenschaftlicher Mitarbeiter 
+                                                                                     2 
+                                              Wissenschaftlicher Mitarbeiter/Ingenieur 
+                                                                                     1 
+                                                 wissenschaftlicher Mitarbeiter/Physik 
+                                                                                     1 
+[1] "HearingImpairment"
+   
+     1  2  3
+  M 36  2  2
+  C 36  1  1
+  A 86  2  0
+[1] "HearinImpairment2"
+   
+       Gelegentliches Rauschen nach sehr langem Üben (geht immer wieder weg)
+  M 37                                                                      1
+  C 36                                                                      0
+  A 86                                                                      0
+   
+    Hörfähigkeit links nur 80% (Trommelfellverdickung)
+  M                                                    1
+  C                                                    0
+  A                                                    0
+   
+    Leichte Schwerhörigkeit Tinnitus
+  M                        0        1
+  C                        1        1
+  A                        0        1
+   
+    Tinnitus, ein hoher Pfeifton auf beiden Ohren, wird durch Stress verstärkt und durch Ruhe gemindert.
+  M                                                                                                     0
+  C                                                                                                     0
+  A                                                                                                     1
+[1] "HearingImpairment3"
+   
+    1 2
+  M 3 1
+  C 0 2
+  A 2 0
+[1] "Duration"
+     Group Dur       
+[1,] "M"   "77.05000"
+[2,] "C"   "71.75676"
+[3,] "A"   "74.30682"

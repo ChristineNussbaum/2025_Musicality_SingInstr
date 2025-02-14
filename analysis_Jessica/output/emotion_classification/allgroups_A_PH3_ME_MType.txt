@@ -1,0 +1,53 @@
+[1] "F0 vs Tbr"
+
+	Paired t-test
+
+data:  ACC by MType
+t = 31.001, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.1932995 0.2195968
+sample estimates:
+mean difference 
+      0.2064481 
+
+d    |       95% CI
+-------------------
+2.41 | [2.11, 2.71]
+[1] "Tbr vs Full"
+
+	Paired t-test
+
+data:  ACC by MType
+t = 49.602, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.3198853 0.3464077
+sample estimates:
+mean difference 
+      0.3331465 
+
+d    |       95% CI
+-------------------
+3.86 | [3.41, 4.30]
+[1] " F0 vs Full"
+
+	Paired t-test
+
+data:  ACC by MType
+t = -29.133, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.1352853 -0.1181114
+sample estimates:
+mean difference 
+     -0.1266983 
+
+d     |         95% CI
+----------------------
+-2.27 | [-2.56, -1.98]
+[1] "Descriptive Data"
+     MType  ACC         SD           N     SE            CI           
+[1,] "f0"   "0.6178620" "0.07677508" "166" "0.005958902" "0.011765528"
+[2,] "full" "0.7445603" "0.08085426" "166" "0.006275508" "0.012390649"
+[3,] "tbr"  "0.4114138" "0.06440062" "166" "0.004998457" "0.009869182"

@@ -1,0 +1,123 @@
+### Vergleich Analysen mit vs. ohne Grenzfälle ### 
+
+all groups, n = 166: musicians vs. nonmusicians vs. amateurs
+
+mögliche Grenzfälle:
+- M.Sc. Music science, 	n = 1 (male, instrumentalist)
+- Age > 50, 		n = 3 (all male; 2 singers, 1 instrumentalist)
+- AQ > 35, 		n = 4 (2 male, 2 female; 1 singer, 3 instrumentalists)
+
+Zusammenfassung: 
+- ohne M.Sc. Music Science (n = 165) ist MType x Group signifikant (p = 0.048)
+- ohne Age > 50 	   (n = 163) ist MType x Group signifikant (p = 0.047)     --> also: sign. Age Differences (p = 0.02007), see details at the end
+- ohne AQ > 35  	   (n = 162) is MType x Group NICHT signifikant (p = 0.051) 
+
+- ohne M.Sc. Music Science + ohne Age>50 (n = 162) ist MType x Group signifikant (p = 0.043) 
+- Ausschluss von AQ>35 hat generell keinen Einfluss auf Sign.-niveau von MType x Group (auch nicht in Kombi mit anderen Ausreißern)
+
+- Unterschied Amateurs vs. NonMusicians bei full MorphType ist nie signifikant (p > 0.0167)
+
+
+Details:
+
+bei n = 166, all groups
+1     (Intercept) F(1, 163) = 14243.766, 	p < .001, np2 = .989
+2           Group F(2, 163) =     2.045, 	p = .133, np2 = .024
+3             Emo F(3, 489) =   128.633, 	p < .001, np2 = .441
+4           MType F(2, 326) =  1362.134, 	p < .001, np2 = .893
+5       Group:Emo F(6, 489) =     1.181, 	p = .315, np2 = .014
+6     Group:MType F(4, 326) =     2.530, 	p = .052, np2 = .030
+7       Emo:MType F(6, 978) =    40.597, 	p < .001, np2 = .199
+8 Group:Emo:MType F(12, 978) =     0.672, 	p = .757, np2 < .018
+-> full Morph Type: amateurs vs nonmus: p-value = 0.06094
+
+Bei n = 165, ohne M.Sc. Music Science (n = 1)
+1     (Intercept) F(1, 162) = 14163.851, 	p < .001, np2 = .989
+2           Group F(2, 162) =     2.058, 	p = .131, np2 = .025
+3             Emo F(3, 486) =   127.723, 	p < .001, np2 = .441
+4           MType F(2, 324) =  1404.922, 	p < .001, np2 = .897
+5       Group:Emo F(6, 486) =     1.203, 	p = .303, np2 = .015
+6     Group:MType F(4, 324) =     2.603, 	p = .048, np2 = .031 *
+7       Emo:MType F(6, 972) =    40.357, 	p < .001, np2 = .199
+8 Group:Emo:MType F(12, 972) =     0.695, 	p = .735, np2 < .019
+-> full Morph Type: amateurs vs nonmus: p-value = 0.0441 -> but Bonferroni alpha = 0.0167
+
+Bei n = 163, ohne Age > 50 (n =3)
+1     (Intercept) F(1, 160) = 14291.491, 	p < .001, np2 = .989
+2           Group F(2, 160) =     2.157, 	p = .119, np2 = .026
+3             Emo F(3, 480) =   126.828, 	p < .001, np2 = .442
+4           MType F(2, 320) =  1389.318, 	p < .001, np2 = .897
+5       Group:Emo F(6, 480) =     1.233, 	p = .288, np2 = .015
+6     Group:MType F(4, 320) =     2.585, 	p = .047, np2 = .031 *
+7       Emo:MType F(6, 960) =    39.952, 	p < .001, np2 = .200
+8 Group:Emo:MType F(12, 960) =     0.646, 	p = .780, np2 < .018
+-> full Morph Type: amateurs vs nonmus: p-value = 0.04137 -> but Bonferroni alpha = 0.0167
+
+Bei n = 162, ohne AQ > 35 (n = 4)
+1     (Intercept) F(1, 159) = 13951.046, p < .001, np2 = .989
+2           Group F(2, 159) =     2.053, 	p = .132, np2 = .025
+3             Emo F(3, 477) =   128.624, 	p < .001, np2 = .447
+4           MType F(2, 318) =  1333.298, 	p < .001, np2 = .893
+5       Group:Emo F(6, 477) =     1.157, 	p = .328, np2 = .014
+6     Group:MType F(4, 318) =     2.550, 	p = .051, np2 = .031
+7       Emo:MType F(6, 954) =    40.681, 	p < .001, np2 = .204
+8 Group:Emo:MType F(12, 954) =     0.666, 	p = .762, np2 < .018
+-> full Morph Type: amateurs vs nonmus: p-value = 0.06461
+
+Bei n = 162, ohne M.Sc. Music Science (n = 1), ohne Age > 50 (n = 3)
+1     (Intercept) F(1, 159) = 14211.983, 	p < .001, np2 = .989
+2           Group F(2, 159) =     2.178, 	p = .117, np2 = .027
+3             Emo F(3, 477) =   125.894, 	p < .001, np2 = .442
+4           MType F(2, 318) =  1435.832, 	p < .001, np2 = .900
+5       Group:Emo F(6, 477) =     1.256, 	p = .276, np2 = .016
+6     Group:MType F(4, 318) =     2.686, 	p = .043, np2 = .033 *
+7       Emo:MType F(6, 954) =    39.700, 	p < .001, np2 = .200
+8 Group:Emo:MType F(12, 954) =     0.672, 	p = .757, np2 < .018
+-> full Morph Type: amateurs vs nonmus: p-value = 0.02874 -> but Bonferroni alpha = 0.0167
+
+Bei n = 161, ohne M.Sc. Music science (n = 1), ohne AQ > 35 (n = 4)
+1     (Intercept) F(1, 158) = 13870.100, 	p < .001, np2 = .989
+2           Group F(2, 158) =     2.070, 	p = .130, np2 = .026
+3             Emo F(3, 474) =   127.677, 	p < .001, np2 = .447
+4           MType F(2, 316) =  1375.157, 	p < .001, np2 = .897
+5       Group:Emo F(6, 474) =     1.184, 	p = .314, np2 = .015
+6     Group:MType F(4, 316) =     2.613, 	p = .048, np2 = .032 *
+7       Emo:MType F(6, 948) =    40.431, 	p < .001, np2 = .204
+8 Group:Emo:MType F(12, 948) =     0.687, 	p = .742, np2 < .019
+-> full Morph Type: amateurs vs nonmus: p-value = 0.04638 -> but Bonferroni alpha = 0.0167
+
+bei n = 159, ohne Age > 50 (n = 3), ohne AQ > 35 (n = 4)
+1     (Intercept)  F(1, 156) = 13994.534, p < .001, np2 = .989
+2           Group  F(2, 156) =     2.181, p = .116, np2 = .027
+3             Emo  F(3, 468) =   126.675, p < .001, np2 = .448
+4           MType  F(2, 312) =  1359.133, p < .001, np2 = .897
+5       Group:Emo  F(6, 468) =     1.203, p = .303, np2 = .015
+6     Group:MType  F(4, 312) =     2.599, p = .047, np2 = .032 *
+7       Emo:MType  F(6, 936) =    40.006, p < .001, np2 = .204
+8 Group:Emo:MType F(12, 936) =     0.638, p = .786, np2 < .018
+-> full Morph Type: amateurs vs nonmus: p-value = 0.04351 -> but Bonferroni alpha = 0.0167
+ 
+Bei n = 158, ohne M.Sc. Music Science (n = 1), ohne Age > 50 (n = 3), ohne AQ > 35 (n = 4)
+1     (Intercept) F(1, 155) = 13914.067, 	p < .001, np2 = .989
+2           Group F(2, 155) =     2.207, 	p = .113, np2 = .028
+3             Emo F(3, 465) =   125.702, 	p < .001, np2 = .448
+4           MType F(2, 310) =  1404.655, 	p < .001, np2 = .901
+5       Group:Emo F(6, 465) =     1.230, 	p = .289, np2 = .016
+6     Group:MType F(4, 310) =     2.690, 	p = .043, np2 = .034 *
+7       Emo:MType F(6, 930) =    39.744, 	p < .001, np2 = .204
+8 Group:Emo:MType F(12, 930) =     0.662, 	p = .764, np2 < .018
+-> full Morph Type: amateurs vs nonmus: p-value = 0.0299 -> but Bonferroni alpha = 0.0167
+
+
+
+Age Differences bei n = 163 (ohne Age > 50):
+
+     Group  Age         SD         N    SE          CI        
+[1,] "M"   "29.61538" "5.641087" "39" "0.9032968" "1.828629"
+[2,] "C"   "30.50000" "6.541964" "38" "1.0612468" "2.150290"
+[3,] "A"   "26.86047" "8.240735" "86" "0.8886213" "1.766817"
+
+F-statistic: 4.006 on 2 and 160 DF,  p-value: 0.02007, Multiple R-squared:  0.04768,	Adjusted R-squared:  0.03578
+
+Musicians vs Amateurs: 	  t = 2.1742, df = 103.71, p-value = 0.03197 (but Bonferroni-corrected would need < 0.0167)
+NonMusicians vs Amateurs: t = 2.6294, df = 88.199, p-value = 0.01009

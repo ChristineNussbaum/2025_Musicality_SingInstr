@@ -1,0 +1,63 @@
+[1] "Tbr"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 0.59334, df = 83.98, p-value = 0.5546
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.02091395  0.03870102
+sample estimates:
+mean in group 1 mean in group 2 
+      0.4162587       0.4073652 
+
+d    |        95% CI
+--------------------
+0.13 | [-0.30, 0.56]
+[1] "F0"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 0.081278, df = 84.375, p-value = 0.9354
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.03519621  0.03819608
+sample estimates:
+mean in group 1 mean in group 2 
+      0.6218238       0.6203239 
+
+d    |        95% CI
+--------------------
+0.02 | [-0.41, 0.44]
+[1] "Full"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 0.86093, df = 82.303, p-value = 0.3918
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.02121383  0.05358801
+sample estimates:
+mean in group 1 mean in group 2 
+      0.7562564       0.7400693 
+
+d    |        95% CI
+--------------------
+0.19 | [-0.24, 0.62]
+[1] "Descriptive Data"
+     MType  Group ACC         SD           N    SE           
+[1,] "f0"   "1"   "0.6218238" "0.09436095" "45" "0.014066500"
+[2,] "f0"   "2"   "0.6203239" "0.07833249" "43" "0.011945593"
+[3,] "full" "1"   "0.7562564" "0.09911747" "45" "0.014775560"
+[4,] "full" "2"   "0.7400693" "0.07624543" "43" "0.011627319"
+[5,] "tbr"  "1"   "0.4162587" "0.07717783" "45" "0.011504991"
+[6,] "tbr"  "2"   "0.4073652" "0.06300160" "43" "0.009607653"
+     CI          
+[1,] "0.02834917"
+[2,] "0.02410718"
+[3,] "0.02977818"
+[4,] "0.02346488"
+[5,] "0.02318679"
+[6,] "0.01938903"

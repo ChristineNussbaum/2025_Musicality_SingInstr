@@ -1,0 +1,78 @@
+
+	Welch Two Sample t-test
+
+data:  dprime by Group
+t = 0.20608, df = 85.698, p-value = 0.8372
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.3145342  0.3872830
+sample estimates:
+mean in group 1 mean in group 2 
+       1.799534        1.763160 
+
+d    |        95% CI
+--------------------
+0.04 | [-0.38, 0.47]
+
+	Welch Two Sample t-test
+
+data:  Resp by Group
+t = -0.82802, df = 78.712, p-value = 0.4102
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.9059750  0.3736753
+sample estimates:
+mean in group 1 mean in group 2 
+       13.22222        13.48837 
+
+
+	Welch Two Sample t-test
+
+data:  crit by Group
+t = -0.40038, df = 85.906, p-value = 0.6899
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.3098848  0.2059879
+sample estimates:
+mean in group 1 mean in group 2 
+     -0.6354104      -0.5834619 
+
+
+	Welch Two Sample t-test
+
+data:  Unsure by Group
+t = -0.28703, df = 85.965, p-value = 0.7748
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -1.372183  1.025930
+sample estimates:
+mean in group 1 mean in group 2 
+       3.222222        3.395349 
+
+
+	Welch Two Sample t-test
+
+data:  DontKnow by Group
+t = 0.78333, df = 68.229, p-value = 0.4361
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.1575257  0.3611433
+sample estimates:
+mean in group 1 mean in group 2 
+      0.3111111       0.2093023 
+
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = -0.29816, df = 82.916, p-value = 0.7663
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.03606434  0.02666152
+sample estimates:
+mean in group 1 mean in group 2 
+      0.2330247       0.2377261 
+
+d     |        95% CI
+---------------------
+-0.07 | [-0.50, 0.37]

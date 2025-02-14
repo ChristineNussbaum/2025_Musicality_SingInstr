@@ -1,0 +1,50 @@
+[1] "Professionals vs Non-Musicians vs Amateurs"
+     Group ACC         SD           N    SE            CI          
+[1,] "A"   "0.5937836" "0.06759030" "88" "0.007205151" "0.01432102"
+[2,] "C"   "0.5754751" "0.05309444" "38" "0.008613056" "0.01745171"
+[3,] "M"   "0.6007814" "0.04133495" "40" "0.006535629" "0.01321956"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = -0.71937, df = 115.16, p-value = 0.4734
+alternative hypothesis: true difference in means between group A and group M is not equal to 0
+95 percent confidence interval:
+ -0.02626630  0.01227065
+sample estimates:
+mean in group A mean in group M 
+      0.5937836       0.6007814 
+
+d     |        95% CI
+---------------------
+-0.13 | [-0.50, 0.23]
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = -2.3406, df = 69.892, p-value = 0.02211
+alternative hypothesis: true difference in means between group C and group M is not equal to 0
+95 percent confidence interval:
+ -0.046870674 -0.003741823
+sample estimates:
+mean in group C mean in group M 
+      0.5754751       0.6007814 
+
+d     |         95% CI
+----------------------
+-0.56 | [-1.04, -0.08]
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 1.6304, df = 88.477, p-value = 0.1066
+alternative hypothesis: true difference in means between group A and group C is not equal to 0
+95 percent confidence interval:
+ -0.004005927  0.040622775
+sample estimates:
+mean in group A mean in group C 
+      0.5937836       0.5754751 
+
+d    |        95% CI
+--------------------
+0.35 | [-0.07, 0.77]

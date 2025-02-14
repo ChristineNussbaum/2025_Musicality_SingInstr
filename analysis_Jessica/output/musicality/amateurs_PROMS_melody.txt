@@ -1,0 +1,78 @@
+
+	Welch Two Sample t-test
+
+data:  dprime by Group
+t = 0.82506, df = 85.384, p-value = 0.4116
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.1914646  0.4631032
+sample estimates:
+mean in group 1 mean in group 2 
+      0.8165659       0.6807466 
+
+d    |        95% CI
+--------------------
+0.18 | [-0.25, 0.60]
+
+	Welch Two Sample t-test
+
+data:  Resp by Group
+t = 0.72443, df = 85.996, p-value = 0.4708
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.593093  1.273196
+sample estimates:
+mean in group 1 mean in group 2 
+       11.68889        11.34884 
+
+
+	Welch Two Sample t-test
+
+data:  crit by Group
+t = 0.0016797, df = 85.961, p-value = 0.9987
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.1501236  0.1503775
+sample estimates:
+mean in group 1 mean in group 2 
+      0.4603988       0.4602719 
+
+
+	Welch Two Sample t-test
+
+data:  Unsure by Group
+t = 0.85055, df = 81.133, p-value = 0.3975
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.6512702  1.6238800
+sample estimates:
+mean in group 1 mean in group 2 
+       6.044444        5.558140 
+
+
+	Welch Two Sample t-test
+
+data:  DontKnow by Group
+t = 0.83753, df = 84.316, p-value = 0.4047
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.2876334  0.7062381
+sample estimates:
+mean in group 1 mean in group 2 
+      1.0000000       0.7906977 
+
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 1.294, df = 85.077, p-value = 0.1992
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.01463623  0.06920126
+sample estimates:
+mean in group 1 mean in group 2 
+      0.1703704       0.1430879 
+
+d    |        95% CI
+--------------------
+0.28 | [-0.15, 0.71]

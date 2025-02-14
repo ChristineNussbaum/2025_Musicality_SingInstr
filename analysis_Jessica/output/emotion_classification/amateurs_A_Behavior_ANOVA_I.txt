@@ -1,0 +1,44 @@
+$`--- ANOVA RESULTS     ------------------------------------`
+           Effect        MSE df1 df2        F     p petasq getasq
+1     (Intercept) 0.05521799   1  86 6737.023 0.000  0.987  0.937
+2           Group 0.05521799   1  86    0.375 0.542  0.004  0.001
+3             Emo 0.04114047   3 258   72.430 0.000  0.457  0.263
+4           MType 0.01319809   2 172  768.932 0.000  0.899  0.448
+5       Group:Emo 0.04114047   3 258    2.143 0.095  0.024  0.010
+6     Group:MType 0.01319809   2 172    0.359 0.699  0.004  0.000
+7       Emo:MType 0.01438824   6 516   22.781 0.000  0.209  0.073
+8 Group:Emo:MType 0.01438824   6 516    1.334 0.240  0.015  0.005
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+           Effect p_Mauchly GGEpsilon  p_GG HFEpsilon  p_HF
+1             Emo     0.803     0.983 0.000     1.022 0.000
+2       Group:Emo     0.803     0.983 0.096     1.022 0.095
+3           MType     0.000     0.732 0.000     0.741 0.000
+4     Group:MType     0.000     0.732 0.632     0.741 0.635
+5       Emo:MType     0.000     0.777 0.000     0.827 0.000
+6 Group:Emo:MType     0.000     0.777 0.251     0.827 0.249
+
+$`--- FORMATTED RESULTS ------------------------------------`
+           Effect                                       Text
+1     (Intercept)  F(1, 86) = 6737.023, p < .001, np2 = .987
+2           Group  F(1, 86) =    0.375, p = .542, np2 < .014
+3             Emo F(3, 258) =   72.430, p < .001, np2 = .457
+4           MType F(2, 172) =  768.932, p < .001, np2 = .899
+5       Group:Emo F(3, 258) =    2.143, p = .095, np2 = .024
+6     Group:MType F(2, 172) =    0.359, p = .635, np2 < .014
+7       Emo:MType F(6, 516) =   22.781, p < .001, np2 = .209
+8 Group:Emo:MType F(6, 516) =    1.334, p = .249, np2 = .015
+
+$`NOTE:`
+[1] "p-values for the following effects were HF-adjusted (p_Mauchly <= 0.05): MType; Group:MType; Emo:MType; Group:Emo:MType. Reporting uncorrected degrees of freedom."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.99             | [0.98, 0.99]
+0.00             | [0.00, 0.00]
+0.45             | [0.36, 0.52]
+0.90             | [0.87, 0.92]
+0.01             | [0.00, 0.04]
+0.00             | [0.00, 0.00]
+0.20             | [0.14, 0.25]
+3.82e-03         | [0.00, 0.01]

@@ -1,0 +1,339 @@
+---
+title: 
+    Aufklärung zur Studie
+    
+    
+    
+    \"Emotionen in der menschlichen Stimme\" 
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+fontsize: 12 pt    # private PC
+#fontsize: 11 pt     # work PC
+
+---
+
+
+```{r setup,  include=FALSE}
+#this is RCode and it is not visible in the Text
+
+# clear directory
+rm(list=ls())
+
+# load required packages
+library("tidyverse")
+library(knitr)
+
+# load relevant functions
+source("functions/mySummary.R") 
+
+#------------------------------------------------#
+#           Enter Probandencode here             #
+#------------------------------------------------#
+
+#current_Code <-  "ENH59A"    # Jessica Senftleben -> TESTDATEN
+#current_Code <-  "AEB91O"    # Jakob Boehme
+#current_Code <-  "AHG16O"    # Raana Saheb Nassagh
+#current_Code <-  "HBG40U"    # Philipp Huber
+#current_Code <-  "OYD07A"    # Nora-Sophie Woye
+#current_Code <-  "EBJ13A"    # Jens Köber
+#current_Code <-  "EVA48E"    # Felix Levin
+#current_Code <-  "AAV53H"    # Hardik Chauhan
+#current_Code <-  "ARB73L"    # Carolin Tyrchan
+#current_Code <-  "EHH65E"    # Henriette Schreurs
+#current_Code <-  "ORH97L"    # Jonas Lürig
+#current_Code <-  "LNE81A"    # Alisa Lange
+#current_Code <-  "EHW05E"    # Regina Schütt
+#current_Code <-  "OEB92I"     # Moritz Zier
+#current_Code <-  "AHH44E"     # Max Guhlmann
+#current_Code <-  "EHZ25O"     # Hedwig Schultz
+#current_Code <-  "EUW55Y"     # Lea Sauter
+#current_Code <-  "INF69I"     # Simon Zier
+#current_Code <-  "UHG71H"     # Susan Schlüter
+#current_Code <-  "LSL52N"     # Klaus-Ekkehard Fischer
+#current_Code <-  "ANB29R"     # Maja Menzel
+#current_Code <-  "EHA94A"     #Leonie Schreiber
+#current_Code <-  "ONB71U"      # Sophie Monticello
+#current_Code <-  "ECC11E"     # Rebekka Fechtner
+#current_Code <-  "AIG27E"      # Martin Leich
+#current_Code <-  "OTM82N"     # Johanna Gätzschmann
+#current_Code <-  "AYB11N"     # Hannah Meyer-Jarchow
+#current_Code <-  "AIG12H"     # Hannah Seidel
+#current_Code <-  "ELE07E"     # Henrike Willrich
+#current_Code <-  "EGL27L"     # Weronika Vogel
+#current_Code <-  "ERE12E"     # Merle Harenbrock
+#current_Code <-  "UEA04N"     # Susanna Dierolf
+#current_Code <-  "OLB40I"     # Lotta Hilliger
+#current_Code <-  "LFB01U"     # Elisa Hofmann
+#current_Code <-  "NSW88R"     # Anne Heßland
+#current_Code <-  "ATT50O"     # Madlaina Mätzler
+#current_Code <-  "AIL01U"     # Rainer Heintzmann
+#current_Code <-  "OCS76A"     # Morgane Toczé
+#current_Code <-  "IGC42N"     # Linda Vogel
+#current_Code <-  "ILA81N"     # Mia Wellmann
+#current_Code <-  "ERG87A"     # René Dörfer
+#current_Code <-  "IHP42U"     # Wiebke Röhr
+#current_Code <-  "EHM92A"     # Lena Schie
+#current_Code <-  "AKG74N"     # Fabian Lukas 
+#current_Code <-  "UEB14H"     # Judith Gürtler
+#current_Code <-  "SCS58E"    # Isabell Hachmöller
+#current_Code <-  "NOJ82A"    # Annmarie Roob
+#current_Code <-  "NNW04N"    # Andreas Hänsel
+#current_Code <-  "LOQ82N"    # Elisabeth Stolle
+#current_Code <-  "AOE84U"    # Nam Dao
+#current_Code <-  "EEH64N"    # Lena Nieding
+#current_Code <-  "LLS53L"    # Florian Kolb
+#current_Code <-  "ULH11I"    # Luisa Helbing
+#current_Code <-  "ARM79O"    # Martin Wölz
+#current_Code <-  "HÃ„M22T"   # Philipp Städter
+#current_Code <-  "AMH41E"    # Nathanael Urmoneit
+#current_Code <-  "INB55E"    # Dixon Wong
+#current_Code <-  "AHJ75H"    # Katharina Ochrimenko
+#current_Code <-  "RRL16O"     # Priska Streicher
+#current_Code <-  "AEM51L"     # Hannah Liebhäuser
+#current_Code <-  "EAL53R"     # Rebecca Thamm
+#current_Code <-  "ANJ18A"     # Maurice Wenig
+#current_Code <-  "RIB02E"    # Friederike Reimer
+#current_Code <-  "AHL00A"    # Lara Wöhmann
+#current_Code <-  "IBD57N"    # Pia-Sophie Weber
+#current_Code <-  "UOR66R"    # Julius Drost
+#current_Code <-  "ATM22I"    # Jan Philipp Poths
+#current_Code <-  "HGE17N"    # Charlotte Luise Jagla
+#current_Code <-  "ADM21N"    # Max Beddoe
+#current_Code <-  "MBG42L"     # Imre Löber
+#current_Code <-  "TUG73N"     # Stefan Kruse
+#current_Code <-  "NSD53O"     # Anton Leschik
+#current_Code <-  "OOD18E"     # Johanna Großer
+#current_Code <-  "OPM21I"     # Johanna Pape
+#current_Code <-  "ILE70O"     # Till Walmann
+#current_Code <-  "AAZ24E"     # Marko Knaack
+#current_Code <-  "AEB56L"    # Fabian Everding
+#current_Code <-  "OEP83I"     # John Bleckwell
+#current_Code <-  "NIZ90E"     # Annika Frick
+#current_Code <-  "YFL29A"    # Ryv Eifler
+current_Code <-  "AHK45M"     # Valentin Schöne
+
+#unklar/keine Rückmeldung
+#current_Code <-  "UUE82A"    # Lukas Kruhoeffer?
+#current_Code <-  "ARM39A"    # ?
+#current_Code <-  "AOP41H"    # Kai Gronemeyer?
+#current_Code <-  "HRH51E"    # ?
+#current_Code <-  "AYO14U"    # Valentin Seyfert?
+#current_Code <-  "AEJ35H"
+#current_Code <-  "IEQ58E"
+#current_Code <-  "TTK72A"
+#current_Code <-  "ANG04N"
+#current_Code <-  "ABJ27I"    # Daniel Cebulla?
+#NIR46E
+#current_Code <-  "EHK66U"    # Felix Schroeder?
+
+
+#------------------------------------------------#
+#           get survey information               #
+#------------------------------------------------#
+load(file="input/survey_amateurs_preprocessed.RData")
+
+# get only the dataset of the given code
+
+DF <- survey %>% filter(Code == current_Code)
+rm(survey)
+
+#get participant id
+current_id <- DF$participant
+
+# get listener sex
+ if (DF$LSex == "1"){ # female
+   Hello <- paste("Liebe Probandin mit dem Code", current_Code) # 
+ } else{ #male
+    Hello <- paste("Lieber Proband mit dem Code",  current_Code)
+ }
+
+```
+## `r Hello`,
+
+vielen herzlichen Dank für Ihre Bereitschaft zur Teilnahme an meiner Studie. Damit leisten Sie einen wertvollen Beitrag zum wissenschaftlichen Fortschritt. Im Folgenden möchte ich Ihnen erklären, was ich mit dieser Studie untersuchen möchte.  
+
+## Die Ziele der Studie
+
+Im Allgemeinen können Menschen Emotionen in der Stimme ohne Probleme erkennen. Allerdings gibt es große Unterschiede von Person zu Person. Beispielsweise haben Menschen mit Autismus oft Probleme damit, während andere Menschen es besonders gut können. In einigen vorangegangenen Studien hat sich gezeigt, dass \textbf{Personen mit einem geschulten Gehör und musikalischer Expertise besser darin sind, Emotionen in der menschlichen Stimme zu erkennen} [Bei Interesse ist hier ein Übersichtsartikel: Nussbaum, C. & Schweinberger, S. R.  (2021). Links Between Musicality and Vocal Emotion Perception. Emotion Review, 13(3), 211-224]. Bis jetzt haben wir jedoch nur unzureichend verstanden, warum das so ist. 
+
+Eine Vermutung ist, dass Musiker:innen es gewohnt sind, \textbf{ihre Aufmerksamkeit auf verschiedene Aspekte ihrer akustischen Umgebung zu lenken}, und dadurch \textbf{sensitiver für akustische Nuancen} in der menschlichen Stimme sind. Darauf aufbauend kann es sein, dass Musiker:innen die vorhandenen akustischen Muster von Emotionen in der Stimme besser und flexibler nutzen können. Dabei interessiert uns besonders, inwieweit Parameter wie die \textbf{Klangfarbe} und die \textbf{Tonhöhe} von Stimmen genutzt werden, um Emotionen zu erkennen. 
+
+Um diese Vermutung zu überprüfen, haben wir eine spezielle \textbf{Morphing-Technologie} genutzt, die unsere Forschung weltweit einzigartig macht. Diese Morphing-Technologie kann Aufnahmen von Stimmen so manipulieren, dass eine Emotion z.B. nur über die Tonhöhe oder Klangfarbe der Stimme ausgedrückt wird. Der jeweils andere Parameter ist in der Stimme zwar auch vorhanden, drückt aber keine Emotion aus. So kann untersucht werden, welche Rolle diese beiden Parameter für die Emotionserkennung spielen. Wir vermuten, dass Musiker:innen die Emotionen in der Stimme deshalb besser erkennen können, weil sie flexibler die Parameter nutzen können, die gerade informativer sind.
+
+Dieser Ansatz ist neu und bisher wenig erprobt. Sie werden vielleicht gehört haben, dass manche Stimmen etwas \textbf{unnatürlich klangen}, daran arbeiten wir zu Zeit. Vielleicht hat Sie das auch irritiert - aber keine Sorge, das können wir später statistisch "rausrechnen".
+
+\newpage
+
+## Ihre persönlichen Ergebnisse: 
+
+In einer vorherigen Studie konnte gezeigt werden, dass sowohl die Klangfarbe als auch die Tonhöhe für die Erkennung von Emotionen wichtig sind, \textbf{jedoch nicht für jede Emotion in gleicher Weise}. Während für die Erkennung von Freude, Angst und Trauer besonders die Tonhöhe wichtig ist, ist die Klangfarbe besonders für die Erkennung von Genuss wichtig. In der folgenden Grafik sehen Sie die \textbf{durchschnittlichen Erkennungsraten für die verschiedenen Emotionen}. Die roten Punkte darin sind \textbf{Ihre persönlichen Ergebnisse}. Die grauen Punkte sind die Daten anderer Proband:innen. Sie sehen, dass die Erkennung von Emotionen zwischen Personen sehr unterschiedlich ist, aber fast alle Proband:innen - auch Sie - \textbf{können Emotionen überzufällig gut erkennen}.  
+
+```{r EXP,  include=FALSE}
+#-----------------------------------------------------#
+#           get Experiment information                #
+#-----------------------------------------------------#
+#load the preprocessed data: 
+load(file="input/Exp_raw.RData")
+
+# select only dataset of the given ID
+D <- D %>% filter(Subject == current_id) 
+D$Emo <- as.character(D$Emo)
+
+D <- mySummary(D, ACC, Emo, MType)
+D <- D %>% filter(Emo != "avg") %>% select(Emo, MType, ACC)
+names(D) <- c("emotion","mType", "ACC")  
+D$mType <- recode(D$mType, full = "Originale \n Emotion", f0 = "Nur \n Tonhöhe", tbr = "Nur \n Klangfarbe")
+D$emotion <- recode(D$emotion, hap = "Freude", ple = "Genuss", fea = "Angst", sad = "Trauer")
+
+
+# load data: preprocessed data from EXperiment 1: A and B
+load(file="input/EXP1_BehavioralData_prep.RData") # CHANGE THAT!
+
+#-----------------------------------------------------------------------------------#
+#                    Plot proportion of correct classifications                     #
+#-----------------------------------------------------------------------------------#
+
+#add figure labels and filename
+yTitleStr = "Anteil der richtigen Antworten"
+xTitleStr = ""
+filename = paste0("plots/Exp_feedback_", current_Code, "_.png")
+
+#prepare factors
+A$mType <- recode(A$mType, full = "Originale \n Emotion", f0 = "Nur \n Tonhöhe", tbr = "Nur \n Klangfarbe")
+B$mType <- recode(B$mType, full = "Originale \n Emotion", f0 = "Nur \n Tonhöhe", tbr = "Nur \n Klangfarbe")
+A$emotion <- recode(A$emotion, hap = "Freude", ple = "Genuss", fea = "Angst", sad = "Trauer")
+B$emotion <- recode(B$emotion, hap = "Freude", ple = "Genuss", fea = "Angst", sad = "Trauer")
+
+# plot the data
+p<-(ggplot(data= A, aes(x = mType, y=ACC)) +
+       geom_jitter(data= B, aes(x = mType, y=ACC),  shape = 16, position = position_jitter(0.1), color="grey")+
+       geom_point(color = "black", shape= 18, size = 3) +
+       geom_errorbar(aes(ymin = (ACC-CI), ymax = (ACC+CI)), width = 0.1 ) + 
+       labs(x = xTitleStr , y = yTitleStr) +       #, title = title
+       geom_point(data= D, aes(x = mType, y=ACC),  shape = 15, size = 2, position = position_jitter(0.1), color="red")+
+       facet_wrap(~ emotion, ncol = 4) +
+       geom_hline(yintercept = 0.25, linetype = 4) + theme_bw()+
+       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+             axis.text=element_text(size=14),
+             axis.title=element_text(size=14), 
+             axis.text.x = element_text(color = "black", size = 14), # angle = 45, hjust = 1.2, vjust =  1.2
+             axis.text.y = element_text(color = "black", size = 14), 
+             strip.text.x = element_text(size = 14)) + 
+       scale_y_continuous(limits=c(0,1.03), breaks = c( 0.0, 0.2, 0.4, 0.6, 0.8, 1.0)))
+ggsave(filename, width = 12, height = 4, dpi =300)
+```
+
+```{r EXP_out,  echo=FALSE, out.width = "450px"}
+
+knitr::include_graphics(filename)
+
+```
+
+Neben dem Hörexperiment haben Sie noch einen \textbf{Musiktest} gemacht. Bei dem Musiktest handelt es sich um eine Kurzversion des \textbf{PROMS (Profile of Music Perception Skills)}, einem etablierten Test zur Erfassung musikalischer Wahrnehmungsfähigkeit. Sie haben daraus, die Untertests  "Melodie", "Tonhöhe", "Klangfarbe" und "Rhythmus" durchgeführt. Dies sind Ihre Ergebnisse: 
+
+```{r music,  include=FALSE}
+load(file = "input/PROMS_raw.RData")
+# select only dataset of the given ID
+P <- P %>% filter(Subject == current_id) 
+
+# code "weiß nicht" antworten 
+P$Resp <- ifelse(P$Response == 3, 3, P$Resp)
+
+P <- table(P$Test, P$Resp)
+
+if (dim(P)[2] == 3){
+
+  Ml <- print( paste0("Melodie: ", P[1,2], " von 18 korrekt und ",  P[1,3], " Mal 'weiß nicht'."))
+  Th <- print( paste0("Tonhöhe: ", P[2,2], " von 18 korrekt und ",  P[2,3], " Mal 'weiß nicht'."))
+  Kl <- print( paste0("Klangfarbe: ", P[4,2], " von 18 korrekt und ",  P[4,3], " Mal 'weiß nicht'."))
+  Rh <- print( paste0("Rhythmus: ", P[3,2], " von 18 korrekt und ",  P[3,3], " Mal 'weiß nicht'."))
+} else {
+  Ml <- print( paste0("Melodie: ", P[1,2], " von 18 korrekt."))
+  Th <- print( paste0("Tonhöhe: ", P[2,2], " von 18 korrekt."))
+  Kl <- print( paste0("Klangfarbe: ", P[4,2], " von 18 korrekt."))
+  Rh <- print( paste0("Rhythmus: ", P[3,2], " von 18 korrekt.")) 
+   
+}
+
+rm(P)
+```
+
+\definecolor{myred}{rgb}{0.8, 0, 0}
+
+\textcolor{myred}{\textbf{`r Ml` \newline
+`r Th` \newline
+`r Kl` \newline
+`r Rh` \newline}}
+
+\newpage
+
+Nach dem Musiktest haben Sie einige \textbf{standardisierte Fragebögen} ausgefüllt. Mithilfe dieser Fragebögen wollen wir herausfinden, ob \textbf{bestimmte Interessen und Persönlichkeits\-eigenschaften} einen Zusammenhang mit der Erkennung von Emotionen in der Stimme ausweisen. 
+
+Als erstes haben Sie den Fragebogen für den sogenannten \textbf{Autismus-Quotienten (AQ)} ausgefüllt. Vielleicht haben Sie schon einmal von der \textbf{Autismus-Spektrum-Störung} gehört, welche unter anderem durch Probleme in der sozialen Kommunikationen, stereo\-type Verhaltensweisen, aber auch erhöhte Aufmerksamkeit für Details charakterisiert ist. \textbf{Autistische Persönlichkeitseigenschaften varriieren jedoch auch in der gesunden Normalbevölkerung sehr stark, ohne dass dies einen pathologischen Charakter hat.} Mit diesem Fragebogen ermittelten wir einen AQ-Score zwischen 1 und 50. Der Großteil der Bevölkerung hat einen AQ-Score zwischen 11 und 24, ein AQ-Score ab 35 gilt als Indiz für eine Autismus-Spektrum-Störung. 
+
+```{r AQ,  include=FALSE}
+AQ <-print(paste0( "Ihr persönlicher AQ-Score ist ", DF$AQ_Total, "."))
+```
+\textcolor{myred}{\textbf{`r AQ`}}
+
+Zuletzt haben wir noch einen Fragebogen zur Messung \textbf{Musikalischer Erfahrenheit} erhoben. Ein großer Vorteil dieses Fragebogens ist, dass er sowohl die Bedeutung strukturierter Lernprozesse (z.B. Instrumentalunterricht) als auch  genetische Unterschiede für die Entwicklung Musikalischer Erfahrenheit berücksichtigt. Neben der generellen Musikalischen Erfahrenheit werden 5 Subkategorien gebildet. \textbf{In der folgenden Grafik sehen Sie die Mittelwerte und Standardabweichungen einer repräsentativen deutschen Stichprobe. Die roten Punkte sind Ihre persönlichen Werte}: \newline
+
+
+```{r MSI,  include=FALSE}
+MSI <- DF[, c(34:38, 44)]
+
+MSI <- pivot_longer(MSI, names_to= "Factor", values_to = "Score", cols = Mean_active:ME_mean)
+
+MSI$FactorDEU <- c("Aktiver Umgang mit Musik", "Musikalische Ausbildung", "Musikbezogene Emotionen", 
+                   "Wahrnehmungsfähigkeiten", "Gesangsfähigkeiten", "Allgemeine \n Musikalische Erfahrenheit")
+
+MSI$FactorDEU <- factor(MSI$FactorDEU, levels = c("Aktiver Umgang mit Musik", "Musikalische Ausbildung", "Musikbezogene Emotionen", 
+                                                  "Wahrnehmungsfähigkeiten", "Gesangsfähigkeiten", "Allgemeine \n Musikalische Erfahrenheit"))
+
+MSI$N <- c(9,7,6,9, 7,18)
+MSI$M_sum <- c(32.99, 22.85, 30.67, 45.84, 27.55, 70.41)
+MSI$SD_sum <- c(9.45 , 10.62, 5.55, 8.62, 8.87, 19.94)
+MSI$M <- MSI$M_sum / MSI$N
+MSI$SD <- MSI$SD_sum / MSI$N
+
+filename = paste0("plots/MSI_feedback_", current_Code, "_.png")
+
+# plot the data
+p<-(ggplot(data= MSI, aes(x = FactorDEU, y=M)) +
+       geom_point(color = "black", shape= 18, size = 3) +
+       geom_errorbar(aes(ymin = (M-SD), ymax = (M+SD)), width = 0.1 ) + 
+       labs(x = "", y = "") +       #, title = title
+       geom_point(aes(x = FactorDEU, y=Score),  shape = 15, size = 2, position = position_jitter(0.1), color="red")+
+       theme_bw()+
+       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+             axis.text=element_text(size=14),
+             axis.title=element_text(size=14), 
+             axis.text.x = element_text(color = "black", size = 14), # angle = 45, hjust = 1.2, vjust =  1.2
+             axis.text.y = element_text(color = "black", size = 16), 
+             strip.text.x = element_text(size = 14)) + 
+       scale_y_continuous(limits=c(0.8,7.2), breaks = c( 1, 2, 3, 4, 5, 6, 7))+
+       coord_flip()) 
+     
+ggsave(filename, width = 12, height = 4, dpi =300)
+
+```
+
+```{r MSI_out,  echo=FALSE, out.width = "450px"}
+
+knitr::include_graphics(filename)
+
+```
+
+
+Alle weiteren erhobenen Fragen nutzen wir, um die Stichprobe der Studie genau zu beschreiben und unsere Ergebnisse besser zu verstehen. 
+
+
+Wenn Sie Fragen zu Ihren Ergebnissen haben, können Sie uns gern jederzeit gern wieder kontaktieren.
+
+Wenn Sie noch andere Personen kennen, die als Teilnehmer:innen für unsere Studie in Frage kommen, empfehlen Sie uns gern weiter.
+
+\textbf{Vielen herzlichen Dank für Ihre Teilnahme!}
+
+\textbf{Jessica Senftleben}

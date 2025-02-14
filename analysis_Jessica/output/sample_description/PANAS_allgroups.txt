@@ -1,0 +1,143 @@
+[1] "Descriptive Data"
+     Group Neg        NegSD       Pos        PosSD      
+[1,] "M"   "1.692500" "0.4773793" "3.317500" "0.6515809"
+[2,] "C"   "1.489474" "0.6892179" "3.100000" "0.6710218"
+[3,] "A"   "1.469318" "0.4186343" "3.054545" "0.6282450"
+[1] "neg_Aff"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.2558939   1 163 1348.846 0.000  0.892  0.892
+2       Group 0.2558939   2 163    2.817 0.063  0.033  0.033
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 1348.846, p < .001, np2 = .892
+2       Group F(2, 163) =    2.817, p = .063, np2 = .033
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.89             | [0.86, 0.91]
+0.02             | [0.00, 0.08]
+[1] "pos_Aff"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.4144536   1 163 3453.716 0.000  0.955  0.955
+2       Group 0.4144536   2 163    2.342 0.099  0.028  0.028
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 3453.716, p < .001, np2 = .955
+2       Group F(2, 163) =    2.342, p = .099, np2 = .028
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.95             | [0.94, 0.96]
+0.02             | [0.00, 0.07]
+[1] "Professionals vs Amateurs (neg_Aff)"
+
+	Welch Two Sample t-test
+
+data:  neg_Aff by Group
+t = 2.5452, df = 67.342, p-value = 0.01322
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.0481765 0.3981871
+sample estimates:
+mean in group M mean in group A 
+       1.692500        1.469318 
+
+d    |       95% CI
+-------------------
+0.62 | [0.13, 1.11]
+[1] "Professionals vs NonMusicians (neg_Aff)"
+
+	Welch Two Sample t-test
+
+data:  neg_Aff by Group
+t = 1.505, df = 65.503, p-value = 0.1371
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -0.06634706  0.47239969
+sample estimates:
+mean in group M mean in group C 
+       1.692500        1.489474 
+
+d    |        95% CI
+--------------------
+0.37 | [-0.12, 0.86]
+[1] "Amateurs vs NonMusicians (neg_Aff)"
+
+	Welch Two Sample t-test
+
+data:  neg_Aff by Group
+t = 0.16743, df = 49.197, p-value = 0.8677
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.2217389  0.2620499
+sample estimates:
+mean in group C mean in group A 
+       1.489474        1.469318 
+
+d    |        95% CI
+--------------------
+0.05 | [-0.51, 0.61]
+[1] "Musicians vs Amateurs (pos_Aff)"
+
+	Welch Two Sample t-test
+
+data:  pos_Aff by Group
+t = 2.14, df = 73.075, p-value = 0.0357
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.01806269 0.50784640
+sample estimates:
+mean in group M mean in group A 
+       3.317500        3.054545 
+
+d    |       95% CI
+-------------------
+0.50 | [0.03, 0.96]
+[1] "Musicians vs NonMusicians (pos_Aff)"
+
+	Welch Two Sample t-test
+
+data:  pos_Aff by Group
+t = 1.4512, df = 75.501, p-value = 0.1509
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -0.08103815  0.51603815
+sample estimates:
+mean in group M mean in group C 
+         3.3175          3.1000 
+
+d    |        95% CI
+--------------------
+0.33 | [-0.12, 0.79]
+[1] "Amateurs vs NonMusicians (pos_Aff)"
+
+	Welch Two Sample t-test
+
+data:  pos_Aff by Group
+t = 0.35565, df = 66.273, p-value = 0.7232
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.2096986  0.3006076
+sample estimates:
+mean in group C mean in group A 
+       3.100000        3.054545 
+
+d    |        95% CI
+--------------------
+0.09 | [-0.39, 0.57]

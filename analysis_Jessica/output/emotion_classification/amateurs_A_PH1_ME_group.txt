@@ -1,0 +1,19 @@
+[1] "Singers vs Instrumentalists"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 0.61582, df = 82.953, p-value = 0.5397
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.01975651  0.03747689
+sample estimates:
+mean in group 1 mean in group 2 
+      0.5981130       0.5892528 
+
+d    |        95% CI
+--------------------
+0.14 | [-0.30, 0.57]
+     Group ACC         SD           N    SE            CI          
+[1,] "1"   "0.5981130" "0.07522155" "45" "0.011213367" "0.02259906"
+[2,] "2"   "0.5892528" "0.05911339" "43" "0.009014708" "0.01819242"

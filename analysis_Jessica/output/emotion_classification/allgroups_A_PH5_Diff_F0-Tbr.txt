@@ -1,0 +1,102 @@
+[1] "Hap vs Ple"
+
+	Paired t-test
+
+data:  Diff by Emo
+t = 11.415, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.1935533 0.2745155
+sample estimates:
+mean difference 
+      0.2340344 
+
+d    |       95% CI
+-------------------
+0.89 | [0.71, 1.07]
+[1] "Hap vs Fea"
+
+	Paired t-test
+
+data:  Diff by Emo
+t = -5.5693, df = 165, p-value = 0.0000001019
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.15051613 -0.07172605
+sample estimates:
+mean difference 
+     -0.1111211 
+
+d     |         95% CI
+----------------------
+-0.43 | [-0.59, -0.27]
+[1] "Hap vs Sad"
+
+	Paired t-test
+
+data:  Diff by Emo
+t = 8.0523, df = 165, p-value = 0.0000000000001534
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.1186866 0.1957991
+sample estimates:
+mean difference 
+      0.1572429 
+
+d    |       95% CI
+-------------------
+0.63 | [0.46, 0.79]
+[1] "Ple vs Fea"
+
+	Paired t-test
+
+data:  Diff by Emo
+t = 7.4093, df = 165, p-value = 0.000000000006246
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.0901591 0.1556675
+sample estimates:
+mean difference 
+      0.1229133 
+
+d    |       95% CI
+-------------------
+0.58 | [0.41, 0.74]
+[1] "Ple vs Sad"
+
+	Paired t-test
+
+data:  Diff by Emo
+t = -3.9892, df = 165, p-value = 0.00009949
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.11479968 -0.03878336
+sample estimates:
+mean difference 
+    -0.07679152 
+
+d     |         95% CI
+----------------------
+-0.31 | [-0.47, -0.15]
+[1] "Fea vs Sad"
+
+	Paired t-test
+
+data:  Diff by Emo
+t = 2.5364, df = 165, p-value = 0.01213
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.01021837 0.08202519
+sample estimates:
+mean difference 
+     0.04612178 
+
+d    |       95% CI
+-------------------
+0.20 | [0.04, 0.35]
+[1] "Descriptive Data"
+     Emo   Diff         SD          N     SE           CI          
+[1,] "fea" "0.22092664" "0.1546634" "166" "0.01200420" "0.02370165"
+[2,] "hap" "0.33204774" "0.2032325" "166" "0.01577390" "0.03114471"
+[3,] "ple" "0.09801335" "0.1497388" "166" "0.01162198" "0.02294697"
+[4,] "sad" "0.17480486" "0.1792016" "166" "0.01390874" "0.02746205"

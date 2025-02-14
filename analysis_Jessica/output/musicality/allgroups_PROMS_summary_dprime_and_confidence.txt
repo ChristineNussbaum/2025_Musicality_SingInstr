@@ -1,0 +1,232 @@
+[1] "dprime descriptives"
+      Group Test     dprime       SD          N    SE          
+ [1,] "M"   "melody" "1.24642064" "0.6724922" "40" "0.10633035"
+ [2,] "M"   "pitch"  "1.90983341" "0.7610701" "40" "0.12033576"
+ [3,] "M"   "rhythm" "2.09446353" "0.9065356" "40" "0.14333587"
+ [4,] "M"   "timbre" "2.43972682" "1.0421387" "40" "0.16477660"
+ [5,] "C"   "melody" "0.07694201" "0.6202520" "38" "0.10061816"
+ [6,] "C"   "pitch"  "1.26465909" "0.7657339" "38" "0.12421845"
+ [7,] "C"   "rhythm" "1.39238399" "0.6796080" "38" "0.11024698"
+ [8,] "C"   "timbre" "1.87191486" "1.0760087" "38" "0.17455166"
+ [9,] "A"   "melody" "0.75019966" "0.7728094" "88" "0.08238176"
+[10,] "A"   "pitch"  "1.78176016" "0.8251168" "88" "0.08795775"
+[11,] "A"   "rhythm" "1.92190234" "0.9732466" "88" "0.10374844"
+[12,] "A"   "timbre" "2.24231705" "0.9731475" "88" "0.10373787"
+      CI         
+ [1,] "0.2150734"
+ [2,] "0.2434020"
+ [3,] "0.2899242"
+ [4,] "0.3332921"
+ [5,] "0.2038718"
+ [6,] "0.2516905"
+ [7,] "0.2233816"
+ [8,] "0.3536753"
+ [9,] "0.1637427"
+[10,] "0.1748256"
+[11,] "0.2062112"
+[12,] "0.2061902"
+[1] "Confidence descriptives"
+      Group Test     Confidence   SD           N    SE           
+ [1,] "M"   "melody" "0.22847222" "0.07729487" "40" "0.012221393"
+ [2,] "M"   "pitch"  "0.26805556" "0.06331184" "40" "0.010010480"
+ [3,] "M"   "rhythm" "0.32777778" "0.07817613" "40" "0.012360731"
+ [4,] "M"   "timbre" "0.32013889" "0.08153023" "40" "0.012891062"
+ [5,] "C"   "melody" "0.06578947" "0.07529307" "38" "0.012214149"
+ [6,] "C"   "pitch"  "0.17836257" "0.06348501" "38" "0.010298628"
+ [7,] "C"   "rhythm" "0.26644737" "0.07585675" "38" "0.012305590"
+ [8,] "C"   "timbre" "0.26096491" "0.09270152" "38" "0.015038172"
+ [9,] "A"   "melody" "0.15703914" "0.09911624" "88" "0.010565827"
+[10,] "A"   "pitch"  "0.23532197" "0.07395498" "88" "0.007883628"
+[11,] "A"   "rhythm" "0.31534091" "0.08794597" "88" "0.009375071"
+[12,] "A"   "timbre" "0.29356061" "0.08055120" "88" "0.008586787"
+      CI          
+ [1,] "0.02472010"
+ [2,] "0.02024811"
+ [3,] "0.02500194"
+ [4,] "0.02607463"
+ [5,] "0.02474822"
+ [6,] "0.02086700"
+ [7,] "0.02493349"
+ [8,] "0.03047023"
+ [9,] "0.02100073"
+[10,] "0.01566956"
+[11,] "0.01863397"
+[12,] "0.01706717"
+     Group Confidence  SD           N     SE            CI          
+[1,] "M"   "0.2861111" "0.08499394" "160" "0.006719361" "0.01327071"
+[2,] "C"   "0.1928911" "0.11197636" "152" "0.009082483" "0.01794516"
+[3,] "A"   "0.2503157" "0.10527418" "352" "0.005611133" "0.01103567"
+[1] "Confidence: ANOVA"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect         MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.011056397   1 163 3070.118 0.000  0.950  0.887
+2       Group 0.011056397   2 163   31.325 0.000  0.278  0.138
+3        Test 0.005199179   3 489  136.217 0.000  0.455  0.328
+4  Group:Test 0.005199179   6 489    4.541 0.000  0.053  0.032
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+      Effect p_Mauchly GGEpsilon  p_GG HFEpsilon  p_HF
+1       Test     0.469     0.981 0.000     1.001 0.000
+2 Group:Test     0.469     0.981 0.000     1.001 0.000
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 3070.118, p < .001, np2 = .950
+2       Group F(2, 163) =   31.325, p < .001, np2 = .278
+3        Test F(3, 489) =  136.217, p < .001, np2 = .455
+4  Group:Test F(6, 489) =    4.541, p < .001, np2 = .053
+
+$`NOTE:`
+[1] "No adjustments necessary (all p_Mauchly > 0.05)."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.95             | [0.94, 0.96]
+0.27             | [0.16, 0.37]
+0.45             | [0.39, 0.50]
+0.04             | [0.01, 0.07]
+[1] "Confidence: Group differences"
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 4.089, df = 375.38, p-value = 0.00005303
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.01858220 0.05300871
+sample estimates:
+mean in group M mean in group A 
+      0.2861111       0.2503157 
+
+d    |       95% CI
+-------------------
+0.42 | [0.22, 0.63]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 8.2511, df = 281.45, p-value = 0.000000000000006108
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.07098103 0.11545903
+sample estimates:
+mean in group M mean in group C 
+      0.2861111       0.1928911 
+
+d    |       95% CI
+-------------------
+0.98 | [0.74, 1.23]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = -5.3789, df = 271.26, p-value = 0.000000162
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.07844286 -0.03640629
+sample estimates:
+mean in group C mean in group A 
+      0.1928911       0.2503157 
+
+d     |         95% CI
+----------------------
+-0.65 | [-0.90, -0.41]
+[1] "melody vs pitch"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Test
+t = -7.6532, df = 299.98, p-value = 0.00000000000027
+alternative hypothesis: true difference in means between group melody and group pitch is not equal to 0
+95 percent confidence interval:
+ -0.09655707 -0.05705739
+sample estimates:
+mean in group melody  mean in group pitch 
+           0.1533635            0.2301707 
+
+d     |         95% CI
+----------------------
+-0.88 | [-1.12, -0.65]
+[1] "melody vs rhythm"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Test
+t = -14.631, df = 317.29, p-value < 0.00000000000000022
+alternative hypothesis: true difference in means between group melody and group rhythm is not equal to 0
+95 percent confidence interval:
+ -0.1744608 -0.1331028
+sample estimates:
+mean in group melody mean in group rhythm 
+           0.1533635            0.3071452 
+
+d     |         95% CI
+----------------------
+-1.64 | [-1.90, -1.39]
+[1] "melody vs timbre"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Test
+t = -13.238, df = 317.29, p-value < 0.00000000000000022
+alternative hypothesis: true difference in means between group melody and group timbre is not equal to 0
+95 percent confidence interval:
+ -0.1598192 -0.1184605
+sample estimates:
+mean in group melody mean in group timbre 
+           0.1533635            0.2925033 
+
+d     |         95% CI
+----------------------
+-1.49 | [-1.73, -1.24]
+[1] "pitch vs rhythm"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Test
+t = -8.6819, df = 325, p-value < 0.00000000000000022
+alternative hypothesis: true difference in means between group pitch and group rhythm is not equal to 0
+95 percent confidence interval:
+ -0.09441673 -0.05953240
+sample estimates:
+ mean in group pitch mean in group rhythm 
+           0.2301707            0.3071452 
+
+d     |         95% CI
+----------------------
+-0.96 | [-1.19, -0.73]
+[1] "pitch vs timbre"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Test
+t = -7.0303, df = 325, p-value = 0.0000000000122
+alternative hypothesis: true difference in means between group pitch and group timbre is not equal to 0
+95 percent confidence interval:
+ -0.07977527 -0.04489005
+sample estimates:
+ mean in group pitch mean in group timbre 
+           0.2301707            0.2925033 
+
+d     |         95% CI
+----------------------
+-0.78 | [-1.00, -0.55]
+[1] "rhythm vs timbre"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Test
+t = 1.5576, df = 330, p-value = 0.1203
+alternative hypothesis: true difference in means between group rhythm and group timbre is not equal to 0
+95 percent confidence interval:
+ -0.003849584  0.033133386
+sample estimates:
+mean in group rhythm mean in group timbre 
+           0.3071452            0.2925033 
+
+d    |        95% CI
+--------------------
+0.17 | [-0.04, 0.39]

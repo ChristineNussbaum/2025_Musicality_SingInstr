@@ -1,0 +1,65 @@
+[1] "ANOVA on Group for timbre-MorphType only"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect         MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.004197112   1 163 5785.403 0.000  0.973  0.973
+2       Group 0.004197112   2 163    0.024 0.977  0.000  0.000
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 5785.403, p < .001, np2 = .973
+2       Group F(2, 163) =    0.024, p = .977, np2 < .010
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 0.20222, df = 88.998, p-value = 0.8402
+alternative hypothesis: true difference in means between group A and group M is not equal to 0
+95 percent confidence interval:
+ -0.02136595  0.02620762
+sample estimates:
+mean in group A mean in group M 
+      0.4119130       0.4094922 
+
+d    |        95% CI
+--------------------
+0.04 | [-0.37, 0.46]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = 0.21335, df = 75.996, p-value = 0.8316
+alternative hypothesis: true difference in means between group C and group M is not equal to 0
+95 percent confidence interval:
+ -0.02324325  0.02882034
+sample estimates:
+mean in group C mean in group M 
+      0.4122807       0.4094922 
+
+d    |        95% CI
+--------------------
+0.05 | [-0.40, 0.50]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  ACC by Group
+t = -0.031078, df = 86.736, p-value = 0.9753
+alternative hypothesis: true difference in means between group A and group C is not equal to 0
+95 percent confidence interval:
+ -0.02388544  0.02315003
+sample estimates:
+mean in group A mean in group C 
+      0.4119130       0.4122807 
+
+d         |        95% CI
+-------------------------
+-6.67e-03 | [-0.43, 0.41]

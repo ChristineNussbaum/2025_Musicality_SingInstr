@@ -1,0 +1,38 @@
+1		MSIproc	active	ME	Ich beschäftige mich in meiner Freizeit viel mit musikbezogenen Aktivitäten.	pos	1
+1		MSIproc	emotion		Ich suche oft Musik aus, bei der ich eine Gänsehaut bekomme.	pos	2
+1		MSIproc	active	ME	Ich schreibe gerne über Musik, z. B. in Internetblogs oder Foren.	pos	3
+1		MSIproc	singing	ME	Wenn jemand anderes ein Lied singt, welches ich nicht kenne, kann ich normalerweise mitsingen.	pos	4
+1		MSIproc	perception		Ich kann beurteilen, ob jemand gut singt oder nicht.	pos	5
+1		MSIproc	perception		Meistens weiß ich, ob ich ein Lied zum ersten Mal höre.	pos	6
+1		MSIproc	singing	ME	Ich kann auswendig singen oder Musik spielen.	pos	7
+1		MSIproc	active		Ich bin fasziniert von Musikstilen, mit denen ich nicht vertraut bin, und möchte mehr darüber erfahren.	pos	8
+1		MSIproc	emotion		Musikstücke rufen selten Gefühle in mir hervor.	neg	9
+1		MSIproc	singing	ME	Ich bin in der Lage, die richtigen Töne zu treffen, wenn ich zu einer Aufnahme mitsinge.	pos	10
+1		MSIproc	perception		Ich finde es schwierig Fehler festzustellen, die ein Sänger macht, selbst wenn ich das Lied kenne.	neg	11
+1		MSIproc	perception	ME	Ich kann zwei Interpretationen oder Versionen desselben Musikstücks miteinander vergleichen und über die Unterschiede diskutieren.	pos	12
+1		MSIproc	perception		Es fällt mir schwer, ein bekanntes Lied zu erkennen, wenn es auf eine andere Weise oder von einem anderen Interpreten gespielt oder gesungen wird.	neg	13
+1		MSIproc	education	ME	Ich bin noch nie für meine musikalischen Fähigkeiten gelobt worden.	neg	14
+1		MSIproc	active	ME	Ich lese oder suche oft im Internet nach Dingen, die mit Musik zu tun haben.	pos	15
+1		MSIproc	emotion		Ich suche häufig eine bestimmte Musik aus, um mich zu motivieren oder zu begeistern.	pos	16
+1		MSIproc	singing	ME	Wenn jemand anders ein Lied singt, das ich kenne, kann ich eine zweite Stimme dazu singen.	pos	17
+1		MSIproc	perception		Ich kann beurteilen, ob jemand nicht im Rhythmus mit der Musik singt oder spielt.	pos	18
+1		MSIproc	emotion	ME	Ich kann identifizieren, was das Besondere an einem bestimmten Musikstück ist.	pos	19
+1		MSIproc	emotion		Ich bin in der Lage, über meine Gefühle, die durch Musik hervorgerufen werden, zu sprechen.	pos	20
+1		MSIproc	active		Ich gebe nicht viel Geld meines verfügbaren Einkommens für Musik aus.	neg	21
+1		MSIproc	perception		Ich kann beurteilen, ob jemand falsch oder richtig singt oder spielt.	pos	22
+1		MSIproc	perception	ME	Wenn ich singe, habe ich keine Ahnung, ob ich richtig oder falsch singe.	neg	23
+1		MSIproc	active	ME	Musik ist für mich eine Art von Sucht - ohne sie könnte ich nicht leben.	pos	24
+1		MSIproc	singing	ME	Ich singe nicht gerne in der Öffentlichkeit, weil ich Angst habe, falsche Töne zu treffen.	neg	25
+1		MSIproc	perception		Wenn ich ein Musikstück höre, kann ich normalerweise die Stilrichtung erkennen.	pos	26
+1		MSIproc	education	ME	Ich würde mich selbst nicht als Musiker/-in bezeichnen.	neg	27
+1		MSIproc	active		Ich halte mich auf dem Laufenden, was neue Musik angeht (z. B. neue Künstler oder Aufnahmen).	pos	28
+1		MSIproc	singing	ME	Wenn ich einen Song zwei- oder dreimal gehört habe, kann ich ihn meistens alleine singen.	pos	29
+1		MSIproc	singing		Ich brauche eine neue Melodie nur einmal zu hören, dann kann ich sie auch Stunden später noch singen.	pos	30
+1		MSIproc	emotion		Musik kann bei mir Erinnerungen an Personen und Orte hervorrufen.	pos	31
+1	scales	OtherQ	education	ME	Ich habe regelmäßig und täglich ein Instrument (einschließlich Gesang) für ......  Jahre geübt.	pos	32
+1	scales	OtherQ	education	ME	An dem Höhepunkt meines Interesses habe ich mein Hauptinstrument ..... Stunden pro Tag geübt.	pos	33
+1	scales	OtherQ	active		Ich habe ..... Live-Events als Zuschauer innerhalb der letzten 12 Monate besucht.	pos	34
+1	scales	OtherQ	education		Ich habe .....  Jahre Unterricht in Musiktheorie (außerhalb der Schule) erhalten.	pos	35
+1	scales	OtherQ	education		Ich habe .....  Jahre Musikunterricht auf einem Instrument (einschließlich Gesang) in meinem bisherigen Leben gehabt.	pos	36
+1	scales	OtherQ	education	ME	Ich kann .....  verschiedene Instrumente spielen.	pos	37
+1	scales	OtherQ	active		Ich höre jeden Tag aufmerksam Musik für ...	pos	38
