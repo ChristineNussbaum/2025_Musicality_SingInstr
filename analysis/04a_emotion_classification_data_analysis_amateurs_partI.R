@@ -92,7 +92,7 @@ D <- D %>% filter(Emo != "avg")
 ### aggregate data for ANOVA
 D <- D %>% group_by(Subject, Group, Emo, MType) %>% summarise(ACC = mean(ACC))
 
-#88 * 4 *3 = 1068
+#88 * 4 *3 = 1056
 
 ### Define variables as appropriate data class and drop levels of factors 
 D$Subject <- as.factor(as.character(D$Subject))

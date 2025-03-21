@@ -1,0 +1,492 @@
+[1] "Descriptive Data"
+     Group AQ_Tot     AQ_TotSD   AQ_Soc     AQ_SocSD   AQ_Att     AQ_AttSD   AQ_SocSkills AQ_SocSkillsSD AQ_Com     AQ_ComSD  
+[1,] "M"   "15.70000" "4.983048" "10.27500" "4.695811" "5.425000" "2.036683" "1.475000"   "1.679247"     "1.850000" "1.610064"
+[2,] "C"   "17.57895" "6.412115" "13.26316" "6.508557" "4.315789" "2.014881" "2.605263"   "2.625648"     "2.394737" "1.732667"
+[3,] "A"   "18.72727" "7.396376" "13.21591" "6.490398" "5.511364" "2.416392" "2.738636"   "2.493644"     "2.488636" "2.117222"
+     AQ_Imag    AQ_ImagSD  AQ_AttSwitch AQ_AttSwitchSD
+[1,] "2.175000" "1.517209" "4.775000"   "1.914687"    
+[2,] "2.868421" "1.947570" "5.394737"   "1.924795"    
+[3,] "2.659091" "1.812386" "5.329545"   "2.060697"    
+[1] "AQ Total"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2       F     p petasq getasq
+1 (Intercept) 44.47311   1 163 970.260 0.000  0.856  0.856
+2       Group 44.47311   2 163   2.847 0.061  0.034  0.034
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 970.260, p < .001, np2 = .856
+2       Group F(2, 163) =   2.847, p = .061, np2 = .034
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.85             | [0.82, 0.88]
+0.02             | [0.00, 0.08]
+[1] "AQ Attention"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2       F     p petasq getasq
+1 (Intercept) 5.030516   1 163 737.776 0.000  0.819  0.819
+2       Group 5.030516   2 163   3.997 0.020  0.047  0.047
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 737.776, p < .001, np2 = .819
+2       Group F(2, 163) =   3.997, p = .020, np2 = .047
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.82             | [0.77, 0.85]
+0.03             | [0.00, 0.10]
+[1] "AQ Social"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2       F     p petasq getasq
+1 (Intercept) 37.37571   1 163 576.629 0.000  0.780  0.780
+2       Group 37.37571   2 163   3.548 0.031  0.042  0.042
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 576.629, p < .001, np2 = .780
+2       Group F(2, 163) =   3.548, p = .031, np2 = .042
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.78             | [0.72, 0.82]
+0.03             | [0.00, 0.09]
+[1] "AQ Social Skills"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2       F     p petasq getasq
+1 (Intercept) 5.558543   1 163 133.457 0.000  0.450  0.450
+2       Group 5.558543   2 163   4.130 0.018  0.048  0.048
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 133.457, p < .001, np2 = .450
+2       Group F(2, 163) =   4.130, p = .018, np2 = .048
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.45             | [0.34, 0.54]
+0.04             | [0.00, 0.10]
+[1] "AQ Communication"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect     MSE df1 df2       F     p petasq getasq
+1 (Intercept) 3.69428   1 163 195.799 0.000  0.546  0.546
+2       Group 3.69428   2 163   1.562 0.213  0.019  0.019
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 195.799, p < .001, np2 = .546
+2       Group F(2, 163) =   1.562, p = .213, np2 = .019
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.54             | [0.44, 0.62]
+6.73e-03         | [0.00, 0.04]
+[1] "AQ Imagination"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2       F     p petasq getasq
+1 (Intercept) 3.164968   1 163 299.068 0.000  0.647  0.647
+2       Group 3.164968   2 163   1.620 0.201  0.019  0.019
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 299.068, p < .001, np2 = .647
+2       Group F(2, 163) =   1.620, p = .201, np2 = .019
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.64             | [0.56, 0.71]
+7.41e-03         | [0.00, 0.04]
+[1] "AQ Attention Switch"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2       F     p petasq getasq
+1 (Intercept) 3.984645   1 163 961.853 0.000  0.855  0.855
+2       Group 3.984645   2 163   1.270 0.284  0.015  0.015
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                      Text
+1 (Intercept) F(1, 163) = 961.853, p < .001, np2 = .855
+2       Group F(2, 163) =   1.270, p = .284, np2 = .015
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.85             | [0.82, 0.88]
+3.25e-03         | [0.00, 0.03]
+[1] "Professionals vs Amateurs (AQ Att)"
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionToDetails by Group
+t = -0.20943, df = 88.611, p-value = 0.8346
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -0.9057947  0.7330674
+sample estimates:
+mean in group M mean in group A 
+       5.425000        5.511364 
+
+d     |        95% CI
+---------------------
+-0.04 | [-0.46, 0.37]
+[1] "Professionals vs NonMusicians (AQ Att)"
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionToDetails by Group
+t = 2.4174, df = 75.871, p-value = 0.01803
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.1953195 2.0231015
+sample estimates:
+mean in group M mean in group C 
+       5.425000        4.315789 
+
+d    |       95% CI
+-------------------
+0.56 | [0.09, 1.01]
+[1] "Amateurs vs NonMusicians (AQ Att)"
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionToDetails by Group
+t = -2.8729, df = 83.528, p-value = 0.005155
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -2.023217 -0.367931
+sample estimates:
+mean in group C mean in group A 
+       4.315789        5.511364 
+
+d     |         95% CI
+----------------------
+-0.63 | [-1.07, -0.19]
+[1] "Professionals vs Amateurs (AQ Soc)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Social by Group
+t = -2.8978, df = 101.75, p-value = 0.004602
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -4.9539600 -0.9278582
+sample estimates:
+mean in group M mean in group A 
+       10.27500        13.21591 
+
+d     |         95% CI
+----------------------
+-0.57 | [-0.97, -0.18]
+[1] "Professionals vs NonMusicians (AQ Soc)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Social by Group
+t = -2.3151, df = 67.079, p-value = 0.02368
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -5.5644510 -0.4118648
+sample estimates:
+mean in group M mean in group C 
+       10.27500        13.26316 
+
+d     |         95% CI
+----------------------
+-0.57 | [-1.05, -0.08]
+[1] "Amateurs vs NonMusicians (AQ Soc)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Social by Group
+t = 0.03743, df = 70.102, p-value = 0.9702
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -2.470317  2.564815
+sample estimates:
+mean in group C mean in group A 
+       13.26316        13.21591 
+
+d        |        95% CI
+------------------------
+8.94e-03 | [-0.46, 0.48]
+[1] "Professionals vs Amateurs (AQ SocSkills)"
+
+	Welch Two Sample t-test
+
+data:  AQ_SocialSkills by Group
+t = -3.3633, df = 107.81, p-value = 0.001067
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -2.0083758 -0.5188969
+sample estimates:
+mean in group M mean in group A 
+       1.475000        2.738636 
+
+d     |         95% CI
+----------------------
+-0.65 | [-1.03, -0.26]
+[1] "Professionals vs NonMusicians (AQ SocSkills)"
+
+	Welch Two Sample t-test
+
+data:  AQ_SocialSkills by Group
+t = -2.2519, df = 62.402, p-value = 0.02786
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -2.1334480 -0.1270784
+sample estimates:
+mean in group M mean in group C 
+       1.475000        2.605263 
+
+d     |         95% CI
+----------------------
+-0.57 | [-1.07, -0.06]
+[1] "Amateurs vs NonMusicians (AQ SocSkilss)"
+
+	Welch Two Sample t-test
+
+data:  AQ_SocialSkills by Group
+t = -0.26564, df = 67.106, p-value = 0.7913
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -1.1354989  0.8687525
+sample estimates:
+mean in group C mean in group A 
+       2.605263        2.738636 
+
+d     |        95% CI
+---------------------
+-0.06 | [-0.54, 0.41]
+[1] "Professionals vs Amateurs (AQ Total)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Total by Group
+t = -2.7159, df = 107.77, p-value = 0.0077
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -5.2367443 -0.8178011
+sample estimates:
+mean in group M mean in group A 
+       15.70000        18.72727 
+
+d     |         95% CI
+----------------------
+-0.52 | [-0.91, -0.14]
+[1] "Professionals vs NonMusicians (AQ Total)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Total by Group
+t = -1.4399, df = 69.829, p-value = 0.1544
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -4.4815888  0.7236941
+sample estimates:
+mean in group M mean in group C 
+       15.70000        17.57895 
+
+d     |        95% CI
+---------------------
+-0.34 | [-0.82, 0.13]
+[1] "Amateurs vs NonMusicians (AQ Total)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Total by Group
+t = -0.87978, df = 80.439, p-value = 0.3816
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -3.745612  1.448961
+sample estimates:
+mean in group C mean in group A 
+       17.57895        18.72727 
+
+d     |        95% CI
+---------------------
+-0.20 | [-0.63, 0.24]
+[1] "Professionals vs Amateurs (AQ Communication)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Communication by Group
+t = -1.8772, df = 97.422, p-value = 0.06349
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -1.31383321  0.03656048
+sample estimates:
+mean in group M mean in group A 
+       1.850000        2.488636 
+
+d     |        95% CI
+---------------------
+-0.38 | [-0.78, 0.02]
+[1] "Professionals vs NonMusicians (AQ Communication)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Communication by Group
+t = -1.4364, df = 74.829, p-value = 0.155
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -1.3002190  0.2107453
+sample estimates:
+mean in group M mean in group C 
+       1.850000        2.394737 
+
+d     |        95% CI
+---------------------
+-0.33 | [-0.79, 0.13]
+[1] "Amateurs vs NonMusicians (AQ Communication)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Communication by Group
+t = -0.26049, df = 85.056, p-value = 0.7951
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.8106142  0.6228152
+sample estimates:
+mean in group C mean in group A 
+       2.394737        2.488636 
+
+d     |        95% CI
+---------------------
+-0.06 | [-0.48, 0.37]
+[1] "Professionals vs Amateurs (AQ Imagination)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Imagination by Group
+t = -1.5716, df = 89.181, p-value = 0.1196
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -1.096098  0.127916
+sample estimates:
+mean in group M mean in group A 
+       2.175000        2.659091 
+
+d     |        95% CI
+---------------------
+-0.33 | [-0.75, 0.09]
+[1] "Professionals vs NonMusicians (AQ Imagination)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Imagination by Group
+t = -1.748, df = 69.915, p-value = 0.08485
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -1.48461552  0.09777342
+sample estimates:
+mean in group M mean in group C 
+       2.175000        2.868421 
+
+d     |        95% CI
+---------------------
+-0.42 | [-0.89, 0.06]
+[1] "Amateurs vs NonMusicians (AQ Imagination)"
+
+	Welch Two Sample t-test
+
+data:  AQ_Imagination by Group
+t = 0.56526, df = 65.926, p-value = 0.5738
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.5300701  0.9487304
+sample estimates:
+mean in group C mean in group A 
+       2.868421        2.659091 
+
+d    |        95% CI
+--------------------
+0.14 | [-0.34, 0.62]
+[1] "Professionals vs Amateurs (AQ Attention Switching)"
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionSwitching by Group
+t = -1.4826, df = 80.834, p-value = 0.1421
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -1.2987911  0.1897002
+sample estimates:
+mean in group M mean in group A 
+       4.775000        5.329545 
+
+d     |        95% CI
+---------------------
+-0.33 | [-0.77, 0.11]
+[1] "Professionals vs NonMusicians (AQ Attention Switching)"
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionSwitching by Group
+t = -1.425, df = 75.752, p-value = 0.1583
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -1.4859802  0.2465065
+sample estimates:
+mean in group M mean in group C 
+       4.775000        5.394737 
+
+d     |        95% CI
+---------------------
+-0.33 | [-0.78, 0.13]
+[1] "Amateurs vs NonMusicians (AQ Attention Switching)"
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionSwitching by Group
+t = 0.17076, df = 74.888, p-value = 0.8649
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.6953592  0.8257420
+sample estimates:
+mean in group C mean in group A 
+       5.394737        5.329545 
+
+d    |        95% CI
+--------------------
+0.04 | [-0.41, 0.49]

@@ -76,8 +76,8 @@ relPathDirFile = "input/survey/data.csv"
     After_Exp <- Raw[, c(1,19:29)]                      # questionnaire after experiment
     AQ <- Raw[, c(1, 31:80)]                            # AQ questionnaire
     BFI <- Raw[, c(1, 81:110)]                          # Big-Five personality questionnaire
-    MSI <- Raw[, c(1, 111:148)]                         # Music-Sophistication-Intex
-    Music_Quali <- Raw[, c(1, 149:154, 142)]                 # Musical Qualifications
+    MSI <- Raw[, c(1, 111:148)]                         # Music-Sophistication-Index
+    Music_Quali <- Raw[, c(1, 149:154, 142)]           # Musical Qualifications
     SES <-Raw[, c(1, 155:159)]                          # Social Economic Status
     panas <-  Raw[, c(1, 160:179)]                      # Positive Affect Negative Affect Scale
     MYears <- Raw[, c(1,142)]                           # Years of Musical Training

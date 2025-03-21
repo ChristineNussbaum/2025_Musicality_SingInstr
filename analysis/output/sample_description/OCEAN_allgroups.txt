@@ -1,0 +1,157 @@
+     Group o      O_SD   c      C_SD   e      E_SD   a      A_SD   n      N_SD  
+[1,] "M"   "4.12" "0.50" "3.49" "0.71" "3.48" "0.66" "3.92" "0.57" "2.95" "0.65"
+[2,] "C"   "3.81" "0.80" "3.76" "0.72" "3.38" "0.79" "3.75" "0.66" "2.58" "0.82"
+[3,] "A"   "4.02" "0.53" "3.61" "0.70" "3.11" "0.72" "3.91" "0.59" "2.68" "0.77"
+[1] "Openness"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.3553879   1 163 6411.767 0.000  0.975  0.975
+2       Group 0.3553879   2 163    2.911 0.057  0.034  0.034
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 6411.767, p < .001, np2 = .975
+2       Group F(2, 163) =    2.911, p = .057, np2 = .034
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.97             | [0.97, 0.98]
+0.02             | [0.00, 0.08]
+[1] "Conscientiousness"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.5023199   1 163 3744.514 0.000  0.958  0.958
+2       Group 0.5023199   2 163    1.430 0.242  0.017  0.017
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 3744.514, p < .001, np2 = .958
+2       Group F(2, 163) =    1.430, p = .242, np2 = .017
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.96             | [0.95, 0.97]
+5.15e-03         | [0.00, 0.04]
+[1] "Extraversion"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.5179018   1 163 3061.156 0.000  0.949  0.949
+2       Group 0.5179018   2 163    4.394 0.014  0.051  0.051
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 3061.156, p < .001, np2 = .949
+2       Group F(2, 163) =    4.394, p = .014, np2 = .051
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.95             | [0.94, 0.96]
+0.04             | [0.00, 0.11]
+[1] "Agreeableness"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.3621791   1 163 5902.473 0.000  0.973  0.973
+2       Group 0.3621791   2 163    1.135 0.324  0.014  0.014
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 5902.473, p < .001, np2 = .973
+2       Group F(2, 163) =    1.135, p = .324, np2 = .014
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.97             | [0.97, 0.98]
+1.63e-03         | [0.00, 0.02]
+[1] "Neuroticism"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.5739465   1 163 1877.046 0.000  0.920  0.920
+2       Group 0.5739465   2 163    2.650 0.074  0.031  0.031
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 1877.046, p < .001, np2 = .920
+2       Group F(2, 163) =    2.650, p = .074, np2 = .031
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.92             | [0.90, 0.93]
+0.02             | [0.00, 0.07]
+[1] "Professionals vs Amateurs (E)"
+
+	Welch Two Sample t-test
+
+data:  E by Group
+t = 2.9131, df = 82.146, p-value = 0.004607
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.1190480 0.6317096
+sample estimates:
+mean in group M mean in group A 
+       3.483333        3.107955 
+
+d    |       95% CI
+-------------------
+0.64 | [0.20, 1.08]
+[1] "Professionals vs NonMusicians (E)"
+
+	Welch Two Sample t-test
+
+data:  E by Group
+t = 0.64625, df = 72.196, p-value = 0.5202
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -0.2212541  0.4335348
+sample estimates:
+mean in group M mean in group C 
+       3.483333        3.377193 
+
+d    |        95% CI
+--------------------
+0.15 | [-0.31, 0.61]
+[1] "Amateurs vs NonMusicians (E)"
+
+	Welch Two Sample t-test
+
+data:  E by Group
+t = 1.8118, df = 64.928, p-value = 0.07465
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.02755423  0.56603111
+sample estimates:
+mean in group C mean in group A 
+       3.377193        3.107955 
+
+d    |        95% CI
+--------------------
+0.45 | [-0.04, 0.94]

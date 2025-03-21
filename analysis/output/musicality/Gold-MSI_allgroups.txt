@@ -1,0 +1,422 @@
+     Group ME         ME_SD       Active     Active_SD   Education  Education_SD Emotion    Emotion_SD  Singing    Singing_SD 
+[1,] "M"   "5.680556" "0.4965455" "4.936111" "0.8067017" "5.950000" "0.5561605"  "5.875000" "0.7286857" "5.335714" "0.8264024"
+[2,] "C"   "2.736842" "1.0702458" "2.953216" "1.1940883" "1.714286" "0.6774274"  "4.951754" "1.3248083" "2.842105" "1.2563307"
+[3,] "A"   "4.761995" "0.8235892" "4.016414" "0.9960244" "4.663961" "0.9577124"  "5.549242" "0.7834328" "4.594156" "1.1865392"
+     Perception Perception_SD
+[1,] "6.311111" "0.5089885"  
+[2,] "4.222222" "1.4927251"  
+[3,] "5.750000" "0.9226122"  
+[1] "ME"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.681034   1 163 4069.087 0.000  0.961  0.961
+2       Group 0.681034   2 163  132.046 0.000  0.618  0.618
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 4069.087, p < .001, np2 = .961
+2       Group F(2, 163) =  132.046, p < .001, np2 = .618
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.96             | [0.95, 0.97]
+0.61             | [0.52, 0.68]
+[1] "Active"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2        F     p petasq getasq
+1 (Intercept) 1.008871   1 163 2241.571 0.000  0.932  0.932
+2       Group 1.008871   2 163   38.018 0.000  0.318  0.318
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 2241.571, p < .001, np2 = .932
+2       Group F(2, 163) =   38.018, p < .001, np2 = .318
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.93             | [0.91, 0.94]
+0.31             | [0.19, 0.41]
+[1] "Education"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.6677325   1 163 3631.409 0.000  0.957  0.957
+2       Group 0.6677325   2 163  280.518 0.000  0.775  0.775
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 3631.409, p < .001, np2 = .957
+2       Group F(2, 163) =  280.518, p < .001, np2 = .775
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.96             | [0.95, 0.96]
+0.77             | [0.71, 0.81]
+[1] "Emotion"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect       MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.8530392   1 163 5015.584 0.000  0.969  0.969
+2       Group 0.8530392   2 163   10.109 0.000  0.110  0.110
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 5015.584, p < .001, np2 = .969
+2       Group F(2, 163) =   10.109, p < .001, np2 = .110
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.97             | [0.96, 0.97]
+0.10             | [0.02, 0.19]
+[1] "Singing"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2        F     p petasq getasq
+1 (Intercept) 1.273125   1 163 2044.184 0.000  0.926  0.926
+2       Group 1.273125   2 163   51.226 0.000  0.386  0.386
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 2044.184, p < .001, np2 = .926
+2       Group F(2, 163) =   51.226, p < .001, np2 = .386
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.93             | [0.91, 0.94]
+0.38             | [0.26, 0.47]
+[1] "Perception"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2        F     p petasq getasq
+1 (Intercept) 1.022109   1 163 4138.706 0.000  0.962  0.962
+2       Group 1.022109   2 163   45.812 0.000  0.360  0.360
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 4138.706, p < .001, np2 = .962
+2       Group F(2, 163) =   45.812, p < .001, np2 = .360
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.96             | [0.95, 0.97]
+0.35             | [0.24, 0.45]
+[1] "Professionals vs Amateurs (ME)"
+
+	Welch Two Sample t-test
+
+data:  ME_mean by Group
+t = 7.799, df = 116.12, p-value = 0.000000000002969
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.6852872 1.1518341
+sample estimates:
+mean in group M mean in group A 
+       5.680556        4.761995 
+
+d    |       95% CI
+-------------------
+1.45 | [1.04, 1.85]
+[1] "Professionals vs NonMusicians (ME)"
+
+	Welch Two Sample t-test
+
+data:  ME_mean by Group
+t = 15.449, df = 51.631, p-value < 0.00000000000000022
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 2.561295 3.326131
+sample estimates:
+mean in group M mean in group C 
+       5.680556        2.736842 
+
+d    |       95% CI
+-------------------
+4.30 | [3.30, 5.28]
+[1] "Amateurs vs NonMusicians (ME)"
+
+	Welch Two Sample t-test
+
+data:  ME_mean by Group
+t = -10.409, df = 56.764, p-value = 0.000000000000008901
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -2.414773 -1.635533
+sample estimates:
+mean in group C mean in group A 
+       2.736842        4.761995 
+
+d     |         95% CI
+----------------------
+-2.76 | [-3.48, -2.03]
+[1] "Professionals vs Amateurs (Active)"
+
+	Welch Two Sample t-test
+
+data:  Mean_active by Group
+t = 5.5417, df = 91.977, p-value = 0.0000002836
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.5900854 1.2493085
+sample estimates:
+mean in group M mean in group A 
+       4.936111        4.016414 
+
+d    |       95% CI
+-------------------
+1.16 | [0.71, 1.59]
+[1] "Professionals vs NonMusicians (Active)"
+
+	Welch Two Sample t-test
+
+data:  Mean_active by Group
+t = 8.5495, df = 64.532, p-value = 0.000000000003266
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 1.519635 2.446154
+sample estimates:
+mean in group M mean in group C 
+       4.936111        2.953216 
+
+d    |       95% CI
+-------------------
+2.13 | [1.51, 2.73]
+[1] "Amateurs vs NonMusicians (Active)"
+
+	Welch Two Sample t-test
+
+data:  Mean_active by Group
+t = -4.8131, df = 60.26, p-value = 0.00001036
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -1.5050196 -0.6213759
+sample estimates:
+mean in group C mean in group A 
+       2.953216        4.016414 
+
+d     |         95% CI
+----------------------
+-1.24 | [-1.79, -0.68]
+[1] "Professionals vs Amateurs (Education)"
+
+	Welch Two Sample t-test
+
+data:  Mean_education by Group
+t = 9.5444, df = 118.49, p-value = 0.0000000000000002327
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 1.019222 1.552856
+sample estimates:
+mean in group M mean in group A 
+       5.950000        4.663961 
+
+d    |       95% CI
+-------------------
+1.75 | [1.33, 2.17]
+[1] "Professionals vs NonMusicians (Education)"
+
+	Welch Two Sample t-test
+
+data:  Mean_education by Group
+t = 30.095, df = 71.674, p-value < 0.00000000000000022
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 3.955121 4.516308
+sample estimates:
+mean in group M mean in group C 
+       5.950000        1.714286 
+
+d    |       95% CI
+-------------------
+7.11 | [5.85, 8.36]
+[1] "Amateurs vs NonMusicians (Education)"
+
+	Welch Two Sample t-test
+
+data:  Mean_education by Group
+t = -19.665, df = 97.531, p-value < 0.00000000000000022
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -3.247359 -2.651991
+sample estimates:
+mean in group C mean in group A 
+       1.714286        4.663961 
+
+d     |         95% CI
+----------------------
+-3.98 | [-4.66, -3.29]
+[1] "Professionals vs Amateurs (Emotion)"
+
+	Welch Two Sample t-test
+
+data:  Mean_emotion by Group
+t = 2.2892, df = 80.755, p-value = 0.02468
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.04261284 0.60890232
+sample estimates:
+mean in group M mean in group A 
+       5.875000        5.549242 
+
+d    |       95% CI
+-------------------
+0.51 | [0.06, 0.95]
+[1] "Professionals vs NonMusicians (Emotion)"
+
+	Welch Two Sample t-test
+
+data:  Mean_emotion by Group
+t = 3.7862, df = 56.868, p-value = 0.0003707
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.4349238 1.4115675
+sample estimates:
+mean in group M mean in group C 
+       5.875000        4.951754 
+
+d    |       95% CI
+-------------------
+1.00 | [0.45, 1.55]
+[1] "Amateurs vs NonMusicians (Emotion)"
+
+	Welch Two Sample t-test
+
+data:  Mean_emotion by Group
+t = -2.5914, df = 48.547, p-value = 0.01259
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -1.0609424 -0.1340337
+sample estimates:
+mean in group C mean in group A 
+       4.951754        5.549242 
+
+d     |         95% CI
+----------------------
+-0.74 | [-1.32, -0.16]
+[1] "Professionals vs Amateurs (Singing)"
+
+	Welch Two Sample t-test
+
+data:  Mean_singing by Group
+t = 4.0777, df = 105, p-value = 0.00008871
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.380969 1.102148
+sample estimates:
+mean in group M mean in group A 
+       5.335714        4.594156 
+
+d    |       95% CI
+-------------------
+0.80 | [0.40, 1.19]
+[1] "Professionals vs NonMusicians (Singing)"
+
+	Welch Two Sample t-test
+
+data:  Mean_singing by Group
+t = 10.3, df = 63.492, p-value = 0.000000000000003563
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 2.009896 2.977322
+sample estimates:
+mean in group M mean in group C 
+       5.335714        2.842105 
+
+d    |       95% CI
+-------------------
+2.59 | [1.91, 3.25]
+[1] "Amateurs vs NonMusicians (Singing)"
+
+	Welch Two Sample t-test
+
+data:  Mean_singing by Group
+t = -7.3044, df = 66.779, p-value = 0.0000000004382
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -2.230850 -1.273252
+sample estimates:
+mean in group C mean in group A 
+       2.842105        4.594156 
+
+d     |         95% CI
+----------------------
+-1.79 | [-2.35, -1.21]
+[1] "Professionals vs Amateurs (Perception)"
+
+	Welch Two Sample t-test
+
+data:  Mean_perception by Group
+t = 4.4154, df = 121.25, p-value = 0.00002204
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ 0.3095257 0.8126965
+sample estimates:
+mean in group M mean in group A 
+       6.311111        5.750000 
+
+d    |       95% CI
+-------------------
+0.80 | [0.43, 1.17]
+[1] "Professionals vs NonMusicians (Perception)"
+
+	Welch Two Sample t-test
+
+data:  Mean_perception by Group
+t = 8.1861, df = 45.103, p-value = 0.000000000182
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 1.574972 2.602805
+sample estimates:
+mean in group M mean in group C 
+       6.311111        4.222222 
+
+d    |       95% CI
+-------------------
+2.44 | [1.66, 3.20]
+[1] "Amateurs vs NonMusicians (Perception)"
+
+	Welch Two Sample t-test
+
+data:  Mean_perception by Group
+t = -5.8454, df = 49.639, p-value = 0.0000003887
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -2.052835 -1.002721
+sample estimates:
+mean in group C mean in group A 
+       4.222222        5.750000 
+
+d     |         95% CI
+----------------------
+-1.66 | [-2.30, -1.01]
