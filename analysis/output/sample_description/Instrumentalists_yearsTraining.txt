@@ -17,3 +17,8 @@
 32    1
 40    1
 44    1
+# A tibble: 1 × 5
+  YearsTraining    SD     N    SE    CI
+          <dbl> <dbl> <int> <dbl> <dbl>
+1          14.6  10.0    43  1.53  3.09
+[1]  0 44

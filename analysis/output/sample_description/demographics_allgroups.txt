@@ -321,15 +321,10 @@ BA Kommunikationswissenschaft und Interkulturelles Musik- und Veranstaltungsmana
   C 36                                                                      0                                                    0
   A 86                                                                      0                                                    0
    
-    Leichte SchwerhÃ¶rigkeit Tinnitus
-  M                        0        1
-  C                        1        1
-  A                        0        1
-   
-    Tinnitus, ein hoher Pfeifton auf beiden Ohren, wird durch Stress verstärkt und durch Ruhe gemindert.
-  M                                                                                                    0
-  C                                                                                                    0
-  A                                                                                                    1
+    Leichte SchwerhÃ¶rigkeit Tinnitus Tinnitus, ein hoher Pfeifton auf beiden Ohren, wird durch Stress verstärkt und durch Ruhe gemindert.
+  M                        0        1                                                                                                    0
+  C                        1        1                                                                                                    0
+  A                        0        1                                                                                                    1
 [1] "HearingImpairment3"
    
     1 2

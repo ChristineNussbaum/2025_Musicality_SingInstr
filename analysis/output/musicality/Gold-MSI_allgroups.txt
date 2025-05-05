@@ -1,11 +1,11 @@
-     Group ME         ME_SD       Active     Active_SD   Education  Education_SD Emotion    Emotion_SD  Singing    Singing_SD 
-[1,] "M"   "5.680556" "0.4965455" "4.936111" "0.8067017" "5.950000" "0.5561605"  "5.875000" "0.7286857" "5.335714" "0.8264024"
-[2,] "C"   "2.736842" "1.0702458" "2.953216" "1.1940883" "1.714286" "0.6774274"  "4.951754" "1.3248083" "2.842105" "1.2563307"
-[3,] "A"   "4.761995" "0.8235892" "4.016414" "0.9960244" "4.663961" "0.9577124"  "5.549242" "0.7834328" "4.594156" "1.1865392"
-     Perception Perception_SD
-[1,] "6.311111" "0.5089885"  
-[2,] "4.222222" "1.4927251"  
-[3,] "5.750000" "0.9226122"  
+     Group ME         ME_SD       Active     Active_SD   Education  Education_SD Emotion    Emotion_SD  Singing    Singing_SD  Perception
+[1,] "M"   "5.680556" "0.4965455" "4.936111" "0.8067017" "5.950000" "0.5561605"  "5.875000" "0.7286857" "5.335714" "0.8264024" "6.311111"
+[2,] "C"   "2.736842" "1.0702458" "2.953216" "1.1940883" "1.714286" "0.6774274"  "4.951754" "1.3248083" "2.842105" "1.2563307" "4.222222"
+[3,] "A"   "4.761995" "0.8235892" "4.016414" "0.9960244" "4.663961" "0.9577124"  "5.549242" "0.7834328" "4.594156" "1.1865392" "5.750000"
+     Perception_SD
+[1,] "0.5089885"  
+[2,] "1.4927251"  
+[3,] "0.9226122"  
 [1] "ME"
 $`--- ANOVA RESULTS     ------------------------------------`
        Effect      MSE df1 df2        F     p petasq getasq
@@ -137,7 +137,7 @@ Omega2 (partial) |       95% CI
 	Welch Two Sample t-test
 
 data:  ME_mean by Group
-t = 7.799, df = 116.12, p-value = 0.000000000002969
+t = 7.799, df = 116.12, p-value = 2.969e-12
 alternative hypothesis: true difference in means between group M and group A is not equal to 0
 95 percent confidence interval:
  0.6852872 1.1518341
@@ -153,7 +153,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  ME_mean by Group
-t = 15.449, df = 51.631, p-value < 0.00000000000000022
+t = 15.449, df = 51.631, p-value < 2.2e-16
 alternative hypothesis: true difference in means between group M and group C is not equal to 0
 95 percent confidence interval:
  2.561295 3.326131
@@ -169,7 +169,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  ME_mean by Group
-t = -10.409, df = 56.764, p-value = 0.000000000000008901
+t = -10.409, df = 56.764, p-value = 8.901e-15
 alternative hypothesis: true difference in means between group C and group A is not equal to 0
 95 percent confidence interval:
  -2.414773 -1.635533
@@ -185,7 +185,7 @@ d     |         95% CI
 	Welch Two Sample t-test
 
 data:  Mean_active by Group
-t = 5.5417, df = 91.977, p-value = 0.0000002836
+t = 5.5417, df = 91.977, p-value = 2.836e-07
 alternative hypothesis: true difference in means between group M and group A is not equal to 0
 95 percent confidence interval:
  0.5900854 1.2493085
@@ -201,7 +201,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_active by Group
-t = 8.5495, df = 64.532, p-value = 0.000000000003266
+t = 8.5495, df = 64.532, p-value = 3.266e-12
 alternative hypothesis: true difference in means between group M and group C is not equal to 0
 95 percent confidence interval:
  1.519635 2.446154
@@ -217,7 +217,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_active by Group
-t = -4.8131, df = 60.26, p-value = 0.00001036
+t = -4.8131, df = 60.26, p-value = 1.036e-05
 alternative hypothesis: true difference in means between group C and group A is not equal to 0
 95 percent confidence interval:
  -1.5050196 -0.6213759
@@ -233,7 +233,7 @@ d     |         95% CI
 	Welch Two Sample t-test
 
 data:  Mean_education by Group
-t = 9.5444, df = 118.49, p-value = 0.0000000000000002327
+t = 9.5444, df = 118.49, p-value = 2.327e-16
 alternative hypothesis: true difference in means between group M and group A is not equal to 0
 95 percent confidence interval:
  1.019222 1.552856
@@ -249,7 +249,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_education by Group
-t = 30.095, df = 71.674, p-value < 0.00000000000000022
+t = 30.095, df = 71.674, p-value < 2.2e-16
 alternative hypothesis: true difference in means between group M and group C is not equal to 0
 95 percent confidence interval:
  3.955121 4.516308
@@ -265,7 +265,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_education by Group
-t = -19.665, df = 97.531, p-value < 0.00000000000000022
+t = -19.665, df = 97.531, p-value < 2.2e-16
 alternative hypothesis: true difference in means between group C and group A is not equal to 0
 95 percent confidence interval:
  -3.247359 -2.651991
@@ -329,7 +329,7 @@ d     |         95% CI
 	Welch Two Sample t-test
 
 data:  Mean_singing by Group
-t = 4.0777, df = 105, p-value = 0.00008871
+t = 4.0777, df = 105, p-value = 8.871e-05
 alternative hypothesis: true difference in means between group M and group A is not equal to 0
 95 percent confidence interval:
  0.380969 1.102148
@@ -345,7 +345,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_singing by Group
-t = 10.3, df = 63.492, p-value = 0.000000000000003563
+t = 10.3, df = 63.492, p-value = 3.563e-15
 alternative hypothesis: true difference in means between group M and group C is not equal to 0
 95 percent confidence interval:
  2.009896 2.977322
@@ -361,7 +361,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_singing by Group
-t = -7.3044, df = 66.779, p-value = 0.0000000004382
+t = -7.3044, df = 66.779, p-value = 4.382e-10
 alternative hypothesis: true difference in means between group C and group A is not equal to 0
 95 percent confidence interval:
  -2.230850 -1.273252
@@ -371,13 +371,13 @@ mean in group C mean in group A
 
 d     |         95% CI
 ----------------------
--1.79 | [-2.35, -1.21]
+-1.79 | [-2.35, -1.22]
 [1] "Professionals vs Amateurs (Perception)"
 
 	Welch Two Sample t-test
 
 data:  Mean_perception by Group
-t = 4.4154, df = 121.25, p-value = 0.00002204
+t = 4.4154, df = 121.25, p-value = 2.204e-05
 alternative hypothesis: true difference in means between group M and group A is not equal to 0
 95 percent confidence interval:
  0.3095257 0.8126965
@@ -393,7 +393,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_perception by Group
-t = 8.1861, df = 45.103, p-value = 0.000000000182
+t = 8.1861, df = 45.103, p-value = 1.82e-10
 alternative hypothesis: true difference in means between group M and group C is not equal to 0
 95 percent confidence interval:
  1.574972 2.602805
@@ -409,7 +409,7 @@ d    |       95% CI
 	Welch Two Sample t-test
 
 data:  Mean_perception by Group
-t = -5.8454, df = 49.639, p-value = 0.0000003887
+t = -5.8454, df = 49.639, p-value = 3.887e-07
 alternative hypothesis: true difference in means between group C and group A is not equal to 0
 95 percent confidence interval:
  -2.052835 -1.002721

@@ -1,0 +1,8 @@
+     Var1               Freq
+[1,] "Blockflöte"       "1" 
+[2,] "Fürst-Pless-Horn" "1" 
+[3,] "Gesang"           "5" 
+[4,] "Gitarre"          "1" 
+[5,] "Klavier"          "3" 
+[6,] "Tamburin"         "1" 
+[7,] "Violine"          "2" 
