@@ -90,7 +90,8 @@ D <- D %>% filter(Emo != "avg")
 ##############################################################################
 
 ### aggregate data for ANOVA
-D <- D %>% group_by(Subject, Group, Emo, MType) %>% summarise(ACC = mean(ACC))
+D <- D %>% group_by(Subject, Group, Emo, MType) %>% summarise(ACC = mean(ACC),
+                                                              N = length(Subject)) # how many trials entered each average
 
 #88 * 4 *3 = 1056
 
@@ -141,7 +142,6 @@ rm(a,b, o2_emo)
 
 ################
 ###Main effects
-
 
 
 ###############  PH1: Main effect of emotion  ###############

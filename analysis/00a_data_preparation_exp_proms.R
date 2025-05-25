@@ -47,6 +47,7 @@ save(D, file="input/Exp_raw.RData")
 
 #--------------------------------------------------------------------------------
 
+table(D$Emo, D$MType, D$Subject)
 
 ### Processing for further analyses
 

@@ -1,0 +1,78 @@
+
+	Welch Two Sample t-test
+
+data:  dprime by Group
+t = -1.1542, df = 81.394, p-value = 0.2518
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.6551545  0.1740914
+sample estimates:
+mean in group 1 mean in group 2 
+       1.820794        2.061325 
+
+d     |        95% CI
+---------------------
+-0.26 | [-0.69, 0.18]
+
+	Welch Two Sample t-test
+
+data:  Resp by Group
+t = -0.6762, df = 85.37, p-value = 0.5007
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -1.1143889  0.5487324
+sample estimates:
+mean in group 1 mean in group 2 
+       14.44444        14.72727 
+
+
+	Welch Two Sample t-test
+
+data:  crit by Group
+t = 1.0547, df = 86.968, p-value = 0.2945
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.07969144  0.25987693
+sample estimates:
+mean in group 1 mean in group 2 
+      0.1989836       0.1088909 
+
+
+	Welch Two Sample t-test
+
+data:  Unsure by Group
+t = 2.2002, df = 85.967, p-value = 0.03047
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ 0.1099804 2.1698176
+sample estimates:
+mean in group 1 mean in group 2 
+       3.844444        2.704545 
+
+
+	Welch Two Sample t-test
+
+data:  DontKnow by Group
+t = 1.421, df = 68.784, p-value = 0.1598
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.1297692  0.7721934
+sample estimates:
+mean in group 1 mean in group 2 
+      0.8666667       0.5454545 
+
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = -0.70958, df = 86.341, p-value = 0.4799
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.05079750  0.02407191
+sample estimates:
+mean in group 1 mean in group 2 
+      0.3101852       0.3235480 
+
+d     |        95% CI
+---------------------
+-0.15 | [-0.57, 0.27]

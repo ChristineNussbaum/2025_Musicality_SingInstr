@@ -1,0 +1,515 @@
+# enter code
+
+#############################################################################
+# here I specified all bitmaps I will need in this experiment, mainly to show instructions:
+
+bitmaps
+  slidewelcome1 	Slides/Folie1.PNG
+  slideIntro2         Slides/Folie2.PNG
+  slideIntro3        Slides/Folie3.PNG
+  slideIntro4        Slides/Folie4.PNG
+  slidePracEnd        Slides/Folie5.PNG
+  slideBreak        Slides/Folie6.PNG
+  slideExpEnd        Slides/Folie7.PNG
+  slideTaskCB1         Slides/Folie8.PNG
+  slidePracCB1         Slides/Folie9.PNG
+  slideTaskCB2        Slides/Folie10.PNG
+  slidePracCB2         Slides/Folie11.PNG
+  slideTaskCB3        Slides/Folie12.PNG
+  slidePracCB3         Slides/Folie13.PNG
+  slideTaskCB4        Slides/Folie14.PNG
+  slidePracCB4         Slides/Folie15.PNG
+  slideBlank         Slides/Folie16.PNG
+  slideFix          Slides/Folie17.PNG
+  slideSound        Slides/Folie18.PNG
+  slideTooSlow    Slides/Folie19.PNG
+  LabelCB1  Icons/LabelCB1.png
+  LabelCB2  Icons/LabelCB2.png
+  LabelCB3  Icons/LabelCB3.png
+  LabelCB4  Icons/LabelCB4.png
+
+#############################################################################
+# here, ich specified all sounds I am gonna need in my experiment -> name and file
+sounds
+  nf01_avg_w01_full	Stimuli/nf01_avg_w01_full_cTmg_AVGref_70dB.wav
+  nf01_avg_w02_full	Stimuli/nf01_avg_w02_full_cTmg_AVGref_70dB.wav
+  nf01_avg_w05_full	Stimuli/nf01_avg_w05_full_cTmg_AVGref_70dB.wav
+  nf01_fea_w01_f0	Stimuli/nf01_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nf01_fea_w01_full	Stimuli/nf01_fea_w01_full_cTmg_AVGref_70dB.wav
+  nf01_fea_w01_tbr	Stimuli/nf01_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nf01_fea_w02_f0	Stimuli/nf01_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nf01_fea_w02_full	Stimuli/nf01_fea_w02_full_cTmg_AVGref_70dB.wav
+  nf01_fea_w02_tbr	Stimuli/nf01_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nf01_fea_w05_f0	Stimuli/nf01_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nf01_fea_w05_full	Stimuli/nf01_fea_w05_full_cTmg_AVGref_70dB.wav
+  nf01_fea_w05_tbr	Stimuli/nf01_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nf01_hap_w01_f0	Stimuli/nf01_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nf01_hap_w01_full	Stimuli/nf01_hap_w01_full_cTmg_AVGref_70dB.wav
+  nf01_hap_w01_tbr	Stimuli/nf01_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nf01_hap_w02_f0	Stimuli/nf01_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nf01_hap_w02_full	Stimuli/nf01_hap_w02_full_cTmg_AVGref_70dB.wav
+  nf01_hap_w02_tbr	Stimuli/nf01_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nf01_hap_w05_f0	Stimuli/nf01_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nf01_hap_w05_full	Stimuli/nf01_hap_w05_full_cTmg_AVGref_70dB.wav
+  nf01_hap_w05_tbr	Stimuli/nf01_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nf01_ple_w01_f0	Stimuli/nf01_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nf01_ple_w01_full	Stimuli/nf01_ple_w01_full_cTmg_AVGref_70dB.wav
+  nf01_ple_w01_tbr	Stimuli/nf01_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nf01_ple_w02_f0	Stimuli/nf01_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nf01_ple_w02_full	Stimuli/nf01_ple_w02_full_cTmg_AVGref_70dB.wav
+  nf01_ple_w02_tbr	Stimuli/nf01_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nf01_ple_w05_f0	Stimuli/nf01_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nf01_ple_w05_full	Stimuli/nf01_ple_w05_full_cTmg_AVGref_70dB.wav
+  nf01_ple_w05_tbr	Stimuli/nf01_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nf01_sad_w01_f0	Stimuli/nf01_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nf01_sad_w01_full	Stimuli/nf01_sad_w01_full_cTmg_AVGref_70dB.wav
+  nf01_sad_w01_tbr	Stimuli/nf01_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nf01_sad_w02_f0	Stimuli/nf01_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nf01_sad_w02_full	Stimuli/nf01_sad_w02_full_cTmg_AVGref_70dB.wav
+  nf01_sad_w02_tbr	Stimuli/nf01_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nf01_sad_w05_f0	Stimuli/nf01_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nf01_sad_w05_full	Stimuli/nf01_sad_w05_full_cTmg_AVGref_70dB.wav
+  nf01_sad_w05_tbr	Stimuli/nf01_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nf02_avg_w01_full	Stimuli/nf02_avg_w01_full_cTmg_AVGref_70dB.wav
+  nf02_avg_w02_full	Stimuli/nf02_avg_w02_full_cTmg_AVGref_70dB.wav
+  nf02_avg_w05_full	Stimuli/nf02_avg_w05_full_cTmg_AVGref_70dB.wav
+  nf02_fea_w01_f0	Stimuli/nf02_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nf02_fea_w01_full	Stimuli/nf02_fea_w01_full_cTmg_AVGref_70dB.wav
+  nf02_fea_w01_tbr	Stimuli/nf02_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nf02_fea_w02_f0	Stimuli/nf02_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nf02_fea_w02_full	Stimuli/nf02_fea_w02_full_cTmg_AVGref_70dB.wav
+  nf02_fea_w02_tbr	Stimuli/nf02_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nf02_fea_w05_f0	Stimuli/nf02_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nf02_fea_w05_full	Stimuli/nf02_fea_w05_full_cTmg_AVGref_70dB.wav
+  nf02_fea_w05_tbr	Stimuli/nf02_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nf02_hap_w01_f0	Stimuli/nf02_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nf02_hap_w01_full	Stimuli/nf02_hap_w01_full_cTmg_AVGref_70dB.wav
+  nf02_hap_w01_tbr	Stimuli/nf02_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nf02_hap_w02_f0	Stimuli/nf02_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nf02_hap_w02_full	Stimuli/nf02_hap_w02_full_cTmg_AVGref_70dB.wav
+  nf02_hap_w02_tbr	Stimuli/nf02_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nf02_hap_w05_f0	Stimuli/nf02_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nf02_hap_w05_full	Stimuli/nf02_hap_w05_full_cTmg_AVGref_70dB.wav
+  nf02_hap_w05_tbr	Stimuli/nf02_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nf02_ple_w01_f0	Stimuli/nf02_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nf02_ple_w01_full	Stimuli/nf02_ple_w01_full_cTmg_AVGref_70dB.wav
+  nf02_ple_w01_tbr	Stimuli/nf02_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nf02_ple_w02_f0	Stimuli/nf02_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nf02_ple_w02_full	Stimuli/nf02_ple_w02_full_cTmg_AVGref_70dB.wav
+  nf02_ple_w02_tbr	Stimuli/nf02_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nf02_ple_w05_f0	Stimuli/nf02_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nf02_ple_w05_full	Stimuli/nf02_ple_w05_full_cTmg_AVGref_70dB.wav
+  nf02_ple_w05_tbr	Stimuli/nf02_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nf02_sad_w01_f0	Stimuli/nf02_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nf02_sad_w01_full	Stimuli/nf02_sad_w01_full_cTmg_AVGref_70dB.wav
+  nf02_sad_w01_tbr	Stimuli/nf02_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nf02_sad_w02_f0	Stimuli/nf02_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nf02_sad_w02_full	Stimuli/nf02_sad_w02_full_cTmg_AVGref_70dB.wav
+  nf02_sad_w02_tbr	Stimuli/nf02_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nf02_sad_w05_f0	Stimuli/nf02_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nf02_sad_w05_full	Stimuli/nf02_sad_w05_full_cTmg_AVGref_70dB.wav
+  nf02_sad_w05_tbr	Stimuli/nf02_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nf03_avg_w01_full	Stimuli/nf03_avg_w01_full_cTmg_AVGref_70dB.wav
+  nf03_avg_w02_full	Stimuli/nf03_avg_w02_full_cTmg_AVGref_70dB.wav
+  nf03_avg_w05_full	Stimuli/nf03_avg_w05_full_cTmg_AVGref_70dB.wav
+  nf03_fea_w01_f0	Stimuli/nf03_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nf03_fea_w01_full	Stimuli/nf03_fea_w01_full_cTmg_AVGref_70dB.wav
+  nf03_fea_w01_tbr	Stimuli/nf03_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nf03_fea_w02_f0	Stimuli/nf03_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nf03_fea_w02_full	Stimuli/nf03_fea_w02_full_cTmg_AVGref_70dB.wav
+  nf03_fea_w02_tbr	Stimuli/nf03_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nf03_fea_w05_f0	Stimuli/nf03_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nf03_fea_w05_full	Stimuli/nf03_fea_w05_full_cTmg_AVGref_70dB.wav
+  nf03_fea_w05_tbr	Stimuli/nf03_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nf03_hap_w01_f0	Stimuli/nf03_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nf03_hap_w01_full	Stimuli/nf03_hap_w01_full_cTmg_AVGref_70dB.wav
+  nf03_hap_w01_tbr	Stimuli/nf03_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nf03_hap_w02_f0	Stimuli/nf03_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nf03_hap_w02_full	Stimuli/nf03_hap_w02_full_cTmg_AVGref_70dB.wav
+  nf03_hap_w02_tbr	Stimuli/nf03_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nf03_hap_w05_f0	Stimuli/nf03_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nf03_hap_w05_full	Stimuli/nf03_hap_w05_full_cTmg_AVGref_70dB.wav
+  nf03_hap_w05_tbr	Stimuli/nf03_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nf03_ple_w01_f0	Stimuli/nf03_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nf03_ple_w01_full	Stimuli/nf03_ple_w01_full_cTmg_AVGref_70dB.wav
+  nf03_ple_w01_tbr	Stimuli/nf03_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nf03_ple_w02_f0	Stimuli/nf03_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nf03_ple_w02_full	Stimuli/nf03_ple_w02_full_cTmg_AVGref_70dB.wav
+  nf03_ple_w02_tbr	Stimuli/nf03_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nf03_ple_w05_f0	Stimuli/nf03_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nf03_ple_w05_full	Stimuli/nf03_ple_w05_full_cTmg_AVGref_70dB.wav
+  nf03_ple_w05_tbr	Stimuli/nf03_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nf03_sad_w01_f0	Stimuli/nf03_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nf03_sad_w01_full	Stimuli/nf03_sad_w01_full_cTmg_AVGref_70dB.wav
+  nf03_sad_w01_tbr	Stimuli/nf03_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nf03_sad_w02_f0	Stimuli/nf03_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nf03_sad_w02_full	Stimuli/nf03_sad_w02_full_cTmg_AVGref_70dB.wav
+  nf03_sad_w02_tbr	Stimuli/nf03_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nf03_sad_w05_f0	Stimuli/nf03_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nf03_sad_w05_full	Stimuli/nf03_sad_w05_full_cTmg_AVGref_70dB.wav
+  nf03_sad_w05_tbr	Stimuli/nf03_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nf04_avg_w01_full	Stimuli/nf04_avg_w01_full_cTmg_AVGref_70dB.wav
+  nf04_avg_w02_full	Stimuli/nf04_avg_w02_full_cTmg_AVGref_70dB.wav
+  nf04_avg_w05_full	Stimuli/nf04_avg_w05_full_cTmg_AVGref_70dB.wav
+  nf04_fea_w01_f0	Stimuli/nf04_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nf04_fea_w01_full	Stimuli/nf04_fea_w01_full_cTmg_AVGref_70dB.wav
+  nf04_fea_w01_tbr	Stimuli/nf04_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nf04_fea_w02_f0	Stimuli/nf04_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nf04_fea_w02_full	Stimuli/nf04_fea_w02_full_cTmg_AVGref_70dB.wav
+  nf04_fea_w02_tbr	Stimuli/nf04_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nf04_fea_w05_f0	Stimuli/nf04_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nf04_fea_w05_full	Stimuli/nf04_fea_w05_full_cTmg_AVGref_70dB.wav
+  nf04_fea_w05_tbr	Stimuli/nf04_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nf04_hap_w01_f0	Stimuli/nf04_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nf04_hap_w01_full	Stimuli/nf04_hap_w01_full_cTmg_AVGref_70dB.wav
+  nf04_hap_w01_tbr	Stimuli/nf04_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nf04_hap_w02_f0	Stimuli/nf04_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nf04_hap_w02_full	Stimuli/nf04_hap_w02_full_cTmg_AVGref_70dB.wav
+  nf04_hap_w02_tbr	Stimuli/nf04_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nf04_hap_w05_f0	Stimuli/nf04_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nf04_hap_w05_full	Stimuli/nf04_hap_w05_full_cTmg_AVGref_70dB.wav
+  nf04_hap_w05_tbr	Stimuli/nf04_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nf04_ple_w01_f0	Stimuli/nf04_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nf04_ple_w01_full	Stimuli/nf04_ple_w01_full_cTmg_AVGref_70dB.wav
+  nf04_ple_w01_tbr	Stimuli/nf04_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nf04_ple_w02_f0	Stimuli/nf04_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nf04_ple_w02_full	Stimuli/nf04_ple_w02_full_cTmg_AVGref_70dB.wav
+  nf04_ple_w02_tbr	Stimuli/nf04_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nf04_ple_w05_f0	Stimuli/nf04_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nf04_ple_w05_full	Stimuli/nf04_ple_w05_full_cTmg_AVGref_70dB.wav
+  nf04_ple_w05_tbr	Stimuli/nf04_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nf04_sad_w01_f0	Stimuli/nf04_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nf04_sad_w01_full	Stimuli/nf04_sad_w01_full_cTmg_AVGref_70dB.wav
+  nf04_sad_w01_tbr	Stimuli/nf04_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nf04_sad_w02_f0	Stimuli/nf04_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nf04_sad_w02_full	Stimuli/nf04_sad_w02_full_cTmg_AVGref_70dB.wav
+  nf04_sad_w02_tbr	Stimuli/nf04_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nf04_sad_w05_f0	Stimuli/nf04_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nf04_sad_w05_full	Stimuli/nf04_sad_w05_full_cTmg_AVGref_70dB.wav
+  nf04_sad_w05_tbr	Stimuli/nf04_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nm01_avg_w01_full	Stimuli/nm01_avg_w01_full_cTmg_AVGref_70dB.wav
+  nm01_avg_w02_full	Stimuli/nm01_avg_w02_full_cTmg_AVGref_70dB.wav
+  nm01_avg_w05_full	Stimuli/nm01_avg_w05_full_cTmg_AVGref_70dB.wav
+  nm01_fea_w01_f0	Stimuli/nm01_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nm01_fea_w01_full	Stimuli/nm01_fea_w01_full_cTmg_AVGref_70dB.wav
+  nm01_fea_w01_tbr	Stimuli/nm01_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nm01_fea_w02_f0	Stimuli/nm01_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nm01_fea_w02_full	Stimuli/nm01_fea_w02_full_cTmg_AVGref_70dB.wav
+  nm01_fea_w02_tbr	Stimuli/nm01_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nm01_fea_w05_f0	Stimuli/nm01_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nm01_fea_w05_full	Stimuli/nm01_fea_w05_full_cTmg_AVGref_70dB.wav
+  nm01_fea_w05_tbr	Stimuli/nm01_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nm01_hap_w01_f0	Stimuli/nm01_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nm01_hap_w01_full	Stimuli/nm01_hap_w01_full_cTmg_AVGref_70dB.wav
+  nm01_hap_w01_tbr	Stimuli/nm01_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nm01_hap_w02_f0	Stimuli/nm01_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nm01_hap_w02_full	Stimuli/nm01_hap_w02_full_cTmg_AVGref_70dB.wav
+  nm01_hap_w02_tbr	Stimuli/nm01_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nm01_hap_w05_f0	Stimuli/nm01_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nm01_hap_w05_full	Stimuli/nm01_hap_w05_full_cTmg_AVGref_70dB.wav
+  nm01_hap_w05_tbr	Stimuli/nm01_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nm01_ple_w01_f0	Stimuli/nm01_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nm01_ple_w01_full	Stimuli/nm01_ple_w01_full_cTmg_AVGref_70dB.wav
+  nm01_ple_w01_tbr	Stimuli/nm01_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nm01_ple_w02_f0	Stimuli/nm01_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nm01_ple_w02_full	Stimuli/nm01_ple_w02_full_cTmg_AVGref_70dB.wav
+  nm01_ple_w02_tbr	Stimuli/nm01_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nm01_ple_w05_f0	Stimuli/nm01_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nm01_ple_w05_full	Stimuli/nm01_ple_w05_full_cTmg_AVGref_70dB.wav
+  nm01_ple_w05_tbr	Stimuli/nm01_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nm01_sad_w01_f0	Stimuli/nm01_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nm01_sad_w01_full	Stimuli/nm01_sad_w01_full_cTmg_AVGref_70dB.wav
+  nm01_sad_w01_tbr	Stimuli/nm01_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nm01_sad_w02_f0	Stimuli/nm01_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nm01_sad_w02_full	Stimuli/nm01_sad_w02_full_cTmg_AVGref_70dB.wav
+  nm01_sad_w02_tbr	Stimuli/nm01_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nm01_sad_w05_f0	Stimuli/nm01_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nm01_sad_w05_full	Stimuli/nm01_sad_w05_full_cTmg_AVGref_70dB.wav
+  nm01_sad_w05_tbr	Stimuli/nm01_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nm02_avg_w01_full	Stimuli/nm02_avg_w01_full_cTmg_AVGref_70dB.wav
+  nm02_avg_w02_full	Stimuli/nm02_avg_w02_full_cTmg_AVGref_70dB.wav
+  nm02_avg_w05_full	Stimuli/nm02_avg_w05_full_cTmg_AVGref_70dB.wav
+  nm02_fea_w01_f0	Stimuli/nm02_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nm02_fea_w01_full	Stimuli/nm02_fea_w01_full_cTmg_AVGref_70dB.wav
+  nm02_fea_w01_tbr	Stimuli/nm02_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nm02_fea_w02_f0	Stimuli/nm02_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nm02_fea_w02_full	Stimuli/nm02_fea_w02_full_cTmg_AVGref_70dB.wav
+  nm02_fea_w02_tbr	Stimuli/nm02_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nm02_fea_w05_f0	Stimuli/nm02_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nm02_fea_w05_full	Stimuli/nm02_fea_w05_full_cTmg_AVGref_70dB.wav
+  nm02_fea_w05_tbr	Stimuli/nm02_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nm02_hap_w01_f0	Stimuli/nm02_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nm02_hap_w01_full	Stimuli/nm02_hap_w01_full_cTmg_AVGref_70dB.wav
+  nm02_hap_w01_tbr	Stimuli/nm02_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nm02_hap_w02_f0	Stimuli/nm02_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nm02_hap_w02_full	Stimuli/nm02_hap_w02_full_cTmg_AVGref_70dB.wav
+  nm02_hap_w02_tbr	Stimuli/nm02_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nm02_hap_w05_f0	Stimuli/nm02_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nm02_hap_w05_full	Stimuli/nm02_hap_w05_full_cTmg_AVGref_70dB.wav
+  nm02_hap_w05_tbr	Stimuli/nm02_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nm02_ple_w01_f0	Stimuli/nm02_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nm02_ple_w01_full	Stimuli/nm02_ple_w01_full_cTmg_AVGref_70dB.wav
+  nm02_ple_w01_tbr	Stimuli/nm02_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nm02_ple_w02_f0	Stimuli/nm02_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nm02_ple_w02_full	Stimuli/nm02_ple_w02_full_cTmg_AVGref_70dB.wav
+  nm02_ple_w02_tbr	Stimuli/nm02_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nm02_ple_w05_f0	Stimuli/nm02_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nm02_ple_w05_full	Stimuli/nm02_ple_w05_full_cTmg_AVGref_70dB.wav
+  nm02_ple_w05_tbr	Stimuli/nm02_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nm02_sad_w01_f0	Stimuli/nm02_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nm02_sad_w01_full	Stimuli/nm02_sad_w01_full_cTmg_AVGref_70dB.wav
+  nm02_sad_w01_tbr	Stimuli/nm02_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nm02_sad_w02_f0	Stimuli/nm02_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nm02_sad_w02_full	Stimuli/nm02_sad_w02_full_cTmg_AVGref_70dB.wav
+  nm02_sad_w02_tbr	Stimuli/nm02_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nm02_sad_w05_f0	Stimuli/nm02_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nm02_sad_w05_full	Stimuli/nm02_sad_w05_full_cTmg_AVGref_70dB.wav
+  nm02_sad_w05_tbr	Stimuli/nm02_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nm03_avg_w01_full	Stimuli/nm03_avg_w01_full_cTmg_AVGref_70dB.wav
+  nm03_avg_w02_full	Stimuli/nm03_avg_w02_full_cTmg_AVGref_70dB.wav
+  nm03_avg_w05_full	Stimuli/nm03_avg_w05_full_cTmg_AVGref_70dB.wav
+  nm03_fea_w01_f0	Stimuli/nm03_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nm03_fea_w01_full	Stimuli/nm03_fea_w01_full_cTmg_AVGref_70dB.wav
+  nm03_fea_w01_tbr	Stimuli/nm03_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nm03_fea_w02_f0	Stimuli/nm03_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nm03_fea_w02_full	Stimuli/nm03_fea_w02_full_cTmg_AVGref_70dB.wav
+  nm03_fea_w02_tbr	Stimuli/nm03_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nm03_fea_w05_f0	Stimuli/nm03_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nm03_fea_w05_full	Stimuli/nm03_fea_w05_full_cTmg_AVGref_70dB.wav
+  nm03_fea_w05_tbr	Stimuli/nm03_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nm03_hap_w01_f0	Stimuli/nm03_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nm03_hap_w01_full	Stimuli/nm03_hap_w01_full_cTmg_AVGref_70dB.wav
+  nm03_hap_w01_tbr	Stimuli/nm03_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nm03_hap_w02_f0	Stimuli/nm03_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nm03_hap_w02_full	Stimuli/nm03_hap_w02_full_cTmg_AVGref_70dB.wav
+  nm03_hap_w02_tbr	Stimuli/nm03_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nm03_hap_w05_f0	Stimuli/nm03_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nm03_hap_w05_full	Stimuli/nm03_hap_w05_full_cTmg_AVGref_70dB.wav
+  nm03_hap_w05_tbr	Stimuli/nm03_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nm03_ple_w01_f0	Stimuli/nm03_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nm03_ple_w01_full	Stimuli/nm03_ple_w01_full_cTmg_AVGref_70dB.wav
+  nm03_ple_w01_tbr	Stimuli/nm03_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nm03_ple_w02_f0	Stimuli/nm03_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nm03_ple_w02_full	Stimuli/nm03_ple_w02_full_cTmg_AVGref_70dB.wav
+  nm03_ple_w02_tbr	Stimuli/nm03_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nm03_ple_w05_f0	Stimuli/nm03_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nm03_ple_w05_full	Stimuli/nm03_ple_w05_full_cTmg_AVGref_70dB.wav
+  nm03_ple_w05_tbr	Stimuli/nm03_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nm03_sad_w01_f0	Stimuli/nm03_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nm03_sad_w01_full	Stimuli/nm03_sad_w01_full_cTmg_AVGref_70dB.wav
+  nm03_sad_w01_tbr	Stimuli/nm03_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nm03_sad_w02_f0	Stimuli/nm03_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nm03_sad_w02_full	Stimuli/nm03_sad_w02_full_cTmg_AVGref_70dB.wav
+  nm03_sad_w02_tbr	Stimuli/nm03_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nm03_sad_w05_f0	Stimuli/nm03_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nm03_sad_w05_full	Stimuli/nm03_sad_w05_full_cTmg_AVGref_70dB.wav
+  nm03_sad_w05_tbr	Stimuli/nm03_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nm04_avg_w01_full	Stimuli/nm04_avg_w01_full_cTmg_AVGref_70dB.wav
+  nm04_avg_w02_full	Stimuli/nm04_avg_w02_full_cTmg_AVGref_70dB.wav
+  nm04_avg_w05_full	Stimuli/nm04_avg_w05_full_cTmg_AVGref_70dB.wav
+  nm04_fea_w01_f0	Stimuli/nm04_fea_w01_f0_cTmg_AVGref_70dB.wav
+  nm04_fea_w01_full	Stimuli/nm04_fea_w01_full_cTmg_AVGref_70dB.wav
+  nm04_fea_w01_tbr	Stimuli/nm04_fea_w01_tbr_cTmg_AVGref_70dB.wav
+  nm04_fea_w02_f0	Stimuli/nm04_fea_w02_f0_cTmg_AVGref_70dB.wav
+  nm04_fea_w02_full	Stimuli/nm04_fea_w02_full_cTmg_AVGref_70dB.wav
+  nm04_fea_w02_tbr	Stimuli/nm04_fea_w02_tbr_cTmg_AVGref_70dB.wav
+  nm04_fea_w05_f0	Stimuli/nm04_fea_w05_f0_cTmg_AVGref_70dB.wav
+  nm04_fea_w05_full	Stimuli/nm04_fea_w05_full_cTmg_AVGref_70dB.wav
+  nm04_fea_w05_tbr	Stimuli/nm04_fea_w05_tbr_cTmg_AVGref_70dB.wav
+  nm04_hap_w01_f0	Stimuli/nm04_hap_w01_f0_cTmg_AVGref_70dB.wav
+  nm04_hap_w01_full	Stimuli/nm04_hap_w01_full_cTmg_AVGref_70dB.wav
+  nm04_hap_w01_tbr	Stimuli/nm04_hap_w01_tbr_cTmg_AVGref_70dB.wav
+  nm04_hap_w02_f0	Stimuli/nm04_hap_w02_f0_cTmg_AVGref_70dB.wav
+  nm04_hap_w02_full	Stimuli/nm04_hap_w02_full_cTmg_AVGref_70dB.wav
+  nm04_hap_w02_tbr	Stimuli/nm04_hap_w02_tbr_cTmg_AVGref_70dB.wav
+  nm04_hap_w05_f0	Stimuli/nm04_hap_w05_f0_cTmg_AVGref_70dB.wav
+  nm04_hap_w05_full	Stimuli/nm04_hap_w05_full_cTmg_AVGref_70dB.wav
+  nm04_hap_w05_tbr	Stimuli/nm04_hap_w05_tbr_cTmg_AVGref_70dB.wav
+  nm04_ple_w01_f0	Stimuli/nm04_ple_w01_f0_cTmg_AVGref_70dB.wav
+  nm04_ple_w01_full	Stimuli/nm04_ple_w01_full_cTmg_AVGref_70dB.wav
+  nm04_ple_w01_tbr	Stimuli/nm04_ple_w01_tbr_cTmg_AVGref_70dB.wav
+  nm04_ple_w02_f0	Stimuli/nm04_ple_w02_f0_cTmg_AVGref_70dB.wav
+  nm04_ple_w02_full	Stimuli/nm04_ple_w02_full_cTmg_AVGref_70dB.wav
+  nm04_ple_w02_tbr	Stimuli/nm04_ple_w02_tbr_cTmg_AVGref_70dB.wav
+  nm04_ple_w05_f0	Stimuli/nm04_ple_w05_f0_cTmg_AVGref_70dB.wav
+  nm04_ple_w05_full	Stimuli/nm04_ple_w05_full_cTmg_AVGref_70dB.wav
+  nm04_ple_w05_tbr	Stimuli/nm04_ple_w05_tbr_cTmg_AVGref_70dB.wav
+  nm04_sad_w01_f0	Stimuli/nm04_sad_w01_f0_cTmg_AVGref_70dB.wav
+  nm04_sad_w01_full	Stimuli/nm04_sad_w01_full_cTmg_AVGref_70dB.wav
+  nm04_sad_w01_tbr	Stimuli/nm04_sad_w01_tbr_cTmg_AVGref_70dB.wav
+  nm04_sad_w02_f0	Stimuli/nm04_sad_w02_f0_cTmg_AVGref_70dB.wav
+  nm04_sad_w02_full	Stimuli/nm04_sad_w02_full_cTmg_AVGref_70dB.wav
+  nm04_sad_w02_tbr	Stimuli/nm04_sad_w02_tbr_cTmg_AVGref_70dB.wav
+  nm04_sad_w05_f0	Stimuli/nm04_sad_w05_f0_cTmg_AVGref_70dB.wav
+  nm04_sad_w05_full	Stimuli/nm04_sad_w05_full_cTmg_AVGref_70dB.wav
+  nm04_sad_w05_tbr	Stimuli/nm04_sad_w05_tbr_cTmg_AVGref_70dB.wav
+  nf01_fea_w01_avg_50	Practise/nf01_fea_w01_avg_50_70dB.wav
+  nf02_hap_w02_avg_50	Practise/nf02_hap_w02_avg_50_70dB.wav
+  nf03_ple_w05_avg_50	Practise/nf03_ple_w05_avg_50_70dB.wav
+  nf04_sad_w01_avg_50	Practise/nf04_sad_w01_avg_50_70dB.wav
+  nm01_fea_w02_avg_50	Practise/nm01_fea_w02_avg_50_70dB.wav
+  nm02_hap_w05_avg_50	Practise/nm02_hap_w05_avg_50_70dB.wav
+  nm03_ple_w01_avg_50	Practise/nm03_ple_w01_avg_50_70dB.wav
+  nm04_sad_w02_avg_50	Practise/nm04_sad_w02_avg_50_70dB.wav
+
+
+
+
+
+# here I set some relevant options
+options
+  fullscreen 	# execute experiment in fullscreen
+  resolution 1000 800  # set resolution so that bitmaps are shown properly
+
+
+#this is the stimuluslist. We load it via textfile
+# Columnames are as follows:
+#(1)Filename(2)Duration (3)ID (4) Emo (5) Utterance (6) MType (7) Sex (8) FilenameSave (9)CorrCB1 (10)CorrCB2 (11)CorrCB3 (10)CorrCB4
+table Stimuli
+  include stimulustable.txt
+
+table Practise
+  include practisetable.txt
+
+
+#############################################################################
+task setCB
+  set &x random 1 4
+  if &x == 1
+    set &Task   slideTaskCB1
+    set &Prac   slidePracCB1
+    set %CB "CB1"
+  fi
+  if &x == 2
+    set &Task   slideTaskCB2
+    set &Prac   slidePracCB2
+    set %CB "CB2"
+  fi
+  if &x == 3
+    set &Task   slideTaskCB3
+    set &Prac   slidePracCB3
+    set %CB "CB3"
+  fi
+  if &x == 4
+    set &Task   slideTaskCB4
+    set &Prac   slidePracCB4
+    set %CB "CB4"
+  fi
+
+#############################################################################
+
+part EmoTask
+  show bitmap slideFix
+  delay 500
+  keys d f j k                  # which keys are allowed
+  sound @1
+  delay @2
+  if &x == 1                # CB1
+  show bitmap LabelCB1 0 200
+  readkey @9 5000
+  fi 
+  if &x == 2                # CB2
+  show bitmap LabelCB2 0 200
+  readkey @10 5000
+  fi 
+  if &x == 3                # CB3
+  show bitmap LabelCB3 0 200
+  readkey @11 5000
+  fi 
+  if &x == 4                # CB4
+  show bitmap LabelCB4 0 200
+  readkey @12 5000
+  fi
+  if STATUS == 3 #timeout
+    show bitmap slideTooSlow
+  fi
+  if STATUS != 3 # alles andere
+    show bitmap slideBlank
+  fi
+  delay 500
+  save @3 @4 @5 @6 @7 @8 %CB STATUS KEY RT BLOCKNAME TABLEROW
+
+
+task EmotionClassification
+  table Stimuli
+  part EmoTask
+
+
+task PractiseClassification
+  table Practise
+  part EmoTask
+
+task explanation1
+  show bitmap &Task
+  keys space
+  readkey 1 100000
+
+task explanation2
+  show bitmap &Prac
+  keys space
+  readkey 1 100000
+
+####################################################################################
+
+########################
+
+block setCounterbalance
+ tasklist
+     setCB 1
+ end
+
+block intro
+  message   slidewelcome1
+  message slideIntro2
+  message slideIntro3
+  message slideIntro4
+  tasklist
+    explanation1 1
+  end
+
+block intro2
+ tasklist
+   explanation2 1
+ end
+
+block middle
+  message slidePracEnd
+
+block pause
+  message slideBreak
+
+block outro
+  message slideExpEnd
+
+
+block trials
+  tasklist
+    EmotionClassification 52 all_before_repeat # do all 52 Trials, without repeating one
+  end
+
+
+block practise
+  tasklist
+    PractiseClassification 8 all_before_repeat # do all 5 Trials, without repeating one
+  end
+
+###########################################################################################
+
+blockorder
+  setCounterbalance
+  intro
+  intro2
+  practise
+  middle
+  trials    # Block 1
+  pause
+  trials    # Block 2
+  pause
+  trials    # Block 3
+  pause
+  trials    # Block 4
+  pause
+  trials    # Block 5
+  pause
+  trials    # Block 6
+  outro

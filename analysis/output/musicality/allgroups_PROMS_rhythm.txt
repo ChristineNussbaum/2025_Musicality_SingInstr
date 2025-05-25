@@ -1,0 +1,69 @@
+[1] "Confidence"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect         MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.006896667   1 163 1913.834 0.000  0.922  0.922
+2       Group 0.006896667   2 163    6.226 0.002  0.071  0.071
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 1913.834, p < .001, np2 = .922
+2       Group F(2, 163) =    6.226, p = .002, np2 = .071
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.92             | [0.90, 0.94]
+0.06             | [0.01, 0.14]
+[1] "Professionals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 0.80166, df = 84.274, p-value = 0.425
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -0.01841266  0.04328640
+sample estimates:
+mean in group M mean in group A 
+      0.3277778       0.3153409 
+
+d    |        95% CI
+--------------------
+0.17 | [-0.25, 0.60]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = 3.5163, df = 75.964, p-value = 0.0007419
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ 0.02659185 0.09606897
+sample estimates:
+mean in group M mean in group C 
+      0.3277778       0.2664474 
+
+d    |       95% CI
+-------------------
+0.81 | [0.34, 1.27]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Confidence by Group
+t = -3.1605, df = 80.835, p-value = 0.002217
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.07967485 -0.01811223
+sample estimates:
+mean in group C mean in group A 
+      0.2664474       0.3153409 
+
+d     |         95% CI
+----------------------
+-0.70 | [-1.15, -0.25]

@@ -89,9 +89,14 @@ D$N <- ifelse(is.na(D$N), 0, D$N)
 
 ### Define variables as appropriate data class and drop levels of factors 
 D$Subject <- as.factor(as.character(D$Subject))
+D$Group <- as.factor(as.character(D$Group))
 D <-  droplevels(D)
 
-D$Freq <- D$N/24 # we have 24 trials with avg in total
+total <- D %>% group_by(Subject) %>% summarise(total = sum(N))
+# the amount of average trial each person has to classify 
+#(not equal for all participants due to randomization error during the experiment)
+D <- merge(D, total)
+D$Freq <- D$N/D$total
 
 #####################
 ###### ANOVA ########
@@ -107,11 +112,13 @@ b = tracedEzOut(a, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq = "partial"
 
 ################################################################################
 # expected output (reduced - formatted results only): 
-# 1    (Intercept)  F(1, 86) = 424.751, p < .001, np2 = .832
-# 2          Group  F(1, 86) =   1.979, p = .163, np2 = .022
-# 3       Emo_Resp F(3, 258) =   1.983, p = .117, np2 = .023
-# 4 Group:Emo_Resp F(3, 258) =   0.633, p = .594, np2 < .017
+# 1    (Intercept)  F(1, 86) = -7171713052542808064.000, p > .999, np2 > .990
+# 2          Group  F(1, 86) =                    0.000, p > .999, np2 < .010
+# 3       Emo_Resp F(3, 258) =                   41.426, p < .001, np2 = .325
+# 4 Group:Emo_Resp F(3, 258) =                    1.299, p = .275, np2 = .015
 ###############################################################################
+
+avg_desc <- mySummary(D, Freq, Emo_Resp, Group)
 
 Fs <-  c(round(a$ANOVA[[6]], 5))[2:4]
 Df <-  c(round(a$ANOVA[[2]], 5))[2:4]
@@ -150,7 +157,7 @@ AVG$MType <- "full"
 AVG$Emo <- "avg"
 AVG <- AVG[c(1,4,5,2,3,6)]
 
-C <- rbind(C, AVG) # this is the correct number of rows -> 4004
+C <- rbind(C, AVG) # this is the correct number of rows -> 4576
 rm(AVG)
 
 C <- as.data.frame(C)
@@ -162,7 +169,14 @@ C <- merge(C, Codes)
 rm(Codes)
 
 C$N <- ifelse(is.na(C$N), 0, C$N)
-C$Freq <- C$N/24
+
+#calculate how often each Emotion was presented (not equal due to error in randomization in experiment)
+total <- C %>% group_by(Subject, Emo, MType) %>% summarize(total = sum(N))
+
+C <- merge(C, total)
+C$Freq <- C$N/C$total
+
+rm(total)
 
 # label all combinations which are correct
 C$Correct <- ifelse(C$Emo == C$Emo_Resp, "Yes", "No")
