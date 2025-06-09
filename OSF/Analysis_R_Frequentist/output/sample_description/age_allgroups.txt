@@ -1,0 +1,80 @@
+[1] "Descriptive Data"
+     Group Age     SD         N    SE          CI        
+[1,] "M"   "29.55" "5.583630" "40" "0.8828494" "1.785731"
+[2,] "C"   "30.50" "6.541964" "38" "1.0612468" "2.150290"
+[3,] "A"   "27.75" "9.440984" "88" "1.0064123" "2.000353"
+     Group range(Age)
+[1,] "M"   "20"      
+[2,] "M"   "42"      
+[3,] "C"   "19"      
+[4,] "C"   "48"      
+[5,] "A"   "18"      
+[6,] "A"   "54"      
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect      MSE df1 df2        F     p petasq getasq
+1 (Intercept) 64.74785   1 163 1899.497 0.000  0.921  0.921
+2       Group 64.74785   2 163    1.771 0.173  0.021  0.021
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+[1] "N/A"
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 163) = 1899.497, p < .001, np2 = .921
+2       Group F(2, 163) =    1.771, p = .173, np2 = .021
+
+$`NOTE:`
+[1] "Reporting unadjusted p-values."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.92             | [0.90, 0.93]
+9.20e-03         | [0.00, 0.05]
+[1] "Professinals vs Amateurs"
+
+	Welch Two Sample t-test
+
+data:  Age by Group
+t = 1.3445, df = 117.37, p-value = 0.1814
+alternative hypothesis: true difference in means between group M and group A is not equal to 0
+95 percent confidence interval:
+ -0.8512643  4.4512643
+sample estimates:
+mean in group M mean in group A 
+          29.55           27.75 
+
+d    |        95% CI
+--------------------
+0.25 | [-0.12, 0.61]
+[1] "Professionals vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Age by Group
+t = -0.68818, df = 72.837, p-value = 0.4935
+alternative hypothesis: true difference in means between group M and group C is not equal to 0
+95 percent confidence interval:
+ -3.701355  1.801355
+sample estimates:
+mean in group M mean in group C 
+          29.55           30.50 
+
+d     |        95% CI
+---------------------
+-0.16 | [-0.62, 0.30]
+[1] "Amateurs vs NonMusicians"
+
+	Welch Two Sample t-test
+
+data:  Age by Group
+t = 1.8803, df = 99.315, p-value = 0.063
+alternative hypothesis: true difference in means between group C and group A is not equal to 0
+95 percent confidence interval:
+ -0.1519421  5.6519421
+sample estimates:
+mean in group C mean in group A 
+          30.50           27.75 
+
+d    |        95% CI
+--------------------
+0.38 | [-0.02, 0.77]

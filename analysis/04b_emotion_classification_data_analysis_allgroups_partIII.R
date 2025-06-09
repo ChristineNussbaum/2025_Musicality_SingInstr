@@ -1,7 +1,7 @@
 ##########################################################################
 ## File: 04b_emotion_classification_data_analysis_allgroups_JS.R
 ## This script analysis the emotion classification performance of professionals,
-##    amateurs and non-musicians
+## amateurs and non-musicians
 # authors: Christine Nussbaum (christine.nussbaum@uni-jena.de), Jessica Senftleben
 # date 10/2022, 02/2024
 
@@ -127,7 +127,7 @@ D <-  droplevels(D)
 
 a <- ezANOVA(data=D, dv=.(ACC), wid=.(Subject), within = .(Emo, MType), between = .(Group), type=3, detailed = TRUE)
 b = tracedEzOut(a, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq = "partial", dfsep = ", ")
-#this analysis return a warning about unequal groups, since there are 39 musicians but 38 non-musicians and 89 amateurs
+#this analysis return a warning about unequal groups, since there are 40 musicians but 38 non-musicians and 88 amateurs
 
 ####################################################################
 #expected output (reduced):
@@ -163,18 +163,17 @@ rm(a,b, o2_emo)
 #reaggreate dataset
 PH1 <- D %>% group_by(Subject,Group) %>% summarise(ACC=mean(ACC))
 
-write.csv(PH1, file="allgroups_Jasp.csv")
 #extract descriptive data
 PH1_descriptive <- mySummary(PH1, ACC, Group)
 
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-MA <- PH1 %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MA <- PH1 %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group)
 d_MA <- t_to_d(MA$statistic, MA$parameter, paired = FALSE)
 
-MC <- PH1 %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MC <- PH1 %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_MC <- t_to_d(MC$statistic, MC$parameter, paired = FALSE)
 
-AC <- PH1 %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+AC <- PH1 %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_AC <- t_to_d(AC$statistic, AC$parameter, paired = FALSE)
 
 #add descriptions for output:
@@ -211,18 +210,21 @@ PH2 <- D %>% group_by(Subject,Emo) %>% summarise(ACC=mean(ACC))
 #extract descriptive data
 PH2_descriptive <- mySummary(PH2, ACC, Emo)
 
+#convert data to wide format
+PH2 <- PH2 %>% pivot_wider(names_from = Emo, values_from = ACC)
+
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/6 = .008
-HapPle <- PH2 %>% filter(Emo == "hap" | Emo == "ple") %>% t.test(data = ., ACC ~ Emo, paired=TRUE)
+HapPle <- t.test(PH2$hap, PH2$ple,  paired=TRUE)
 d_HapPle <- t_to_d(HapPle$statistic, HapPle$parameter, paired = TRUE)
-HapFea <- PH2 %>% filter(Emo == "hap" | Emo == "fea") %>% t.test(data = ., ACC ~ Emo, paired=TRUE)
+HapFea <- t.test(PH2$hap, PH2$fea,  paired=TRUE)
 d_HapFea <- t_to_d(HapFea$statistic, HapFea$parameter, paired = TRUE)
-HapSad <- PH2 %>% filter(Emo == "hap" | Emo == "sad") %>% t.test(data = ., ACC ~ Emo, paired=TRUE)
+HapSad <- t.test(PH2$hap, PH2$sad,  paired=TRUE)
 d_HapSad <- t_to_d(HapSad$statistic, HapSad$parameter, paired = TRUE)
-PleFea <- PH2 %>% filter(Emo == "ple" | Emo == "fea") %>% t.test(data = ., ACC ~ Emo, paired=TRUE)
+PleFea <- t.test(PH2$ple, PH2$fea,  paired=TRUE)
 d_PleFea <- t_to_d(PleFea$statistic, PleFea$parameter, paired = TRUE)
-PleSad <- PH2 %>% filter(Emo == "ple" | Emo == "sad") %>% t.test(data = ., ACC ~ Emo, paired=TRUE)
+PleSad <- t.test(PH2$ple, PH2$sad,  paired=TRUE)
 d_PleSad <- t_to_d(PleSad$statistic, PleSad$parameter, paired = TRUE)
-FeaSad <- PH2 %>% filter(Emo == "fea" | Emo == "sad") %>% t.test(data = ., ACC ~ Emo, paired=TRUE)
+FeaSad <- t.test(PH2$fea, PH2$sad,  paired=TRUE)
 d_FeaSad <- t_to_d(FeaSad$statistic, FeaSad$parameter, paired = TRUE)
 
 #add descriptions for output:
@@ -268,12 +270,15 @@ PH3 <- D %>% group_by(Subject, MType) %>% summarise(ACC=mean(ACC))
 #extract descriptive data
 PH3_descriptive <- mySummary(PH3, ACC, MType)
 
+#convert data to wide format
+PH3 <- PH3 %>% pivot_wider(names_from = MType, values_from = ACC)
+
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-F0Tbr   <- PH3 %>% filter(MType == "f0" | MType == "tbr") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Tbr   <- t.test(PH3$f0, PH3$tbr,  paired=TRUE)
 d_F0Tbr <- t_to_d(F0Tbr$statistic, F0Tbr$parameter, paired = TRUE)
-TbrFull <- PH3 %>% filter(MType == "tbr" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+TbrFull <- t.test(PH3$tbr, PH3$full,  paired=TRUE)
 d_TbrFull <- t_to_d(TbrFull$statistic, TbrFull$parameter, paired = TRUE)
-F0Full  <- PH3 %>% filter(MType == "f0" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Full  <- t.test(PH3$f0, PH3$full,  paired=TRUE)
 d_F0Full <- t_to_d(F0Full$statistic, F0Full$parameter, paired = TRUE)
 
 #add descriptions for output:
@@ -334,9 +339,8 @@ PH4_descriptive
 capture.output(as.matrix(PH4_descriptive), 
                file = "output/emotion_classification/allgroups_A_PH4_Int_MType_Group_descriptive_data.txt")
 
-write.csv(PH4, file="allgroups_mtype_JASP.csv")
-############## MType "Full" only: ######################################
 
+############## MType "Full" only: ######################################
 PH4full <- PH4 %>% filter(MType == "full")
 
 #####################
@@ -348,7 +352,7 @@ PH4full <- PH4 %>% filter(MType == "full")
 
 ANOVAModel <- ezANOVA(data=PH4full, wid=Subject, dv=ACC, between= Group, type =3, detailed=TRUE)
 full = tracedEzOut(ANOVAModel, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq = "partial", dfsep = ", ")
-#this analysis return a warning about unequal groups, since there are 39 musicians but 38 non-musicians and 89 amateurs
+#this analysis return a warning about unequal groups, since there are 40 musicians but 38 non-musicians and 88 amateurs
 
 ##########################################################
 #expected output 
@@ -360,11 +364,11 @@ full = tracedEzOut(ANOVAModel, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq
 
 
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-MA <- PH4full %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MA <- PH4full %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group)
 d_MA <- t_to_d(MA$statistic, MA$parameter, paired = FALSE)
-MC <- PH4full %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MC <- PH4full %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_MC <- t_to_d(MC$statistic, MC$parameter, paired = FALSE)
-AC <- PH4full %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+AC <- PH4full %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_AC <- t_to_d(AC$statistic, AC$parameter, paired = FALSE)
 
 ##############################################
@@ -402,7 +406,7 @@ PH4f0 <- PH4 %>% filter(MType == "f0")
 
 ANOVAModel <- ezANOVA(data=PH4f0, wid=Subject, dv=ACC, between= Group, type =3, detailed=TRUE)
 f0 = tracedEzOut(ANOVAModel, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq = "partial", dfsep = ", ")
-#this analysis return a warning about unequal groups, since there are 39 musicians but 38 non-musicians and 89 amateurs
+#this analysis return a warning about unequal groups, since there are 40 musicians but 38 non-musicians and 88 amateurs
 
 #########################################################
 #expected output 
@@ -413,11 +417,11 @@ f0 = tracedEzOut(ANOVAModel, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq =
 ##########################################################
 
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-MA <- PH4f0 %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MA <- PH4f0 %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group)
 d_MA <- t_to_d(MA$statistic, MA$parameter, paired = FALSE)
-MC <- PH4f0 %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MC <- PH4f0 %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_MC <- t_to_d(MC$statistic, MC$parameter, paired = FALSE)
-AC <- PH4f0 %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+AC <- PH4f0 %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_AC <- t_to_d(AC$statistic, AC$parameter, paired = FALSE)
 
 ##############################################
@@ -454,7 +458,7 @@ PH4tbr <- PH4 %>% filter(MType == "tbr")
 
 ANOVAModel <- ezANOVA(data=PH4tbr, wid=Subject, dv=ACC, between= Group, type =3, detailed=TRUE)
 tbr = tracedEzOut(ANOVAModel, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq = "partial", dfsep = ", ")
-#this analysis return a warning about unequal groups, since there are 39 musicians but 38 non-musicians and 89 amateurs
+#this analysis return a warning about unequal groups, since there are 40 musicians but 38 non-musicians and 88 amateurs
 
 #########################################################
 #expected output 
@@ -465,11 +469,11 @@ tbr = tracedEzOut(ANOVAModel, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq 
 ##########################################################
 
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-MA <- PH4tbr %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MA <- PH4tbr %>% filter(Group == "M" | Group == "A") %>% t.test(data = ., ACC ~ Group)
 d_MA <- t_to_d(MA$statistic, MA$parameter, paired = FALSE)
-MC <- PH4tbr %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+MC <- PH4tbr %>% filter(Group == "M" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_MC <- t_to_d(MC$statistic, MC$parameter, paired = FALSE)
-AC <- PH4tbr %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group, paired=FALSE)
+AC <- PH4tbr %>% filter(Group == "A" | Group == "C") %>% t.test(data = ., ACC ~ Group)
 d_AC <- t_to_d(AC$statistic, AC$parameter, paired = FALSE)
 
 ##############################################
@@ -549,12 +553,15 @@ o2_hap <- F_to_omega2(unlist(c(ANOVA_hap$ANOVA[6])),  unlist(c(ANOVA_hap$ANOVA[2
 #2       MType F(2, 330) =  624.133, p < .001, np2 = .791
 ##########################################################
 
+#convert data to wide format
+PH5hap <- PH5hap %>% pivot_wider(names_from = MType, values_from = ACC)
+
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-F0Tbr   <- PH5hap %>% filter(MType == "f0" | MType == "tbr") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Tbr   <- t.test(PH5hap$f0, PH5hap$tbr,  paired=TRUE)
 d_F0Tbr <- t_to_d(F0Tbr$statistic, F0Tbr$parameter, paired = TRUE)
-TbrFull <- PH5hap %>% filter(MType == "tbr" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+TbrFull <- t.test(PH5hap$tbr, PH5hap$full,  paired=TRUE)
 d_TbrFull <- t_to_d(TbrFull$statistic, TbrFull$parameter, paired = TRUE)
-F0Full  <- PH5hap %>% filter(MType == "f0" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Full  <- t.test(PH5hap$f0, PH5hap$full,  paired=TRUE)
 d_F0Full <- t_to_d(F0Full$statistic, F0Full$parameter, paired = TRUE)
 
 
@@ -602,12 +609,15 @@ o2_ple <- F_to_omega2(unlist(c(ANOVA_ple$ANOVA[6])),  unlist(c(ANOVA_ple$ANOVA[2
 #2       MType F(2, 330) =  348.494, p < .001, np2 = .679
 ############################################################
 
+#convert data to wide format
+PH5ple <- PH5ple %>% pivot_wider(names_from = MType, values_from = ACC)
+
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-F0Tbr   <- PH5ple %>% filter(MType == "f0" | MType == "tbr") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Tbr   <- t.test(PH5ple$f0, PH5ple$tbr,  paired=TRUE)
 d_F0Tbr <- t_to_d(F0Tbr$statistic, F0Tbr$parameter, paired = TRUE)
-TbrFull <- PH5ple %>% filter(MType == "tbr" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+TbrFull <- t.test(PH5ple$tbr, PH5ple$full,  paired=TRUE)
 d_TbrFull <- t_to_d(TbrFull$statistic, TbrFull$parameter, paired = TRUE)
-F0Full  <- PH5ple %>% filter(MType == "f0" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Full  <- t.test(PH5ple$f0, PH5ple$full,  paired=TRUE)
 d_F0Full <- t_to_d(F0Full$statistic, F0Full$parameter, paired = TRUE)
 
 # ##############################################
@@ -655,13 +665,17 @@ o2_fea <- F_to_omega2(unlist(c(ANOVA_fea$ANOVA[6])),  unlist(c(ANOVA_fea$ANOVA[2
 #2       MType F(2, 330) =  420.655, p < .001, np2 = .718
 ############################################################
 
+#convert data to wide format
+PH5fea <- PH5fea %>% pivot_wider(names_from = MType, values_from = ACC)
+
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-F0Tbr   <- PH5fea %>% filter(MType == "f0" | MType == "tbr") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Tbr   <- t.test(PH5fea$f0, PH5fea$tbr,  paired=TRUE)
 d_F0Tbr <- t_to_d(F0Tbr$statistic, F0Tbr$parameter, paired = TRUE)
-TbrFull <- PH5fea %>% filter(MType == "tbr" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+TbrFull <- t.test(PH5fea$tbr, PH5fea$full,  paired=TRUE)
 d_TbrFull <- t_to_d(TbrFull$statistic, TbrFull$parameter, paired = TRUE)
-F0Full  <- PH5fea %>% filter(MType == "f0" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Full  <- t.test(PH5fea$f0, PH5fea$full,  paired=TRUE)
 d_F0Full <- t_to_d(F0Full$statistic, F0Full$parameter, paired = TRUE)
+
 
 # ##############################################
 # expected output
@@ -707,13 +721,15 @@ o2_sad <- F_to_omega2(unlist(c(ANOVA_sad$ANOVA[6])),  unlist(c(ANOVA_sad$ANOVA[2
 #2       MType F(2, 330) =  210.634, p < .001, np2 = .561
 #########################################################
 
+#convert data to wide format
+PH5sad <- PH5sad %>% pivot_wider(names_from = MType, values_from = ACC)
 
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/3 = .0167
-F0Tbr   <- PH5sad %>% filter(MType == "f0" | MType == "tbr") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Tbr   <- t.test(PH5sad$f0, PH5sad$tbr,  paired=TRUE)
 d_F0Tbr <- t_to_d(F0Tbr$statistic, F0Tbr$parameter, paired = TRUE)
-TbrFull <- PH5sad %>% filter(MType == "tbr" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+TbrFull <- t.test(PH5sad$tbr, PH5sad$full,  paired=TRUE)
 d_TbrFull <- t_to_d(TbrFull$statistic, TbrFull$parameter, paired = TRUE)
-F0Full  <- PH5sad %>% filter(MType == "f0" | MType == "full") %>% t.test(data = ., ACC ~ MType, paired=TRUE)
+F0Full  <- t.test(PH5sad$f0, PH5sad$full,  paired=TRUE)
 d_F0Full <- t_to_d(F0Full$statistic, F0Full$parameter, paired = TRUE)
 
 # ##############################################
@@ -749,19 +765,24 @@ PH5$Diff <- PH5$f0 - PH5$tbr
 #extract descriptive data
 PH5_descriptive <- mySummary(PH5, Diff, Emo)
 
+
+#convert data to wide format
+PH5 <- PH5[,c(1,2,6)] %>% pivot_wider(names_from = Emo, values_from = Diff)
+
 # perform pairwise t-tests, Bonferroni-corrected a-level: .05/6 = .008
-HapPle <- PH5 %>% filter(Emo == "hap" | Emo == "ple") %>% t.test(data = ., Diff ~ Emo, paired=TRUE)
+HapPle <- t.test(PH5$hap, PH5$ple,  paired=TRUE)
 d_HapPle <- t_to_d(HapPle$statistic, HapPle$parameter, paired = TRUE)
-HapFea <- PH5 %>% filter(Emo == "hap" | Emo == "fea") %>% t.test(data = ., Diff ~ Emo, paired=TRUE)
+HapFea <- t.test(PH5$hap, PH5$fea,  paired=TRUE)
 d_HapFea <- t_to_d(HapFea$statistic, HapFea$parameter, paired = TRUE)
-HapSad <- PH5 %>% filter(Emo == "hap" | Emo == "sad") %>% t.test(data = ., Diff ~ Emo, paired=TRUE)
+HapSad <- t.test(PH5$hap, PH5$sad,  paired=TRUE)
 d_HapSad <- t_to_d(HapSad$statistic, HapSad$parameter, paired = TRUE)
-PleFea <- PH5 %>% filter(Emo == "ple" | Emo == "fea") %>% t.test(data = ., Diff ~ Emo, paired=TRUE)
+PleFea <- t.test(PH5$ple, PH5$fea,  paired=TRUE)
 d_PleFea <- t_to_d(PleFea$statistic, PleFea$parameter, paired = TRUE)
-PleSad <- PH5 %>% filter(Emo == "ple" | Emo == "sad") %>% t.test(data = ., Diff ~ Emo, paired=TRUE)
+PleSad <- t.test(PH5$ple, PH5$sad,  paired=TRUE)
 d_PleSad <- t_to_d(PleSad$statistic, PleSad$parameter, paired = TRUE)
-FeaSad <- PH5 %>% filter(Emo == "fea" | Emo == "sad") %>% t.test(data = ., Diff ~ Emo, paired=TRUE)
+FeaSad <- t.test(PH5$fea, PH5$sad,  paired=TRUE)
 d_FeaSad <- t_to_d(FeaSad$statistic, FeaSad$parameter, paired = TRUE)
+
 
 #add descriptions for output:
 info <- c("Hap vs Ple", "Hap vs Fea", "Hap vs Sad", "Ple vs Fea", "Ple vs Sad", "Fea vs Sad",  "Descriptive Data")

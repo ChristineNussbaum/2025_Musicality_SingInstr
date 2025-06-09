@@ -1,0 +1,70 @@
+[1] "ANOVA on MType for fea stimuli only"
+$`--- ANOVA RESULTS     ------------------------------------`
+       Effect        MSE df1 df2        F     p petasq getasq
+1 (Intercept) 0.04319450   1 165 3007.797 0.000  0.948  0.924
+2       MType 0.01079413   2 330  420.655 0.000  0.718  0.459
+
+$`--- SPHERICITY TESTS  ------------------------------------`
+  Effect p_Mauchly GGEpsilon  p_GG HFEpsilon  p_HF
+1  MType     0.033     0.961 0.000     0.972 0.000
+
+$`--- FORMATTED RESULTS ------------------------------------`
+       Effect                                       Text
+1 (Intercept) F(1, 165) = 3007.797, p < .001, np2 = .948
+2       MType F(2, 330) =  420.655, p < .001, np2 = .718
+
+$`NOTE:`
+[1] "p-values for the following effects were HF-adjusted (p_Mauchly <= 0.05): MType. Reporting uncorrected degrees of freedom."
+
+Omega2 (partial) |       95% CI
+-------------------------------
+0.95             | [0.93, 0.96]
+0.72             | [0.67, 0.75]
+[1] "F0 vs Tbr"
+
+	Paired t-test
+
+data:  PH5fea$f0 and PH5fea$tbr
+t = 18.404, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ 0.1972250 0.2446283
+sample estimates:
+mean difference 
+      0.2209266 
+
+d    |       95% CI
+-------------------
+1.43 | [1.21, 1.65]
+[1] "Tbr vs Full"
+
+	Paired t-test
+
+data:  PH5fea$tbr and PH5fea$full
+t = -27.137, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.3472088 -0.3001108
+sample estimates:
+mean difference 
+     -0.3236598 
+
+d     |         95% CI
+----------------------
+-2.11 | [-2.39, -1.84]
+[1] " F0 vs Full"
+
+	Paired t-test
+
+data:  PH5fea$f0 and PH5fea$full
+t = -10.084, df = 165, p-value < 0.00000000000000022
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.12284898 -0.08261733
+sample estimates:
+mean difference 
+     -0.1027332 
+
+d     |         95% CI
+----------------------
+-0.79 | [-0.96, -0.61]

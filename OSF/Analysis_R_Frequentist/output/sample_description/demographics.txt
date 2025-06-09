@@ -1,0 +1,189 @@
+[1] "Sex"
+   
+     1  2  4
+  1 22 22  1
+  2 24 18  1
+[1] "Language"
+   
+     1  3
+  1 43  2
+  2 42  1
+[1] "Profession"
+
+                                                           Doktorand der Bioinformatik 
+                                                                                     1 
+                                                Anglistik/Amerikanistik und Management 
+                                                                                     1 
+                                                                             Apotheker 
+                                                                                     1 
+                                                                                Ärztin 
+                                                                                     1 
+                        ausgebildeter Jurist, arbeite als Salesassistent im Homeoffice 
+                                                                                     1 
+                                                                  Außendienst Vertrieb 
+                                                                                     1 
+                                                                          B.Sc. Physik 
+                                                                                     1 
+BA Kommunikationswissenschaft und Interkulturelles Musik- und Veranstaltungsmanagement 
+                                                                                     1 
+                                                                     Bachelor Biologie 
+                                                                                     1 
+                                                                         Bauzeichnerin 
+                                                                                     1 
+                                                           Biochemie/Molekularbiologie 
+                                                                                     1 
+                                                                         Bioinformatik 
+                                                                                     1 
+                                           BWL für Ingenieure und Naturwissenschaftler 
+                                                                                     1 
+                                                                                Chemie 
+                                                                                     1 
+                                                                    Chemische Biologie 
+                                                                                     1 
+                                                           Chemische Biologie (M. Sc.) 
+                                                                                     1 
+                                                                        Data Scientist 
+                                                                                     1 
+                                                                      Doktorand Physik 
+                                                                                     1 
+                                                                Doktorandin Linguistik 
+                                                                                     1 
+                                                                        Elektrotechnik 
+                                                                                     1 
+                                                       Erziehungswissenschaft und LLTP 
+                                                                                     1 
+                                                       Förder- und Inklusionspädagogik 
+                                                                                     1 
+                                                                    Förderschullehramt 
+                                                                                     1 
+                                                                       Geoinformatiker 
+                                                                                     1 
+                                     Germanistik mit Sprechwissenschaft/Phonetik B. A. 
+                                                                                     1 
+                                                    Geschäftsführer im Sportmanagement 
+                                                                                     1 
+                                                              Geschichtswissenschaften 
+                                                                                     1 
+                                                                  Humanmedizin Studium 
+                                                                                     1 
+                                                                            Informatik 
+                                                                                     1 
+                                                                          Informatiker 
+                                                                                     1 
+                                                                             Ingenieur 
+                                                                                     1 
+                                             Internationale Beziehungen und Romanistik 
+                                                                                     1 
+                                                                       IT-Angestellter 
+                                                                                     1 
+                                                                                  Jura 
+                                                                                     1 
+                                                                                Jurist 
+                                                                                     1 
+                                                              Kinder- und Jugendmedien 
+                                                                                     1 
+                                                                   klinische Forschung 
+                                                                                     1 
+                                               Kommunikationswissenschaft und Englisch 
+                                                                                     1 
+  Kommunikationswissenschaften und interkulturelles Musik und Veranstaltungsmanagement 
+                                                                                     1 
+                                                                Landschaftsarchitektur 
+                                                                                     1 
+                                                                              Landwirt 
+                                                                                     1 
+                                           Lehramt Gymnasium Deutsch; Wirtschaft-Recht 
+                                                                                     1 
+                                          Lehramt Gymnasium Englisch/Geschichte/DaFDaZ 
+                                                                                     1 
+                                                                              Lehrerin 
+                                                                                     1 
+                                                                          M.Sc. Chemie 
+                                                                                     1 
+                          MA Erziehungswissenschaft - Sozialpädagogik/Sozialmanagement 
+                                                                                     1 
+                                                                            Mathematik 
+                                                                                     1 
+                                                        Mathematiker (Hochschuldozent) 
+                                                                                     1 
+                                                                               Medizin 
+                                                                                     1 
+                                                                        Medizintechnik 
+                                                                                     2 
+                                                                     Molekularbiologin 
+                                                                                     1 
+                                                                    noch in der Schule 
+                                                                                     1 
+                                                                      Philosophie B.A. 
+                                                                                     1 
+                                                                                Physik 
+                                                                                     3 
+                                                                              Physiker 
+                                                                                     5 
+                                                                       Physikingenieur 
+                                                                                     1 
+                                                      Praktikantin mit BSc in Biologie 
+                                                                                     1 
+                                                                       Primarpädagogik 
+                                                                                     2 
+                                                             Primarpädagogik (Studium) 
+                                                                                     1 
+                                                                  Projektkoordinatorin 
+                                                                                     1 
+                                                                         Prüfingenieur 
+                                                                                     1 
+                                                                           Psychologie 
+                                                                                     2 
+                                                                     Psychologie B.Sc. 
+                                                                                     1 
+                                                                 Psychologie Studentin 
+                                                                                     1 
+                                                     Psychologie, Bachelor of Science  
+                                                                                     1 
+                                                           Psychologin im Strafvollzug 
+                                                                                     1 
+                                                                    Rechtswissenschaft 
+                                                                                     1 
+                                                                              Referent 
+                                                                                     1 
+                                                                       Sonderpädagogik 
+                                                                                     1 
+                                                                      Sozialarbeiterin 
+                                                                                     1 
+                                                                Sprecherin/Podcasterin 
+                                                                                     1 
+                                                                Student der Informatik 
+                                                                                     1 
+                                                   Studium: Bauingenieurwesen Bachelor 
+                                                                                     1 
+                                                    Studium: Gärtnerischer Pflanzenbau 
+                                                                                     1 
+                        Studium: Master Grundschullehramt mit Schwerpunktfach Englisch 
+                                                                                     1 
+                                                     Theologie und Wirtschaft (Master) 
+                                                                                     1 
+                                                                           Volkswirtin 
+                                                                                     1 
+                                                                 Volkswirtschaftslehre 
+                                                                                     1 
+                                         wissenschaftliche Mitarbeiterin ev. Theologie 
+                                                                                     1 
+[1] "HearingImpairment"
+   
+     1  2
+  1 43  2
+  2 43  0
+[1] "HearinImpairment2"
+   
+       Tinnitus Tinnitus, ein hoher Pfeifton auf beiden Ohren, wird durch Stress verstärkt und durch Ruhe gemindert.
+  1 43        1                                                                                                    1
+  2 43        0                                                                                                    0
+[1] "HearingImpairment3"
+   
+    1
+  1 2
+  2 0
+[1] "Duration"
+     Group      Dur
+[1,]     1 75.06667
+[2,]     2 73.51163

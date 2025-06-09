@@ -1,0 +1,111 @@
+     Group   AQ_Tot AQ_TotSD   AQ_Soc AQ_SocSD   AQ_Att AQ_AttSD AQ_SocSkills AQ_SocSkillsSD   AQ_Com AQ_ComSD  AQ_Imag AQ_ImagSD
+[1,]     1 18.20000 6.148170 12.80000 5.366563 5.400000 2.329651     2.400000       1.935318 2.533333 1.937665 2.511111  1.753208
+[2,]     2 19.27907 8.550482 13.65116 7.530521 5.627907 2.526274     3.093023       2.950496 2.441860 2.312516 2.813953  1.880423
+     AQ_AttSwitch AQ_AttSwitchSD
+[1,]     5.355556       1.908778
+[2,]     5.302326       2.231110
+
+	Welch Two Sample t-test
+
+data:  AQ_Total by Group
+t = -0.67704, df = 76.036, p-value = 0.5004
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -4.253405  2.095266
+sample estimates:
+mean in group 1 mean in group 2 
+       18.20000        19.27907 
+
+d     |        95% CI
+---------------------
+-0.16 | [-0.60, 0.30]
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionToDetails by Group
+t = -0.4394, df = 84.642, p-value = 0.6615
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -1.2592393  0.8034253
+sample estimates:
+mean in group 1 mean in group 2 
+       5.400000        5.627907 
+
+d     |        95% CI
+---------------------
+-0.10 | [-0.52, 0.33]
+
+	Welch Two Sample t-test
+
+data:  AQ_Social by Group
+t = -0.60816, df = 75.649, p-value = 0.5449
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -3.638865  1.936540
+sample estimates:
+mean in group 1 mean in group 2 
+       12.80000        13.65116 
+
+d     |        95% CI
+---------------------
+-0.14 | [-0.59, 0.31]
+
+	Welch Two Sample t-test
+
+data:  AQ_SocialSkills by Group
+t = -1.2966, df = 72.014, p-value = 0.1989
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -1.7585144  0.3724679
+sample estimates:
+mean in group 1 mean in group 2 
+       2.400000        3.093023 
+
+d     |        95% CI
+---------------------
+-0.31 | [-0.77, 0.16]
+
+	Welch Two Sample t-test
+
+data:  AQ_Communication by Group
+t = 0.20066, df = 82.02, p-value = 0.8415
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.8153568  0.9983025
+sample estimates:
+mean in group 1 mean in group 2 
+       2.533333        2.441860 
+
+d    |        95% CI
+--------------------
+0.04 | [-0.39, 0.48]
+
+	Welch Two Sample t-test
+
+data:  AQ_Imagination by Group
+t = -0.78054, df = 84.862, p-value = 0.4372
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -1.0742921  0.4686074
+sample estimates:
+mean in group 1 mean in group 2 
+       2.511111        2.813953 
+
+d     |        95% CI
+---------------------
+-0.17 | [-0.60, 0.26]
+
+	Welch Two Sample t-test
+
+data:  AQ_AttentionSwitching by Group
+t = 0.12001, df = 82.686, p-value = 0.9048
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.8290061  0.9354660
+sample estimates:
+mean in group 1 mean in group 2 
+       5.355556        5.302326 
+
+d    |        95% CI
+--------------------
+0.03 | [-0.40, 0.46]
