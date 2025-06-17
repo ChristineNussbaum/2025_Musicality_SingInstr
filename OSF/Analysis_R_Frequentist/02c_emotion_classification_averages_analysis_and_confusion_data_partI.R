@@ -1,6 +1,6 @@
 ##########################################################################
 ## File: 02c_emotion_classification_averages_analysis_and_confusion_data_partI.R
-## This script analysis the emotion recognition performance of musicians and non-musicians - Analysis of AVG trials and Confusion matrices
+## This script analysis the emotion recognition performance of singers and instrumentalists - Analysis of AVG trials and Confusion matrices
 # author: Christine Nussbaum (christine.nussbaum@uni-jena.de)
 # date 10/2022 and 05/2025
 
@@ -198,7 +198,6 @@ yTitleStr = "Classification Proportion in %"
 xTitleStr = "Emotion"
 facetStr =  " splitted per mType"
 
-title = paste0("Confusion matrix: Proportion of ", yTitleStr, " per ", xTitleStr, facetStr, " (N =", length(unique(D$Subject))," )")
 filename = paste0("plots/amateurs_04_confusion_matrix_emotion_withavg.png")
 
 C$MType <- recode(C$MType, full = "Full", f0 = "F0", tbr = "Timbre")
@@ -239,7 +238,6 @@ yTitleStr = "Classification Proportion in %"
 xTitleStr = "Emotion"
 facetStr =  " splitted per mType"
 
-#title = paste0("Confusion matrix: Proportion of ", yTitleStr, " per ", xTitleStr, facetStr, " (Musicians only)")
 filename = paste0("plots/amateurs_04b_singers_confusion_matrix_emotion_withavg.png")
 
 C$MType <- recode(C$MType, full = "Full", f0 = "F0", tbr = "Timbre")
@@ -278,7 +276,7 @@ yTitleStr = "Classification Proportion in %"
 xTitleStr = "Emotion"
 facetStr =  " splitted per mType"
 
-#title = paste0("Confusion matrix: Proportion of ", yTitleStr, " per ", xTitleStr, facetStr, " (Nonmusicians only)")
+
 filename = paste0("plots/amateurs_04c_instrumentalists_confusion_matrix_emotion_withavg.png")
 
 C$MType <- recode(C$MType, full = "Full", f0 = "F0", tbr = "Timbre")

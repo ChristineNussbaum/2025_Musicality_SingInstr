@@ -1,6 +1,6 @@
 ##########################################################################
 ## File: 02a_emotion_classification_data_analysis_amateurs_partI.R
-## This script analysis the emotion classification performance of musicians and non-musicians
+## This script analysis the emotion classification performance of singers and instrumentalists
 # authors: Christine Nussbaum (christine.nussbaum@uni-jena.de), Jessica Dethloff
 # date 10/2022, 02/2024, 05/2025
 
@@ -112,7 +112,7 @@ D <-  droplevels(D)
 
 a<-ezANOVA(data=D, dv=.(ACC), wid=.(Subject), within = .(Emo, MType), between = .(Group), type=3, detailed = TRUE)
 b = tracedEzOut(a, print = TRUE, sph.cor = "HF", mau.p = 0.05, etasq = "partial", dfsep = ", ")
-#this analysis return a warning about unequal groups, since there are 45 singers but 44 instrumentalists
+#this analysis return a warning about unequal groups, since there are 45 singers but 43 instrumentalists
 
 ####################################################################
 #expected output (reduced):

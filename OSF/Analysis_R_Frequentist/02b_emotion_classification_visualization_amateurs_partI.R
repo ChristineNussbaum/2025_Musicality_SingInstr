@@ -1,6 +1,6 @@
 ##########################################################################
 ## File: 02b_emotion_classification_visualization_amateurs_partI.R
-## This script analysis the emotion recognition performance of musicians and non-musicians
+## This script analysis the emotion recognition performance of singers and instrumentalists
 # authors: Christine Nussbaum (christine.nussbaum@uni-jena.de), Jessica Senftleben
 # date 7/2023, 05/2025
 
@@ -29,7 +29,7 @@ load(file="input/amateurs_Exp_processed.RData")
 # remove participant with degree in music science
 D2 <- subset(D, Code!="AEB56L")
 
-#rename D2 in D2 to make script easier to read
+#rename D2 in D to make script easier to read
 D <- D2
 rm(D2)
 
